@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
-import { MuiThemeProvider, createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import { MuiThemeProvider, responsiveFontSizes } from '@material-ui/core/styles';
+import { Box, AppBar, Typography, Toolbar,} from '@material-ui/core'
 import {CssBaseline, Button} from '@material-ui/core';
+
 import HeaderComponent from './components/header/header';
 
 import themeBW from '../src/themes/BlackAndWhite/themeBW';
 import themeBLUE from '../src/themes/Blue/themeBLUE';
 import './App.css';
 
-let theme1 = createMuiTheme(themeBW);
-theme1 = responsiveFontSizes(theme1);
-let theme2 = createMuiTheme(themeBLUE);
-theme2 = responsiveFontSizes(theme2);
+const theme1 = responsiveFontSizes(themeBW);
+const theme2 = responsiveFontSizes(themeBLUE);
 
 class App extends Component {
 	state={
@@ -25,10 +25,19 @@ class App extends Component {
     	return (
     	    <MuiThemeProvider theme={themeIs ? theme1 : theme2}>
 				<CssBaseline/>
-					<Button onClick={this.onChange}>Change theme</Button>
+					<div>
+						<Box component="nav" className="navbarContainer">
+							<AppBar>
+								<Toolbar>
+										<Typography variant='h6'>This is a navigation bar</Typography>
+								</Toolbar>
+							</AppBar>
+						</Box>
+					</div>
 					<div>
 						<div>
-							<HeaderComponent></HeaderComponent>
+							<HeaderComponent/>
+							<Button onClick={this.onChange} color="primary">Change theme</Button>
 						</div>
 						<Button color="primary">
 							This is a test
@@ -37,7 +46,7 @@ class App extends Component {
 							This is a test
 						</Button>
 					</div>
-			
+
 			</MuiThemeProvider>
 		);
 	}
