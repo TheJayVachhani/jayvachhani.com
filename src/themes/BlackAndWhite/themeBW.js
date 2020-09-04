@@ -5,6 +5,9 @@ export default{
 		},
 		secondary: { 
 			main: "#62666A" 
+		},
+		background:{
+			default: "#e4e5e6"
 		}
   	}
 };

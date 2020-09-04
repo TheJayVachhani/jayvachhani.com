@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Typography} from '@material-ui/core';
+import {Typography, Box} from '@material-ui/core';
 import './header.css';
 
 class HeaderComponent extends Component {
@@ -30,12 +30,12 @@ class HeaderComponent extends Component {
 
     render() {
         return (
-			<div className="header-wrapper" style={{"height": this.state.height}}>
-				<div className="header">
-				<Typography variant='h3' color="primary">Name Name</Typography>
-				<Typography variant='h6' color="secondary">Things about me</Typography>
-				</div>
-			</div>
+			<Box component="div" className="header-wrapper" style={{"height": this.state.height}}>
+				<Box component="div" className="header">
+				<Typography variant='h3' color="primary">Jay Vachhani</Typography>
+				<Typography variant='h6' color="secondary">Computer Science and Management</Typography>
+				</Box>
+			</Box>
         );
     }
 }
