@@ -30,18 +30,8 @@ class App extends Component {
 						<div>
 							<Header/>
 						</div>
-						<div>
-							<Button color="primary">
-								This is a test Button
-							</Button>
-							<Button color="secondary">
-								This is a test Button
-							</Button>
-						</div>
-						<div>
-							<div className="section-container"> 
-								<Experience/>
-							</div>
+						<div className="section-container"> 
+							<Experience/>
 						</div>
 						<div>
 							<Box component="nav" className="navbarContainer">
@@ -50,6 +40,10 @@ class App extends Component {
 											<section>
 												<Button onClick={this.onChange} color="Primary">Change theme</Button>
 											</section>
+											<section className="navigation">
+												<Button color="Primary">Experience</Button>
+											</section>
+
 									</Toolbar>
 								</AppBar>
 							</Box>

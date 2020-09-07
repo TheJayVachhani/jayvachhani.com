@@ -9,20 +9,28 @@ export default createMuiTheme({
 			main:  "#4A71FF"
 		},
 		background:{
-			default: "#161627"
+			default: "#0F0F1A"
 		}
 	},
 	overrides: {
 		MuiToolbar: {
 			root: {
 				color: "#4A71FF",
-				background: "#3A5269"
+				background: "#161627"
 			},
 		},
 		MuiCard:{
 			root: {
 				backgroundColor: "#161627"
 			}
-		}
+		},
+		MuiCardHeader:{
+			title:{
+				color: "#E0A800",
+			},
+			subheader: {
+				color: "#4A71FF" ,
+			}
+		},
 	},
 });

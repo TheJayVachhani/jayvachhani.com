@@ -23,6 +23,14 @@ export default createMuiTheme({
 			root: {
 				backgroundColor: "#E4e5e6",
 			}
-		}
+		},
+		MuiCardHeader:{
+			title:{
+				color: "#0A0B0C",
+			},
+			subheader: {
+				color: "#313335" ,
+			}
+		},
 	},
 });
