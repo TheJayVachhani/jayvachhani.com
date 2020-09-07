@@ -46,12 +46,10 @@ export default createMuiTheme({
 				backgroundColor: "#313335",
 				color: "#e4e5e6",
 				indicatorColor: "#16C25D",
+				'&:hover': {
+					color:"#78E2A5",
+				}
 			},
 		},
-		MuiTabPanel: {
-			root:{
-				backgroundColor: "#e4e5e6"
-			}
-		}
 	},
 });

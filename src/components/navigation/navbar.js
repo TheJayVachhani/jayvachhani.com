@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
 import {AppBar, Tabs, Tab, Typography, Box} from '@material-ui/core';
-import {makeStyles, useTheme} from '@material-ui/core/styles';
+import {useTheme} from '@material-ui/core/styles';
 
 import Experience from '../experience/experience';
 import Home from '../home/home';
@@ -54,7 +54,7 @@ export default function Navbar(){
 
     return (
         <div>
-            <AppBar position="static">
+            <AppBar position="sticky" >
                 <Tabs value={value} onChange={handleChange} variant="fullWidth" aria-label="All Navigation Tabs">
                 <Tab aria-label="Home" label="Home" {...Props(0)} />
                 <Tab aria-label="Experience" label="Experience" {...Props(1)} />
