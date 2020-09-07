@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Card, CardHeader, CardContent, Chip, CardActions, Collapse, IconButton, Typography, List, ListItem, ListItemText, Link, Divider} from '@material-ui/core';
+import {Grid, Card, CardHeader, CardContent, Chip, CardActions, Collapse, IconButton, Button, Typography, List, ListItem, ListItemText, Link, Divider} from '@material-ui/core';
 import {ExpandMore, CodeRounded, PanoramaFishEye, DeveloperModeRounded, DeveloperBoardRounded, DataUsageOutlined, Autorenew  } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
@@ -39,8 +39,16 @@ const ExperienceComponent = () => {
     const [expanded4, setExpanded4] = React.useState(false);
     const [expanded5, setExpanded5] = React.useState(false);
 
+    const handleBigClick = () => {
+        setExpanded(!expanded);
+        setExpanded2(!expanded2);
+        setExpanded3(!expanded3);
+        setExpanded4(!expanded4);
+        setExpanded5(!expanded5);
+    }
+
     const handleExpandClick = () => {
-      setExpanded(!expanded);
+        setExpanded(!expanded);
     };
 
     const handleExpandClick2 = () => {
@@ -61,7 +69,15 @@ const ExperienceComponent = () => {
     
         return (
             <div className="experienceHeader">
-                <Typography variant='h5' color="primary">Experience</Typography>
+                <Grid container xs={12} direction="column" justify="center" align="center">
+                    <Grid item xs={12}>
+                        <Typography variant='h5' color="primary">Experience</Typography>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Button onClick={handleBigClick} color="secondary">All</Button>
+                    </Grid>
+                </Grid>
+                
                 <div className="experienceHeader">
                     <Card>
                         <CardHeader
@@ -93,7 +109,10 @@ const ExperienceComponent = () => {
                                     </List>
                                 </Grid>
                                 <Grid item xs={8}>
-                                    <Chip color="primary" label="PDDL" icon={<CodeRounded />} className="chip"/>
+                                    <Chip color="primary" label="JavaScript" icon={<CodeRounded />} className="chip"/>
+                                    <Chip color="primary" label="Node JS" icon={<CodeRounded />} className="chip"/>
+                                    <Chip color="primary" label="PostgreSQL" icon={<CodeRounded />} className="chip"/>
+                                    <Chip color="primary" label="Git" icon={<CodeRounded />} className="chip"/>
                                 </Grid>
                             </Grid>
                             <Divider variant="middle"/>
@@ -416,6 +435,11 @@ const ExperienceComponent = () => {
                         </Collapse>
                     </Card>
                 </div>
+                <Grid container xs={12} direction="column" justify="center" align="center">
+                    <Grid item xs={12}>
+                        <Button onClick={handleBigClick} color="secondary" align="center">All</Button>
+                    </Grid>
+                </Grid>
             </div>
         );
     
