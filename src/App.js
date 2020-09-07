@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { MuiThemeProvider, responsiveFontSizes } from '@material-ui/core/styles';
 import {LensRounded} from '@material-ui/icons';
-import {CssBaseline, Button, IconButton} from '@material-ui/core';
+import {CssBaseline, IconButton} from '@material-ui/core';
 
 import Navbar from './components/navigation/navbar';
 import themeBW from '../src/themes/BlackAndWhite/themeBW';
