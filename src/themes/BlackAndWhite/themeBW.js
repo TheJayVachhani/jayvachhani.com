@@ -19,5 +19,10 @@ export default createMuiTheme({
 				background: "#e4e5e6"
 			},
 		},
+		MuiCard:{
+			root: {
+				backgroundColor: "#E4e5e6",
+			}
+		}
 	},
 });

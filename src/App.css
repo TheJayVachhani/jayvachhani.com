@@ -1,5 +1,18 @@
 .navbarContainer {
     position: sticky;
-    opacity: 0.9;
+    opacity: 1;
     width: 100%; 
-  }
+}
+.section {
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+}
+.section-container {
+	width: 100%;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 160px;
+	padding-bottom: 160px;
+}

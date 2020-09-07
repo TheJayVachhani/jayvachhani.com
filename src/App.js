@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import { MuiThemeProvider, responsiveFontSizes } from '@material-ui/core/styles';
-import { Box, AppBar, Typography, Toolbar,} from '@material-ui/core'
+import { Box, AppBar, Toolbar,} from '@material-ui/core'
 import {CssBaseline, Button} from '@material-ui/core';
 
-import HeaderComponent from './components/header/header';
+import Header from './components/header/header';
+import Experience from './components/experience/experience';
 
 import themeBW from '../src/themes/BlackAndWhite/themeBW';
 import themeBLUE from '../src/themes/Blue/themeBLUE';
@@ -26,25 +27,33 @@ class App extends Component {
     	    <MuiThemeProvider theme={themeIs ? theme1 : theme2}>
 				<CssBaseline/>
 					<div>
-						<Box component="nav" className="navbarContainer">
-							<AppBar>
-								<Toolbar>
-										<Typography variant='h6'>This is a navigation bar</Typography>
-								</Toolbar>
-							</AppBar>
-						</Box>
-					</div>
-					<div>
 						<div>
-							<HeaderComponent/>
-							<Button onClick={this.onChange} color="primary">Change theme</Button>
+							<Header/>
 						</div>
-						<Button color="primary">
-							This is a test
-						</Button>
-						<Button color="secondary">
-							This is a test
-						</Button>
+						<div>
+							<Button color="primary">
+								This is a test Button
+							</Button>
+							<Button color="secondary">
+								This is a test Button
+							</Button>
+						</div>
+						<div>
+							<div className="section-container"> 
+								<Experience/>
+							</div>
+						</div>
+						<div>
+							<Box component="nav" className="navbarContainer">
+								<AppBar>
+									<Toolbar>
+											<section>
+												<Button onClick={this.onChange} color="Primary">Change theme</Button>
+											</section>
+									</Toolbar>
+								</AppBar>
+							</Box>
+						</div>
 					</div>
 
 			</MuiThemeProvider>
