@@ -44,7 +44,10 @@ export default createMuiTheme({
 		MuiTabs: {
 			root:{
 				backgroundColor: "#161627",
-				color: "#59B8C5"
+				color: "#59B8C5",
+				'&:hover': {
+					color:"#4A71FF",
+				}
 			},
 			
 		},

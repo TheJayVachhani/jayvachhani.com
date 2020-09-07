@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { MuiThemeProvider, responsiveFontSizes } from '@material-ui/core/styles';
-import {CssBaseline, Button} from '@material-ui/core';
+import {LensRounded} from '@material-ui/icons';
+import {CssBaseline, Button, IconButton} from '@material-ui/core';
 
 import Navbar from './components/navigation/navbar';
 import themeBW from '../src/themes/BlackAndWhite/themeBW';
@@ -27,7 +28,9 @@ class App extends Component {
 						<div>
 							<Navbar/>
 						</div>
-						<Button onClick={this.onChange} color="secondary">Click Me :)</Button>
+						<IconButton onClick={this.onChange} color="secondary">
+							<LensRounded/>
+						</IconButton>
 					</div>
 			</MuiThemeProvider>
 		);

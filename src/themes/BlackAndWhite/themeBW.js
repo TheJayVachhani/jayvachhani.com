@@ -16,12 +16,12 @@ export default createMuiTheme({
 		MuiToolbar: {
 			root: {
 				color: "#0A0B0C",
-				background: "#e4e5e6"
+				background: "#E4E5E6"
 			},
 		},
 		MuiCard:{
 			root: {
-				backgroundColor: "#E4e5e6",
+				backgroundColor: "#D5D7D5",
 			}
 		},
 		MuiCardHeader:{
@@ -29,7 +29,7 @@ export default createMuiTheme({
 				color: "#0A0B0C",
 			},
 			subheader: {
-				color: "#313335" ,
+				color: "#16C25D" ,
 			}
 		},
 		MuiChip: {

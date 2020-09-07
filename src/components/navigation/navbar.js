@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
 import {AppBar, Tabs, Tab, Typography, Box} from '@material-ui/core';
 import {useTheme} from '@material-ui/core/styles';
+import './navbar.css';
 
 import Experience from '../experience/experience';
 import Home from '../home/home';
@@ -62,17 +63,14 @@ export default function Navbar(){
                 <Tab aria-label="Contact" label="Contact" {...Props(3)}/>
                 </Tabs>
             </AppBar>
-            <SwipeableViews axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                index={value}
-                onChangeIndex={handleChangeIndex}
-                >
+            <SwipeableViews axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'} index={value} onChangeIndex={handleChangeIndex}>
             <TabPanel value={value} index={0}>
                 <div>
                     <Home/>
                 </div>
             </TabPanel>
             <TabPanel value={value} index={1}>
-                <div className="section-container">
+                <div className="experience-container">
                     <Experience/>
                 </div>
             </TabPanel>
