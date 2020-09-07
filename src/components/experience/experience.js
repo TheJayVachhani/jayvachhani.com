@@ -45,7 +45,7 @@ const ExperienceComponent = () => {
     };
     
         return (
-            <div className="experienceHeader">
+            <div className="experienceHeader" style={{backgroundColor: "primary"}}>
                 <Typography variant='h5' color="primary">Experience</Typography>
                 <div>
                 <Card>
@@ -75,9 +75,9 @@ const ExperienceComponent = () => {
                                 </List>
                             </Grid>
                             <Grid item xs={8}>
-                                <Chip label="JavaScript" icon={<CodeRounded />} className="chip"/>
-                                <Chip label="Node JS" icon={<CodeRounded />} className="chip"/>
-                                <Chip label="PostgreSQL" icon={<CodeRounded />} className="chip"/>
+                                <Chip color="primary" label="JavaScript" icon={<CodeRounded />} className="chip"/>
+                                <Chip color="primary" label="Node JS" icon={<CodeRounded />} className="chip"/>
+                                <Chip color="primary" label="PostgreSQL" icon={<CodeRounded />} className="chip"/>
                             </Grid>
                         </Grid>
                         <Divider variant="middle"/>
@@ -90,10 +90,10 @@ const ExperienceComponent = () => {
                                 </List>
                             </Grid>
                             <Grid item xs={8}>
-                                <Chip label="REACT JS" icon={<DeveloperModeRounded fontSize="small"/>} className="chip"/>
-                                <Chip label="Material-UI" icon={<DeveloperModeRounded fontSize="small"/>} className="chip"/>
-                                <Chip label="PERN" icon={<DeveloperModeRounded fontSize="small"/>} className="chip"/>
-                                <Chip label="Atomic Design" icon={<DeveloperModeRounded fontSize="small"/>} className="chip"/>
+                                <Chip color="primary" label="REACT JS" icon={<DeveloperModeRounded fontSize="small"/>} className="chip"/>
+                                <Chip color="primary" label="Material-UI" icon={<DeveloperModeRounded fontSize="small"/>} className="chip"/>
+                                <Chip color="primary" label="PERN" icon={<DeveloperModeRounded fontSize="small"/>} className="chip"/>
+                                <Chip color="primary" label="Atomic Design" icon={<DeveloperModeRounded fontSize="small"/>} className="chip"/>
                             </Grid>
                         </Grid>
                         <Divider variant="middle"/>
@@ -106,11 +106,11 @@ const ExperienceComponent = () => {
                                 </List>
                             </Grid>
                             <Grid item xs={8}>
-                                <Chip label="Jira" icon={<DataUsageOutlined fontSize="small"/>} className="chip"/>
-                                <Chip label="VS Code" icon={<DataUsageOutlined fontSize="small"/>} className="chip"/>
-                                <Chip label="Figma" icon={<DataUsageOutlined fontSize="small"/>} className="chip"/>
-                                <Chip label="Bitbucket" icon={<DataUsageOutlined fontSize="small"/>} className="chip"/>
-                                <Chip label="Office 365" icon={<DataUsageOutlined fontSize="small"/>} className="chip"/>
+                                <Chip color="primary" label="Jira" icon={<DataUsageOutlined fontSize="small"/>} className="chip"/>
+                                <Chip color="primary" label="VS Code" icon={<DataUsageOutlined fontSize="small"/>} className="chip"/>
+                                <Chip color="primary" label="Figma" icon={<DataUsageOutlined fontSize="small"/>} className="chip"/>
+                                <Chip color="primary" label="Bitbucket" icon={<DataUsageOutlined fontSize="small"/>} className="chip"/>
+                                <Chip color="primary" label="Office 365" icon={<DataUsageOutlined fontSize="small"/>} className="chip"/>
                             </Grid>
                         </Grid>
                     </Collapse>

@@ -38,7 +38,7 @@ class App extends Component {
 								<AppBar>
 									<Toolbar>
 											<section>
-												<Button onClick={this.onChange} color="Primary">Change theme</Button>
+												<Button onClick={this.onChange} color="secondary">Change theme</Button>
 											</section>
 											<section className="navigation">
 												<Button color="Primary">Experience</Button>

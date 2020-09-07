@@ -26,11 +26,20 @@ export default createMuiTheme({
 		},
 		MuiCardHeader:{
 			title:{
-				color: "#E0A800",
+				color: "#E4E5E6",
 			},
 			subheader: {
 				color: "#4A71FF" ,
 			}
 		},
+		MuiChip: {
+			colorPrimary: {
+				color: "#e4e5e6",
+				backgroundColor: "#0F0F1A"
+			},
+			iconColorPrimary: {
+				color: "#13F6EB",
+			},
+		}
 	},
 });

@@ -6,7 +6,7 @@ export default createMuiTheme({
 			main: "#0A0B0C"
 		},
 		secondary: { 
-			main: "#62666A" 
+			main: "#16C25D" 
 		},
 		background:{
 			default: "#E4E5E6"
@@ -32,5 +32,14 @@ export default createMuiTheme({
 				color: "#313335" ,
 			}
 		},
+		MuiChip: {
+			colorPrimary: {
+				color: "#e4e5e6",
+				backgroundColor: "#313335"
+			},
+			iconColorPrimary: {
+				color: "#16C25D"
+			},
+		}
 	},
 });
