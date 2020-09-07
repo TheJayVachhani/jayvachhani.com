@@ -15,6 +15,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-swipeable-views": "^0.13.9",
     "react-three-fiber": "^4.2.21",
     "react-typed": "^1.2.0"
   },

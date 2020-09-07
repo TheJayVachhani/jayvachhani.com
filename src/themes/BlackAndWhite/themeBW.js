@@ -40,6 +40,18 @@ export default createMuiTheme({
 			iconColorPrimary: {
 				color: "#16C25D"
 			},
+		},
+		MuiTabs: {
+			root:{
+				backgroundColor: "#313335",
+				color: "#e4e5e6",
+				indicatorColor: "#16C25D",
+			},
+		},
+		MuiTabPanel: {
+			root:{
+				backgroundColor: "#e4e5e6"
+			}
 		}
 	},
 });

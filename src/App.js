@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
 import { MuiThemeProvider, responsiveFontSizes } from '@material-ui/core/styles';
-import { Box, AppBar, Toolbar,} from '@material-ui/core'
 import {CssBaseline, Button} from '@material-ui/core';
 
-import Header from './components/header/header';
-import Experience from './components/experience/experience';
-
+import Navbar from './components/navigation/navbar';
 import themeBW from '../src/themes/BlackAndWhite/themeBW';
 import themeBLUE from '../src/themes/Blue/themeBLUE';
 import './App.css';
@@ -28,28 +25,10 @@ class App extends Component {
 				<CssBaseline/>
 					<div>
 						<div>
-							<Header/>
+							<Navbar/>
 						</div>
-						<div className="section-container"> 
-							<Experience/>
-						</div>
-						<div>
-							<Box component="nav" className="navbarContainer">
-								<AppBar>
-									<Toolbar>
-											<section>
-												<Button onClick={this.onChange} color="secondary">Change theme</Button>
-											</section>
-											<section className="navigation">
-												<Button color="Primary">Experience</Button>
-											</section>
-
-									</Toolbar>
-								</AppBar>
-							</Box>
-						</div>
+						<Button onClick={this.onChange} color="secondary">Click Me :)</Button>
 					</div>
-
 			</MuiThemeProvider>
 		);
 	}

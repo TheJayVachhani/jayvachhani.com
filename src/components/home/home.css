@@ -1,0 +1,24 @@
+
+.header h6 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+  
+.header h3 {
+    text-transform: uppercase;
+    letter-spacing: 9px;
+}
+.header {
+    text-align: center;
+    position: relative;
+}
+
+.header-wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    width: 100%;
+}
