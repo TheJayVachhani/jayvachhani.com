@@ -43,9 +43,8 @@ function Props(index) {
 }
 
 export default function Navbar(props){
-    const { match, history } = props;
-    const {params} = match;
-    const {page} = params;
+    const {history} = props;
+
     const theme = useTheme();
     
     const tabNameToIndex = {
@@ -55,14 +54,7 @@ export default function Navbar(props){
         3: "contact"
     }
 
-    const indexToTabName = {
-        home: 0,
-        experience: 1,
-        about: 2,
-        contact: 3
-    }
-    
-    const [selectedTab, setSelectedTab] = React.useState(indexToTabName[page]);
+    const [selectedTab, setSelectedTab] = React.useState(0);
   
     const handleChange = (event, newValue) => {
         history.push(`/${tabNameToIndex[newValue]}`);
@@ -77,17 +69,17 @@ export default function Navbar(props){
         <div>
             <AppBar position="sticky" >
                 <Tabs value={selectedTab} onChange={handleChange} variant="fullWidth" aria-label="All Navigation Tabs">
-                <Tab aria-label="Home" label="Home" {...Props(0)} />
-                <Tab aria-label="Experience" label="Experience" {...Props(1)} />
-                <Tab aria-label="About" label="About" {...Props(2)} />
-                <Tab aria-label="Contact" label="Contact" {...Props(3)}/>
+                    <Tab aria-label="Home" label="Home" {...Props(0)} />
+                    <Tab aria-label="Experience" label="Experience" {...Props(1)} />
+                    <Tab aria-label="About" label="About" {...Props(2)} />
+                    <Tab aria-label="Contact" label="Contact" {...Props(3)}/>
                 </Tabs>
             </AppBar>
             <SwipeableViews axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'} index={selectedTab} onChangeIndex={handleChangeIndex}>
-            <TabPanel>
+            <TabPanel value={selectedTab} index={0}>
                 {selectedTab === 0 && <Home/>}
             </TabPanel>
-            <TabPanel>
+            <TabPanel value={selectedTab} index={1}>
                 <div className="experience-container">
                     {selectedTab === 1 && <Experience/>}
                 </div>
@@ -95,7 +87,7 @@ export default function Navbar(props){
             <TabPanel value={selectedTab} index={2}>
                 Item Three
             </TabPanel>
-            <TabPanel>
+            <TabPanel value={selectedTab} index={3}>
                 {selectedTab === 3 && <Contact/>}
             </TabPanel>
             </SwipeableViews>

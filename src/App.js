@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Route} from 'react-router-dom';
+import {Route , Redirect, Switch} from 'react-router-dom';
 import {MuiThemeProvider, responsiveFontSizes} from '@material-ui/core/styles';
 import {LensRounded, MinimizeRounded, PanoramaFishEyeRounded} from '@material-ui/icons';
 import {CssBaseline, IconButton, Box, Button, Typography} from '@material-ui/core';
@@ -51,7 +51,10 @@ class App extends Component {
 				<CssBaseline/>
 					<div>
 						<div>
-							<Route exact path="/:page?" render={props => <Navbar {...props}/>} />
+							<Switch>
+								<Redirect exact from="/" to="/home"/>
+								<Route exact path="/:page?" render={props => <Navbar {...props}/>} />
+							</Switch>
 						</div>
 						<div>
 						<Box component="div" className="footer" color="background"> 
