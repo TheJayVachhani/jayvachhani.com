@@ -17,12 +17,6 @@ export default createMuiTheme({
 		}
 	},
 	overrides: {
-		MuiToolbar: {
-			root: {
-				color: "#4A71FF",
-				background: "#161627"
-			},
-		},
 		MuiCard:{
 			root: {
 				backgroundColor: "#161627"
