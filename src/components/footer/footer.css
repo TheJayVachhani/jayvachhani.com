@@ -1,0 +1,13 @@
+.footer {
+    top: auto;
+    bottom: 0;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.a {
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 5px;
+}

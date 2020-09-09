@@ -4,6 +4,7 @@ import {LensRounded} from '@material-ui/icons';
 import {CssBaseline, IconButton} from '@material-ui/core';
 
 import Navbar from './components/navigation/navbar';
+import Footer from './components/footer/footer'
 import themeBW from '../src/themes/BlackAndWhite/themeBW';
 import themeBLUE from '../src/themes/Blue/themeBLUE';
 import './App.css';
@@ -31,6 +32,9 @@ class App extends Component {
 						<IconButton onClick={this.onChange} color="secondary">
 							<LensRounded/>
 						</IconButton>
+						<div>
+							<Footer/>
+						</div>
 					</div>
 			</MuiThemeProvider>
 		);

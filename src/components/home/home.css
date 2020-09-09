@@ -2,12 +2,18 @@
 .header h6 {
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+}
+.header h5 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
   
 .header h3 {
     text-transform: uppercase;
-    letter-spacing: 9px;
+    font-weight: 400;
+    letter-spacing: 12px;
 }
 .header {
     text-align: center;
@@ -21,4 +27,10 @@
     padding-bottom: 30vh;
     width: 100%;
     height: 100vh;
+}
+.icon-wrapper{
+    width: 60%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
