@@ -1,6 +1,6 @@
 import React from 'react';
 import {Typography, Box, Grid, IconButton} from '@material-ui/core';
-import {LinkedIn, GitHub} from '@material-ui/icons';
+import {LinkedIn} from '@material-ui/icons';
 import Typed from 'react-typed';
 import './home.css';
 
@@ -31,14 +31,9 @@ const HomeComponent = () => {
                     <br/>
                     <Box component="div" className="icon-wrapper">
                         <Grid container justify="center" direction="row" spacing={2}>
-                            <Grid item xs={3} lg={2}>
+                            <Grid item xs={12} lg={12}>
                                 <IconButton href="https://www.linkedin.com/in/thejayvachhani/" target="_blank">
                                     <LinkedIn color="secondary" style={{ fontSize: 35 }}/>
-                                </IconButton>
-                            </Grid>
-                            <Grid item xs={3} lg={2}>
-                                <IconButton href="https://github.com/TheJayVachhani" target="_blank">
-                                    <GitHub color="secondary" style={{ fontSize: 30 }}/>
                                 </IconButton>
                             </Grid>
                         </Grid>

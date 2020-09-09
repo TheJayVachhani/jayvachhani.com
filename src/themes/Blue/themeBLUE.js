@@ -10,6 +10,10 @@ export default createMuiTheme({
 		},
 		background:{
 			default: "#0F0F1A"
+		},
+		text:{
+			primary: "#4A71FF",
+			secondary: "#59B8C5",
 		}
 	},
 	overrides: {
@@ -49,7 +53,6 @@ export default createMuiTheme({
 					color:"#4A71FF",
 				}
 			},
-			
 		},
 	},
 });

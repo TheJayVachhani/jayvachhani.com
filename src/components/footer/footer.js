@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {Box, Button, IconButton, Typography} from '@material-ui/core';
-import {MinimizeRounded, LensRounded} from '@material-ui/icons';
+import {Box, Button, Typography} from '@material-ui/core';
+import {MinimizeRounded} from '@material-ui/icons';
 import './footer.css';
 
 class footer extends Component {
@@ -18,12 +18,9 @@ class footer extends Component {
                         <Button color="primary" target="_blank" href="https://www.freecodecamp.org/jayvachhani" aria-label="Free Code Camp Profile Link">FreeCodeCamp</Button>
                     </Typography>
                     <br/>
-                    <Typography variant="body2" color="primary">
+                    <Typography variant="body2" color="textPrimary">
                         &copy; Copyright Jay Vachhani 2020 MIT License
                     </Typography>
-                    <IconButton onClick={this.onChange} color="secondary">
-							<LensRounded/>
-					</IconButton>
                 </Box>
             </Box>
         )

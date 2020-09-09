@@ -11,6 +11,10 @@ export default createMuiTheme({
 		background:{
 			default: "#E4E5E6"
 		},
+		text:{
+			primary: "#0A0B0C",
+			secondary: "#0A0B0C",
+		}
 	},
 	overrides: {
 		MuiToolbar: {
