@@ -19,7 +19,7 @@ const HomeComponent = () => {
                     <Grid container justify="center" direction="column" >
                         <Grid item xs={12} align="center">
                             <Typography variant='h6' color="secondary">
-                                <Typed strings={["Web Development", "Full Stack Learner", "Data Science", "Financial Markets", "AI + ML Learner",]} typeSpeed={30} backSpeed={30} loop/>
+                                <Typed strings={["Web Development","UI + UX Design", "Full Stack Learner", "Data Science", "Financial Markets", "AI + ML Learner",]} typeSpeed={30} backSpeed={30} loop/>
                             </Typography>
                         </Grid>
                         <Grid item xs={12} align="center">

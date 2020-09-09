@@ -19,3 +19,10 @@
 .navigation{
     align-content: right;
 }
+
+.footer {
+    top: auto;
+    bottom: 0;
+    text-align: center;
+    padding-top: 5vh;
+}

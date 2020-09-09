@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Grid, Card, CardHeader, CardContent, Chip, CardActions, Collapse, IconButton, Button, Typography, List, ListItem, ListItemText, Link, Divider} from '@material-ui/core';
 import {ExpandMore, CodeRounded, PanoramaFishEye, DeveloperModeRounded, DeveloperBoardRounded, DataUsageOutlined, Autorenew  } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/core/styles';
@@ -33,11 +33,11 @@ const useStyles = makeStyles((theme) => ({
 const ExperienceComponent = () => {
 
     const classes = useStyles();
-    const [expanded, setExpanded] = React.useState(false);
-    const [expanded2, setExpanded2] = React.useState(false);
-    const [expanded3, setExpanded3] = React.useState(false);
-    const [expanded4, setExpanded4] = React.useState(false);
-    const [expanded5, setExpanded5] = React.useState(false);
+    const [expanded, setExpanded] = useState(false);
+    const [expanded2, setExpanded2] = useState(false);
+    const [expanded3, setExpanded3] = useState(false);
+    const [expanded4, setExpanded4] = useState(false);
+    const [expanded5, setExpanded5] = useState(false);
 
     const handleBigClick = () => {
         setExpanded(!expanded);
