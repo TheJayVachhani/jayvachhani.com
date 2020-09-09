@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Route} from 'react-router-dom';
 import {MuiThemeProvider, responsiveFontSizes} from '@material-ui/core/styles';
 import {LensRounded, MinimizeRounded, PanoramaFishEyeRounded} from '@material-ui/icons';
 import {CssBaseline, IconButton, Box, Button, Typography} from '@material-ui/core';
@@ -38,7 +39,7 @@ class App extends Component {
 		}
 		this.setState(({ themeIs: themeDict[value]}));
 	}
-	backtoNormal = () => {
+	backToNormal = () => {
 		value=0;
 		this.setState(({ themeIs: themeDict[value]}));
 	}
@@ -50,7 +51,7 @@ class App extends Component {
 				<CssBaseline/>
 					<div>
 						<div>
-							<Navbar/>
+							<Route exact path="/:page?" render={props => <Navbar {...props}/>} />
 						</div>
 						<div>
 						<Box component="div" className="footer" color="background"> 
@@ -66,7 +67,7 @@ class App extends Component {
 									<Button color="primary" target="_blank" href="https://www.hackerrank.com/jay_vachhani" aria-label="Hacker Rank Profile Link">Hackerrank</Button>
 									<MinimizeRounded fontSize="small" color="secondary"/>
 									<Button color="primary" target="_blank" href="https://www.freecodecamp.org/jayvachhani" aria-label="Free Code Camp Profile Link">FreeCodeCamp</Button>
-									<IconButton onClick={this.backtoNormal} title="Starting Theme" aria-label="Starting Theme" color="primary">
+									<IconButton onClick={this.backToNormal} title="Starting Theme" aria-label="Starting Theme" color="primary">
 										<PanoramaFishEyeRounded/>
 									</IconButton>
 								</Typography>

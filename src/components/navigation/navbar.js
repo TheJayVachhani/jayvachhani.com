@@ -42,46 +42,61 @@ function Props(index) {
     };
 }
 
-export default function Navbar(){
+export default function Navbar(props){
+    const { match, history } = props;
+    const {params} = match;
+    const {page} = params;
     const theme = useTheme();
-    const [value, setValue] = React.useState(0);
+    
+    const tabNameToIndex = {
+        0: "home",
+        1: "experience",
+        2: "about",
+        3: "contact"
+    }
+
+    const indexToTabName = {
+        home: 0,
+        experience: 1,
+        about: 2,
+        contact: 3
+    }
+    
+    const [selectedTab, setSelectedTab] = React.useState(indexToTabName[page]);
   
     const handleChange = (event, newValue) => {
-        setValue(newValue);
+        history.push(`/${tabNameToIndex[newValue]}`);
+        setSelectedTab(newValue);
     };
 
     const handleChangeIndex = (index) => {
-        setValue(index);
+        setSelectedTab(index);
     };
 
     return (
         <div>
             <AppBar position="sticky" >
-                <Tabs value={value} onChange={handleChange} variant="fullWidth" aria-label="All Navigation Tabs">
+                <Tabs value={selectedTab} onChange={handleChange} variant="fullWidth" aria-label="All Navigation Tabs">
                 <Tab aria-label="Home" label="Home" {...Props(0)} />
                 <Tab aria-label="Experience" label="Experience" {...Props(1)} />
                 <Tab aria-label="About" label="About" {...Props(2)} />
                 <Tab aria-label="Contact" label="Contact" {...Props(3)}/>
                 </Tabs>
             </AppBar>
-            <SwipeableViews axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'} index={value} onChangeIndex={handleChangeIndex}>
-            <TabPanel value={value} index={0}>
-                <div>
-                    <Home/>
-                </div>
+            <SwipeableViews axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'} index={selectedTab} onChangeIndex={handleChangeIndex}>
+            <TabPanel>
+                {selectedTab === 0 && <Home/>}
             </TabPanel>
-            <TabPanel value={value} index={1}>
+            <TabPanel>
                 <div className="experience-container">
-                    <Experience/>
+                    {selectedTab === 1 && <Experience/>}
                 </div>
             </TabPanel>
-            <TabPanel value={value} index={2}>
+            <TabPanel value={selectedTab} index={2}>
                 Item Three
             </TabPanel>
-            <TabPanel value={value} index={3}>
-                <div>
-                    <Contact/>
-                </div>
+            <TabPanel>
+                {selectedTab === 3 && <Contact/>}
             </TabPanel>
             </SwipeableViews>
         </div>
