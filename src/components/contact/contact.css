@@ -1,34 +1,28 @@
-.header h6 {
+.contact h6 {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-.header h5 {
+.contact h5 {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
   
-.header h3 {
+.contact h3 {
     text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
 }
-.header {
+.contact {
     text-align: center;
 }
 
-.header-wrapper {
+.contact-wrapper {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 25vh;
-    padding-bottom: 17vh;
-    width: 100%;
-}
-.icon-wrapper{
-    width: 60%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+    width: 350px;
 }

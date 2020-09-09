@@ -6,10 +6,25 @@ import './contact.css';
 
 const contact = () => {
     return (
-        <Box component="div" className="header-wrapper">
-            <Box component="div" className="header">
+        <Box component="div" className="contact-wrapper">
+            <Box component="div" className="contact">
                 <Grid container justify="center" direction="column">
-                    
+                    <Grid item xs={12}>
+                        <Typography variant="h3">Contact Me</Typography>
+                    </Grid>
+                    <br/>
+                    <Grid item xs={12}>
+                        <Box component="form">
+                            <TextField fullWidth={true} label="Name"  placeholder="Bugs B Bunny"variant="outlined" color="primary" margin="dense" size="medium"/>
+                            <TextField fullWidth={true} label="Email"  placeholder="whatsUp@Doc?.com"variant="outlined" color="primary"margin="dense" size="medium"/>
+                            <TextField fullWidth={true} label="Message" placeholder="I really like your website!" multiline rows={4} variant="outlined" color="primary" margin="dense" size="medium"/>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Button fullWidth={true} color="primary" endIcon={<SendRounded fontSize="small" color="secondary"/>}>
+                            Send
+                        </Button>
+                    </Grid>
                 </Grid>
             </Box>
         </Box>
