@@ -7,6 +7,7 @@ import './navbar.css';
 
 import Experience from '../experience/experience';
 import Home from '../home/home';
+import Contact from '../contact/contact';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -78,7 +79,9 @@ export default function Navbar(){
                 Item Three
             </TabPanel>
             <TabPanel value={value} index={3}>
-                Item Four
+                <div>
+                    <Contact/>
+                </div>
             </TabPanel>
             </SwipeableViews>
         </div>

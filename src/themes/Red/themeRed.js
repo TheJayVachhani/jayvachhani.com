@@ -32,7 +32,7 @@ export default createMuiTheme({
 		},
 		MuiChip: {
 			colorPrimary: {
-				color: "#e4e5e6",
+				color: "#E4E5E6",
 				backgroundColor: "#001427"
 			},
 			iconColorPrimary: {
@@ -42,10 +42,10 @@ export default createMuiTheme({
 		MuiTabs: {
 			root:{
 				backgroundColor: "#001427",
-				color: "#E53B38",
+				color: "#FFF3B0",
 				indicatorColor: "#E53B38",
 				'&:hover': {
-					color:"#EA5F5D",
+					color:"#FB120E",
 				}
 			},
 		},
