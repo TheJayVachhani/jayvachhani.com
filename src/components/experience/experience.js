@@ -78,8 +78,8 @@ const ExperienceComponent = () => {
                     <div className="experienceHeader">
                         <Card>
                             <CardHeader
-                                title="Trainee Software Developer" align="center"
-                                subheader="Jaivel Aerospace Ltd, Jun 2020 - Jun 2021"
+                                title={<Typography variant="h5" color="primary">Trainee Software Developer</Typography>} align="center"
+                                subheader={<Typography variant="h6" color="secondary">Jaivel Aerospace Ltd, Jun 2020 - Jun 2021</Typography>}
                             />
                             <CardContent>
                                 <Typography  variant="body1" color="primary"  align="justify">
@@ -152,8 +152,8 @@ const ExperienceComponent = () => {
                     <div>
                         <Card>
                             <CardHeader
-                                title="University Software Development Project" align="center"
-                                subheader="King's College London, Jan - Apr 2020"
+                                title={<Typography variant="h5" color="primary">University Software Development Project</Typography>} align="center"
+                                subheader={<Typography variant="h6" color="secondary">King's College London, Jan - Apr 2020</Typography>}
                             />
                             <CardContent>
                                 <Typography  variant="body1" color="primary" align="justify">
@@ -230,8 +230,8 @@ const ExperienceComponent = () => {
                     <div>
                         <Card>
                             <CardHeader
-                                title="University Artificial Intelligence Planning Project" align="center"
-                                subheader="King's College London, Apr 2020"
+                                title={<Typography variant="h5" color="primary">University Artificial Intelligence Planning Project</Typography>} align="center"
+                                subheader={<Typography variant="h6" color="secondary">King's College London, Apr 2020</Typography>}
                             />
                             <CardContent>
                                 <Typography  variant="body1" color="primary"  align="justify">
@@ -309,8 +309,8 @@ const ExperienceComponent = () => {
                     <div>
                         <Card>
                             <CardHeader
-                                title="Learner Work Experience" align="center"
-                                subheader="Jaivel Aerospace, Jun - Sept 2019"
+                                title={<Typography variant="h5" color="primary">Learner Work Experience</Typography>} align="center"
+                                subheader={<Typography variant="h6" color="secondary">Jaivel Aerospace, Jun - Sept 2019</Typography>}
                             />
                             <CardContent>
                                 <Typography  variant="body1" color="primary" align="justify">
@@ -385,8 +385,8 @@ const ExperienceComponent = () => {
                     <div>
                         <Card>
                             <CardHeader
-                                title="Student Work Experience" align="center"
-                                subheader="McLaren Racing Limited, 5 weeks Aug 2017"
+                                title={<Typography variant="h5" color="primary">Student Work Experience</Typography>} align="center"
+                                subheader={<Typography variant="h6" color="secondary">McLaren Racing Limited, 5 weeks Aug 2017</Typography>}
                             />
                             <CardContent>
                                 <Typography  variant="body1" color="primary"  align="justify">

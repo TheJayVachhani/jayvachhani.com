@@ -1,7 +1,9 @@
+.about {
+    
+}
 .about h6 {
     font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 .about h5 {
     font-weight: 300;
@@ -10,18 +12,26 @@
 .about h3 {
     text-transform: capitalize;
     font-weight: 300;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     text-align: center;
 }
-.about {
-    
+.about h4{
+    text-transform: capitalize;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
 }
+.about caption{
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
 .about-wrapper {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     padding-top: 10vh;
-    padding-bottom: 15vh;
+    padding-bottom: 10vh;
     width: 100%;
 }
 .about-header{
@@ -30,13 +40,23 @@
     margin-right: auto;
     width: 90%;
     text-align: center;
+    padding-bottom: 6vh;
+}
+.about-body{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 1vh;
 }
 .about-images{
     position: relative;
     margin-left: auto;
     margin-right: auto;
     padding-top: 1%;
-    width: 90%;
+    max-width: 80%;
+    max-height: 40%;
     text-align: center;
 }
 .about-image-paper{

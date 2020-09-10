@@ -13,7 +13,7 @@ export default createMuiTheme({
 		},
 		text:{
 			primary: "#0A0B0C",
-			secondary: "#0A0B0C",
+			secondary: "#313335",
 		}
 	},
 	overrides: {

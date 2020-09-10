@@ -8,16 +8,15 @@
 .experienceHeader h5 {
     text-align: center;
     font-weight: 300;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 .experienceHeader h6 {
     text-align: center;
     font-weight: 400;
     font-size: 1rem;
     text-transform: capitalize;
-    text-align: right;
 }
 .experienceHeader h3 {
     text-transform: uppercase;
