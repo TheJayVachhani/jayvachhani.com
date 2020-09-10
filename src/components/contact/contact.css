@@ -8,7 +8,6 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-  
 .contact h3 {
     text-transform: uppercase;
     font-weight: 300;
@@ -17,7 +16,6 @@
 .contact {
     text-align: center;
 }
-
 .contact-wrapper {
     position: relative;
     margin-left: auto;

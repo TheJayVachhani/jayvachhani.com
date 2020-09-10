@@ -8,6 +8,7 @@ import './navbar.css';
 import Experience from '../experience/experience';
 import Home from '../home/home';
 import Contact from '../contact/contact';
+import About from '../about/about';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -80,12 +81,10 @@ export default function Navbar(props){
                 {selectedTab === 0 && <Home/>}
             </TabPanel>
             <TabPanel value={selectedTab} index={1}>
-                <div className="experience-container">
-                    {selectedTab === 1 && <Experience/>}
-                </div>
+                {selectedTab === 1 && <Experience/>}
             </TabPanel>
             <TabPanel value={selectedTab} index={2}>
-                Item Three
+                {selectedTab === 2 && <About/>}
             </TabPanel>
             <TabPanel value={selectedTab} index={3}>
                 {selectedTab === 3 && <Contact/>}

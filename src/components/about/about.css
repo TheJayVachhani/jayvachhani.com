@@ -1,0 +1,26 @@
+.about h6 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.about h5 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.about h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.about {
+    text-align: center;
+}
+.about-wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+    width: 80%;
+}

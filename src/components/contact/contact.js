@@ -4,13 +4,13 @@ import {SendRounded} from '@material-ui/icons';
 import './contact.css';
 
 
-const contact = () => {
+const ContactComponent = () => {
     return (
         <Box component="div" className="contact-wrapper">
             <Box component="div" className="contact">
                 <Grid container justify="center" direction="column">
                     <Grid item xs={12}>
-                        <Typography variant="h3">Contact Me</Typography>
+                        <Typography variant="h3" color="primary">Contact Me</Typography>
                     </Grid>
                     <br/>
                     <Grid item xs={12}>
@@ -30,4 +30,4 @@ const contact = () => {
         </Box>
     )
 }
-export default contact
+export default ContactComponent

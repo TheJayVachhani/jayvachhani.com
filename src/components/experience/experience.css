@@ -5,7 +5,6 @@
     margin-top: 2px;
     display: block;
 }
-
 .experienceHeader h5 {
     text-align: center;
     font-weight: 300;
@@ -22,5 +21,14 @@
 }
 .experienceHeader h3 {
     text-transform: uppercase;
-    letter-spacing: 9px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.experience-container {
+	width: 100%;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
