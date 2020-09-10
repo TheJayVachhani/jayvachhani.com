@@ -5,16 +5,16 @@
 }
 .about h5 {
     font-weight: 300;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 .about h3 {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 300;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    text-align: center;
 }
 .about {
-    text-align: center;
+    
 }
 .about-wrapper {
     position: relative;
@@ -22,5 +22,20 @@
     margin-right: auto;
     padding-top: 10vh;
     padding-bottom: 15vh;
-    width: 80%;
+    width: 100%;
+}
+.about-header{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+}
+.about-images{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
+    width: 90%;
+    text-align: center;
 }

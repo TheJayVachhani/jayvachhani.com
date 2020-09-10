@@ -12,8 +12,8 @@ export default createMuiTheme({
 			default: "#151D29"
 		},
 		text:{
-			primary: "#E0AAFF",
-			secondary: "#00B5B8",
+			primary: "#00B5B8",
+			secondary: "#E0AAFF",
 		}
 	},
 	overrides: {
