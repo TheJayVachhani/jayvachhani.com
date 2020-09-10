@@ -1,6 +1,17 @@
 {
   "name": "jayvachhani.tech",
-  "version": "0.1.0",
+  "description": "Personal Website v1",
+  "version": "1.0.0",
+  "author": "Jay Vachhani <jay.vachhani@outlook.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheJayVachhani/jayvachhani.tech"
+  },
+  "keywords": [
+    "react",
+    "material-ui"
+  ],
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
