@@ -39,3 +39,15 @@
     width: 90%;
     text-align: center;
 }
+.about-image-paper{
+    display: flex;
+    align-items: center;
+    height: 5%;
+}
+.about-img{
+    height: 255;
+    display: block;
+    max-width: 400;
+    overflow: hidden;
+    width: 100%;
+}
