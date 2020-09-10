@@ -30,5 +30,4 @@ const contact = () => {
         </Box>
     )
 }
-
 export default contact
