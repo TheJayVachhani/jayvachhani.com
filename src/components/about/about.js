@@ -136,7 +136,10 @@ const AboutComponent = () => {
                                 <TimelineItem>
                                     <TimelineOppositeContent>
                                         <Typography variant="h6" color="primary">
-                                            Seeking to fulfill my ambitions, I have embarked on this path. I look forward to showcasing some cool projects on this site in the near future.     
+                                            Seeking to fulfill my ambitions, I have embarked on this path.
+                                        </Typography>
+                                        <Typography variant="h6" color="primary">
+                                            I look forward to showcasing some cool projects on this site in the near future.     
                                         </Typography>
                                     </TimelineOppositeContent>
                                     <TimelineSeparator>
