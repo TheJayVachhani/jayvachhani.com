@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3d006b5e.chunk.css",
+    "main.js": "/static/js/main.a82b381c.chunk.js",
+    "main.js.map": "/static/js/main.a82b381c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cc115f75.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cc115f75.js.map",
+    "static/js/2.f8b929f4.chunk.js": "/static/js/2.f8b929f4.chunk.js",
+    "static/js/2.f8b929f4.chunk.js.map": "/static/js/2.f8b929f4.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.174a6d7006f299c59e80bd6b86e5ffb3.js": "/precache-manifest.174a6d7006f299c59e80bd6b86e5ffb3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3d006b5e.chunk.css.map": "/static/css/main.3d006b5e.chunk.css.map",
+    "static/js/2.f8b929f4.chunk.js.LICENSE.txt": "/static/js/2.f8b929f4.chunk.js.LICENSE.txt",
+    "static/media/Bolivia-Abandoned-Railway.png": "/static/media/Bolivia-Abandoned-Railway.d34d901f.png",
+    "static/media/Bolivia-Amazon.png": "/static/media/Bolivia-Amazon.ec44c90e.png",
+    "static/media/Bolivia-MtTarija.png": "/static/media/Bolivia-MtTarija.44d9ab7b.png",
+    "static/media/Bolivia-Salt-Flats.png": "/static/media/Bolivia-Salt-Flats.5839b030.png",
+    "static/media/Speyer-Quiet-Street.png": "/static/media/Speyer-Quiet-Street.0c4a88d9.png",
+    "static/media/Zermatt-Glacier.png": "/static/media/Zermatt-Glacier.aaaca069.png",
+    "static/media/Zermatt-Lodge.png": "/static/media/Zermatt-Lodge.9ecb6ee3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc115f75.js",
+    "static/js/2.f8b929f4.chunk.js",
+    "static/css/main.3d006b5e.chunk.css",
+    "static/js/main.a82b381c.chunk.js"
+  ]
+}
