@@ -20,9 +20,9 @@
     align-content: right;
 }
 
-.footer {
-    top: auto;
-    bottom: 0;
+.change-buttons {
+    max-width: 400px;
+    margin-left: auto;
+	margin-right: auto;
     text-align: center;
-    padding-bottom: 3vh;
 }

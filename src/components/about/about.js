@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import {useTheme} from '@material-ui/core/styles';
 import SwipeableViews from 'react-swipeable-views';
-import {Grid, Card, CardHeader, Typography, Button, MobileStepper, Box} from '@material-ui/core';
-import {Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineOppositeContent, TimelineDot} from '@material-ui/lab'; 
+import {Grid, Card, CardHeader, CardContent, Typography, Button, MobileStepper, Box} from '@material-ui/core';
 import {KeyboardArrowLeftRounded, KeyboardArrowRightRounded} from '@material-ui/icons';
 
 import BoliviaSalt from './images/Bolivia-Salt-Flats.png';
@@ -82,87 +81,69 @@ const AboutComponent = () => {
                     </Grid>
                 </Box>
                 <Box component="div" className="about-body">
-                    <Grid container justify="center" spacing={1} direction="column" alignItems="center">
-                        <Grid item xs={12} md={10}>
-                            <Typography color="primary" variant="h4">
-                                I'm New To This.
-                            </Typography>
+                    <Box component="div" className="about-body-header">
+                        <Grid container justify="center" direction="column" alignItems="center">
+                            <Grid item xs={12}>
+                                <Typography color="primary" variant="h4">
+                                    I Like to Cook.
+                                </Typography>
+                            </Grid>
                         </Grid>
-                    </Grid>
-                    <Grid container justify="center" spacing={1} direction="column" alignItems="stretch" >
-                        <Grid item xs={12}>
-                            <Timeline>
-                                <TimelineItem>
-                                    <TimelineOppositeContent>
-                                        <Typography variant="h6" color="primary">
-                                            My first line of code was written at the beginning of university. A journey into the unknown became a more familiar one.
+                    </Box>
+                    <Grid container justify="center" spacing={3} direction="row" alignItems="flex-start">
+                        <Grid item xs={11} md={3}>
+                            <Box component="div" className="about-body-item">
+                                <Card>
+                                    <CardHeader
+                                        title={<Typography variant="h5" color="primary">The Recipe</Typography>} align="center"
+                                        subheader={<Typography variant="h6" color="secondary">My Beginning</Typography>}
+                                    />
+                                    <CardContent>
+                                        <Typography variant="h6" color="primary" align="left">
+                                            My first line of code was written at the beginning of university.
                                         </Typography>
-                                    </TimelineOppositeContent>
-                                    <TimelineSeparator>
-                                        <TimelineDot color="secondary"/>
-                                        <TimelineConnector style={{backgroundColor: theme.palette.secondary.main }}/>
-                                    </TimelineSeparator>
-                                    <TimelineContent>
-                                        <Card>
-                                            <CardHeader
-                                                title={<Typography variant="h5" color="primary">Elegant Minimalist Design.</Typography>} align="center"
-                                                subheader={<Typography variant="h6" color="secondary">Steadfast Ethos for this Site</Typography>}
-                                            />
-                                        </Card>
-                                    </TimelineContent>
-                                </TimelineItem>
-                                <TimelineItem>
-                                    <TimelineOppositeContent>
-                                        <Typography variant="h6" color="primary">
-                                            Endeavoring to construct new human-computer interactions,    
+                                        <Typography variant="h6" color="primary" align="left">
+                                            Like any recipe, I've only improved the more I refined it.
                                         </Typography>
-                                        <Typography variant="h6" color="primary">
-                                            I've begun immersion into the world of MOOCs, tapping into the vast set of resources to grow my skills.    
+                                    </CardContent>
+                                </Card>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={11} md={4}>
+                            <Box component="div" className="about-body-item">
+                                <Card experience-header>
+                                    <CardHeader
+                                        title={<Typography variant="h5" color="primary">Skills in Practice</Typography>} align="center"
+                                        subheader={<Typography variant="h6" color="secondary">Adapt and Adopt</Typography>}
+                                    />
+                                    <CardContent>
+                                        <Typography variant="h6" color="primary"  align="left">
+                                            Learning from masters in their craft I've gained knowledge.   
                                         </Typography>
-                                    </TimelineOppositeContent>
-                                    <TimelineSeparator>
-                                        <TimelineDot color="secondary"/>
-                                        <TimelineConnector style={{backgroundColor: theme.palette.secondary.main }}/>
-                                    </TimelineSeparator>
-                                    <TimelineContent>
-                                        <Card>
-                                            <CardHeader
-                                                title={<Typography variant="h5" color="primary">Adapt and Adopt</Typography>} align="center"
-                                                subheader={<Typography variant="h6" color="secondary">Embracing the New</Typography>}
-                                            />
-                                        </Card>
-                                    </TimelineContent>
-                                </TimelineItem>
-                                <TimelineItem>
-                                    <TimelineOppositeContent>
-                                        <Typography variant="h6" color="primary">
-                                            Seeking to fulfill my ambitions, I have embarked on this path.
+                                        <Typography variant="h6" color="primary" align="left">
+                                            I've immersed myself in many MOOCs, tapping into a vast set of means to develop my skills.    
+                                        </Typography>                                              
+                                    </CardContent>
+                                </Card>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={11} md={3}>
+                            <Box component="div" className="about-body-item">
+                                <Card experience-header>
+                                    <CardHeader
+                                        title={<Typography variant="h5" color="primary">The Result</Typography>} align="center"
+                                        subheader={<Typography variant="h6" color="secondary">My Goal</Typography>}
+                                    />
+                                    <CardContent>
+                                        <Typography variant="h6" color="primary" align="left">
+                                            To deliver new, great products.
                                         </Typography>
-                                        <Typography variant="h6" color="primary">
-                                            I look forward to showcasing some cool projects on this site in the near future.     
+                                        <Typography variant="h6" color="primary" align="left" >
+                                            I look forward to showcasing some cool projects, and maybe a recipe or two, on this site in the near future.     
                                         </Typography>
-                                    </TimelineOppositeContent>
-                                    <TimelineSeparator>
-                                        <TimelineDot color="secondary"/>
-                                        <TimelineConnector style={{backgroundColor: theme.palette.secondary.main }} />
-                                    </TimelineSeparator>
-                                    <TimelineContent>
-                                        <Card>
-                                            <CardHeader
-                                                title={<Typography variant="h5" color="primary">Venture with Ingenuity</Typography>} align="center"
-                                                subheader={<Typography variant="h6" color="secondary">Response to the Changing World</Typography>}
-                                            />
-                                        </Card>
-                                    </TimelineContent>
-                                </TimelineItem>
-                                <TimelineItem>
-                                    <TimelineSeparator>
-                                        <TimelineDot color="secondary" />
-                                        </TimelineSeparator>
-                                    <TimelineContent>
-                                    </TimelineContent>
-                                </TimelineItem>
-                            </Timeline>
+                                    </CardContent>
+                                </Card>
+                            </Box>
                         </Grid>
                     </Grid>
                 </Box>

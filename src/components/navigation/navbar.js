@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
 import {AppBar, Tabs, Tab, Typography, Box} from '@material-ui/core';
 import {useTheme} from '@material-ui/core/styles';
-import './navbar.css';
 
 import Experience from '../experience/experience';
 import Home from '../home/home';

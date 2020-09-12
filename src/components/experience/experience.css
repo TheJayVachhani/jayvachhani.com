@@ -5,27 +5,26 @@
     margin-top: 2px;
     display: block;
 }
-.experienceHeader h5 {
+.experience-header h5 {
     text-align: center;
     font-weight: 300;
     font-size: 1.7rem;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
-.experienceHeader h6 {
+.experience-header h6 {
     text-align: center;
     font-weight: 400;
     font-size: 1rem;
     text-transform: capitalize;
 }
-.experienceHeader h3 {
+.experience-header h3 {
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2px;
 }
 .experience-container {
-	width: 100%;
-	max-width: 400px;
+	width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 5%;
