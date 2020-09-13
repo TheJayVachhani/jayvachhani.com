@@ -5,6 +5,9 @@
     margin-top: 2px;
     display: block;
 }
+.experience-header{
+    width: 95%;
+}
 .experience-header h5 {
     text-align: center;
     font-weight: 300;

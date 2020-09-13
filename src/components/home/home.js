@@ -9,7 +9,7 @@ const HomeComponent = () => {
         <Box component="div" className="header-wrapper" >
             <Box component="div" className="header">
                 <Grid container justify="center" direction="column">
-                    <Grid item xs={12}>
+                    <Grid item xs={10} md={12}>
                         <Typography variant='h3' color="primary">Jay Vachhani</Typography>
                         <Typography variant='h5' color="primary">
                             Computer Science and Management

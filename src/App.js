@@ -14,8 +14,8 @@ import themeLightBlue from './themes/LightBlue/themeLightBlue.js';
 import './App.css';
 
 const theme1 = responsiveFontSizes(themeBlackGreen);
-const theme2 = responsiveFontSizes(themePink);
-const theme3 = responsiveFontSizes(themeSea);
+const theme2 = responsiveFontSizes(themeSea);
+const theme3 = responsiveFontSizes(themePink);
 const theme4 = responsiveFontSizes(themeLightBlue);
 const theme5 = responsiveFontSizes(themeBlue);
 
