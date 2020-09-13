@@ -149,7 +149,7 @@ const ExperienceComponent = () => {
                     </Card>
                 </div>
                 <br/>
-                <div>
+                <div className="experience-header">
                     <Card>
                         <CardHeader
                             title={<Typography variant="h5" color="primary">University Software Development Project</Typography>} align="center"
@@ -227,7 +227,7 @@ const ExperienceComponent = () => {
                     </Card>
                 </div>
                 <br/>
-                <div>
+                <div className="experience-header">
                     <Card>
                         <CardHeader
                             title={<Typography variant="h5" color="primary">University Artificial Intelligence Planning Project</Typography>} align="center"
@@ -306,7 +306,7 @@ const ExperienceComponent = () => {
                     </Card>
                 </div>
                 <br/>
-                <div>
+                <div className="experience-header">
                     <Card>
                         <CardHeader
                             title={<Typography variant="h5" color="primary">Learner Work Experience</Typography>} align="center"
@@ -382,7 +382,7 @@ const ExperienceComponent = () => {
                     </Card>
                 </div>
                 <br/>
-                <div>
+                <div className="experience-header">
                     <Card>
                         <CardHeader
                             title={<Typography variant="h5" color="primary">Student Work Experience</Typography>} align="center"
