@@ -43,7 +43,7 @@ const FooterComponent = () => {
             </Box>
             <Box component="div" className="footer-copyright">
                 <Typography variant="body2" color="textPrimary">
-                    &copy; Copyright Jay Vachhani 2020 MIT License
+                    &copy; Copyright Jay Vachhani 2020
                 </Typography>
             </Box>
         </div>

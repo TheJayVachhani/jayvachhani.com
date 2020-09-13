@@ -9,20 +9,22 @@ import Footer from './components/footer/footer';
 import themeBlackGreen from './themes/BlackGreen/themeBlackGreen.js';
 import themeBlue from './themes/Blue/themeBlue.js';
 import themeSea from './themes/Sea/themeSea.js';
-import themeRed from './themes/Red/themeRed.js';
+import themePink from './themes/Pink/themePink';
+import themeLightBlue from './themes/LightBlue/themeLightBlue.js';
 import './App.css';
 
-
 const theme1 = responsiveFontSizes(themeBlackGreen);
-const theme2 = responsiveFontSizes(themeRed);
+const theme2 = responsiveFontSizes(themePink);
 const theme3 = responsiveFontSizes(themeSea);
-const theme4 = responsiveFontSizes(themeBlue);
+const theme4 = responsiveFontSizes(themeLightBlue);
+const theme5 = responsiveFontSizes(themeBlue);
 
 let themeDict = { 
 	0: theme1,
 	1: theme2,
 	2: theme3,
-	3: theme4
+	3: theme4,
+	4: theme5,
 }
 let value = 0;
 
@@ -35,7 +37,8 @@ class App extends Component {
 			case 0: value=1; break;
 			case 1: value=2; break;
 			case 2: value=3; break;
-			case 3: value=0; break;
+			case 3: value=4; break;
+			case 4: value=0; break;
 			default: value=0;
 		}
 		this.setState(({ themeIs: themeDict[value]}));

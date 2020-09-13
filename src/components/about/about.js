@@ -153,9 +153,9 @@ const AboutComponent = () => {
                             <Typography variant="h4" color="primary" >
                                 I Like to Take Photos too.
                             </Typography>
-                            <Typography variant="caption">{imageCarousel[activeStep].label}</Typography>
+                            <Typography variant="body2">{imageCarousel[activeStep].label}</Typography>
                         </Grid>
-                        <Grid item xs={12} md={10} lg={12}>
+                        <Grid item xs={12} md={10} lg={9} xl={7}>
                             <AutoPlayViews axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'} index={activeStep} onChangeIndex={handleStepChange} enableMouseEvents>
                                 {imageCarousel.map((step, index)=> (
                                     <div key={step.label}>
