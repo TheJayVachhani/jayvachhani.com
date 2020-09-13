@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.a0d611c5.chunk.css",
-    "main.js": "/static/js/main.c02a4aba.chunk.js",
-    "main.js.map": "/static/js/main.c02a4aba.chunk.js.map",
+    "main.css": "/static/css/main.aa56a60b.chunk.css",
+    "main.js": "/static/js/main.609b02ca.chunk.js",
+    "main.js.map": "/static/js/main.609b02ca.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cc115f75.js",
     "runtime-main.js.map": "/static/js/runtime-main.cc115f75.js.map",
     "static/js/2.6c4e8450.chunk.js": "/static/js/2.6c4e8450.chunk.js",
     "static/js/2.6c4e8450.chunk.js.map": "/static/js/2.6c4e8450.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.150bb881ecb463a4d961204681e927a3.js": "/precache-manifest.150bb881ecb463a4d961204681e927a3.js",
+    "precache-manifest.011801be33d79a3fa52c681cbbf8acf6.js": "/precache-manifest.011801be33d79a3fa52c681cbbf8acf6.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.a0d611c5.chunk.css.map": "/static/css/main.a0d611c5.chunk.css.map",
+    "static/css/main.aa56a60b.chunk.css.map": "/static/css/main.aa56a60b.chunk.css.map",
     "static/js/2.6c4e8450.chunk.js.LICENSE.txt": "/static/js/2.6c4e8450.chunk.js.LICENSE.txt",
     "static/media/Bolivia-Abandoned-Railway.png": "/static/media/Bolivia-Abandoned-Railway.d34d901f.png",
     "static/media/Bolivia-Amazon.png": "/static/media/Bolivia-Amazon.ec44c90e.png",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.cc115f75.js",
     "static/js/2.6c4e8450.chunk.js",
-    "static/css/main.a0d611c5.chunk.css",
-    "static/js/main.c02a4aba.chunk.js"
+    "static/css/main.aa56a60b.chunk.css",
+    "static/js/main.609b02ca.chunk.js"
   ]
 }
