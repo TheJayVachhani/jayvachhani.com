@@ -3,21 +3,24 @@
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-size: 1rem;
 }
 .header h5 {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 1.2rem;
 }
   
 .header h3 {
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: 9px;
+    letter-spacing: .7rem;
+    font-size: 1.9rem;
 }
 .header {
     text-align: center;
-    align-items: center;
+    align-self: center;
 }
 
 .header-wrapper {
@@ -26,7 +29,7 @@
     margin-right: auto;
     padding-top: 20vh;
     padding-bottom: 14vh;
-    width: 100%;
+    width: 95%;
 }
 .icon-wrapper{
     width: 60%;

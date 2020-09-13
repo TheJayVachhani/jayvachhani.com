@@ -5,22 +5,26 @@
     margin-top: 2px;
     display: block;
 }
-.experience-header{
-    width: 95%;
-    align-items: center;
+.experience-body{
+    width: 100%;
 }
-.experience-header h5 {
+.experience-body h5 {
     text-align: center;
     font-weight: 300;
     font-size: 1.7rem;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
-.experience-header h6 {
+.experience-body h6 {
     text-align: center;
     font-weight: 400;
     font-size: 1rem;
     text-transform: capitalize;
+}
+.experience-body h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
 }
 .experience-header h3 {
     text-transform: uppercase;
@@ -28,9 +32,9 @@
     letter-spacing: 2px;
 }
 .experience-container {
-	width: 400px;
+	max-width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 5%;
-	padding-bottom: 5%;
+    padding-bottom: 5%;
 }
