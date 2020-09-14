@@ -13,9 +13,9 @@ import themePink from './themes/Pink/themePink';
 import themeLightBlue from './themes/LightBlue/themeLightBlue.js';
 import './App.css';
 
-const theme1 = responsiveFontSizes(themeBlackGreen);
-const theme2 = responsiveFontSizes(themeSea);
-const theme3 = responsiveFontSizes(themePink);
+const theme1 = responsiveFontSizes(themeSea);
+const theme2 = responsiveFontSizes(themePink);
+const theme3 = responsiveFontSizes(themeBlackGreen);
 const theme4 = responsiveFontSizes(themeLightBlue);
 const theme5 = responsiveFontSizes(themeBlue);
 
@@ -44,7 +44,7 @@ class App extends Component {
 		this.setState(({ themeIs: themeDict[value]}));
 	}
 	backToNormal = () => {
-		value=0;
+		value=2;
 		this.setState(({ themeIs: themeDict[value]}));
 	}
 

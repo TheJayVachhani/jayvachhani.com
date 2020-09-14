@@ -134,6 +134,15 @@ const HomeComponent = () => {
                                                             </li>
                                                         </ul>
                                                         <li><Typography variant="body1" color="secondary">&lt;/ul&gt;</Typography></li>
+                                                        <li>
+                                                            <Typography component="span" variant="body1" color="secondary">&lt;h1&gt;</Typography>
+                                                            <ul className="no-top-padding">
+                                                                <li>
+                                                                    <Typography component="span" variant="body1" color="textSecondary"> Change the theme using the buttons </Typography>
+                                                                </li>
+                                                            </ul>
+                                                            <Typography component="span" variant="body1" color="secondary">&lt;/h1&gt;</Typography>
+                                                        </li>
                                                     </ul>
                                                 </li>
                                                 <li><Typography variant="body1" color="secondary">&lt;/body&gt;</Typography></li>
