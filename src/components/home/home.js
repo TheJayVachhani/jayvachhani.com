@@ -17,11 +17,11 @@ const HomeComponent = () => {
                             <Typography variant='h3' color="textSecondary">Web Developer</Typography>
                         </Grid>
                         <Grid container justify="center" direction="column" alignItems="center" spacing={1}>
-                            <Grid item xs={11} md={4}>
-                                <Typography variant='h5' color="textSecondary" align="left">Computer Science and Management Student at King's College London. </Typography>
+                            <Grid item xs={11} md={6}>
+                                <Typography variant='h5' color="textSecondary" align="left">Computer Science and Management Student at King's College London,</Typography>
                             </Grid>
-                            <Grid item xs={11} md={4}>
-                                <Typography variant='h5' color="textSecondary" align="left">Passionate about building and designing dynamic web applications & experiences. </Typography>
+                            <Grid item xs={11} md={6}>
+                                <Typography variant='h5' color="textSecondary" align="left">building and designing dynamic web applications & experiences.</Typography>
                             </Grid>
                         </Grid>
                         <Box component="div" className="icon-wrapper">
@@ -134,15 +134,6 @@ const HomeComponent = () => {
                                                             </li>
                                                         </ul>
                                                         <li><Typography variant="body1" color="secondary">&lt;/ul&gt;</Typography></li>
-                                                        <li>
-                                                            <Typography component="span" variant="body1" color="secondary">&lt;h1&gt;</Typography>
-                                                            <ul className="no-top-padding">
-                                                                <li>
-                                                                    <Typography component="span" variant="body1" color="textSecondary"> Change the theme using the buttons </Typography>
-                                                                </li>
-                                                            </ul>
-                                                            <Typography component="span" variant="body1" color="secondary">&lt;/h1&gt;</Typography>
-                                                        </li>
                                                     </ul>
                                                 </li>
                                                 <li><Typography variant="body1" color="secondary">&lt;/body&gt;</Typography></li>

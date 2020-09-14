@@ -6,13 +6,13 @@ export default createMuiTheme({
 			main: "#FFCC80"
 		},
 		secondary: { 
-			main:  "#59B8C5"
+			main:  "#8d80ff"
 		},
 		background:{
 			default: "#0F0F1A"
 		},
 		text:{
-			primary: "#59B8C5",
+			primary: "#8d80ff",
 			secondary: "#FFCC80",
 		}
 	},
@@ -27,7 +27,7 @@ export default createMuiTheme({
 				color: "#E4E5E6",
 			},
 			subheader: {
-				color: "#59B8C5" ,
+				color: "#8d80ff" ,
 			}
 		},
 		MuiChip: {
@@ -36,13 +36,13 @@ export default createMuiTheme({
 				backgroundColor: "#0F0F1A"
 			},
 			iconColorPrimary: {
-				color: "#59B8C5",
+				color: "#8d80ff",
 			},
 		},
 		MuiTabs: {
 			root:{
 				backgroundColor: "#161627",
-				color: "#59B8C5",
+				color: "#8d80ff",
 				'&:hover': {
 					color:"#4A71FF",
 				}

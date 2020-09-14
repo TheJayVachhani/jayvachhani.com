@@ -1,23 +1,24 @@
 import React, {Component} from 'react';
 import {Route , Redirect, Switch} from 'react-router-dom';
 import {MuiThemeProvider, responsiveFontSizes} from '@material-ui/core/styles';
-import {LensRounded, PanoramaFishEyeRounded} from '@material-ui/icons';
+import {Brightness4Rounded, Brightness7Rounded} from '@material-ui/icons';
 import {CssBaseline, IconButton, Box} from '@material-ui/core';
 
 import Navbar from './components/navigation/navbar';
 import Footer from './components/footer/footer';
 import themeBlackGreen from './themes/BlackGreen/themeBlackGreen.js';
-import themeBlue from './themes/Blue/themeBlue.js';
+import themePurple from './themes/Blue/themePurple.js';
 import themeSea from './themes/Sea/themeSea.js';
 import themePink from './themes/Pink/themePink';
 import themeLightBlue from './themes/LightBlue/themeLightBlue.js';
 import './App.css';
 
+
 const theme1 = responsiveFontSizes(themeSea);
 const theme2 = responsiveFontSizes(themePink);
 const theme3 = responsiveFontSizes(themeBlackGreen);
 const theme4 = responsiveFontSizes(themeLightBlue);
-const theme5 = responsiveFontSizes(themeBlue);
+const theme5 = responsiveFontSizes(themePurple);
 
 let themeDict = { 
 	0: theme1,
@@ -53,7 +54,7 @@ class App extends Component {
     	return (
     	    <MuiThemeProvider theme={(themeIs)}>
 				<CssBaseline/>
-					<div>
+					<div>						
 						<Box component="div">
 							<Switch>
 								<Redirect exact from="/" to="/home"/>
@@ -62,10 +63,10 @@ class App extends Component {
 						</Box>
 						<Box component="div" className="change-buttons" color="background"> 
 							<IconButton onClick={this.onChange} title="Change Theme" aria-label="Change Theme Button" color="secondary">
-								<LensRounded/>
+								<Brightness4Rounded/>
 							</IconButton>
 							<IconButton onClick={this.backToNormal} title="Starting Theme" aria-label="Starting Theme" color="primary">
-								<PanoramaFishEyeRounded/>
+								<Brightness7Rounded/>
 							</IconButton>
 						</Box>
 						<div>
