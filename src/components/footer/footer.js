@@ -1,7 +1,6 @@
 import React from 'react';
 import {RemoveRounded} from '@material-ui/icons';
-import { Hidden, Box, Button, Typography, Grid} from '@material-ui/core';
-import Typed from 'react-typed';
+import {Box, Button, Typography, Grid} from '@material-ui/core';
 import './footer.css'
 
 
@@ -10,14 +9,7 @@ const FooterComponent = () => {
         <div>
             <Box component="div" className="footer" color="background">
                 <Grid container justify="center"  direction="row" alignItems="center" spacing={3}>
-                    <Grid item lg={2}>
-                        <Hidden mdDown>
-                            <Typography variant='h6' color="secondary">
-                                    <Typed strings={["Web","UI", "UX", "Data", "AI", "ML"]} typeSpeed={90} backSpeed={60} loop/>
-                            </Typography>
-                        </Hidden>
-                    </Grid>
-                    <Grid item xs={12} lg={8}>
+                    <Grid item xs={12}>
                         <Grid container justify="center"  direction="row" alignItems="center">
                             <Grid item xs={5}>
                                 <Grid container justify="center"  direction="column" alignItems="flex-end">
@@ -25,7 +17,7 @@ const FooterComponent = () => {
                                         <Button  color="primary" target="_blank" href="https://www.linkedin.com/in/thejayvachhani/" aria-label="Linked In Profile Link">LinkedIn</Button>													
                                     </Grid>
                                     <Grid item xs={12}>
-                                        <Button  color="primary" target="_blank" href="https://www.hackerrank.com/jay_vachhani" aria-label="Hacker Rank Profile Link">Hackerrank</Button>
+                                        <Button  color="primary" target="_blank" href="https://www.freecodecamp.org/jayvachhani" aria-label="Free Code Camp Profile Link">FreeCodeCamp</Button>
                                     </Grid>
                                 </Grid>
                             </Grid>
@@ -45,23 +37,16 @@ const FooterComponent = () => {
                                         <Button  color="primary" target="_blank" href="https://github.com/TheJayVachhani/" aria-label="Git Hub Profile Link">GitHub</Button>													
                                     </Grid>
                                     <Grid item xs={12}>											
-                                    <Button  color="primary" target="_blank" href="https://www.freecodecamp.org/jayvachhani" aria-label="Free Code Camp Profile Link">FreeCodeCamp</Button>
+                                        <Button  color="primary" target="_blank" href="https://www.hackerrank.com/jay_vachhani" aria-label="Hacker Rank Profile Link">Hackerrank</Button>
                                     </Grid>
                                 </Grid>
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item lg={2}>
-                        <Hidden mdDown>
-                            <Typography variant='h6' color="secondary">
-                            <Typed strings={["JS", "HTML", "CSS", "REACT", "Python", "SQL", "Java", "Scala", "C++", "PDDL", "LaTeX"]} typeSpeed={60} backSpeed={60} loop/>
-                            </Typography>
-                        </Hidden>
-                    </Grid>
                 </Grid>
             </Box>
             <Box component="div" className="footer-copyright">
-                <Typography variant="body2" color="textPrimary">
+                <Typography variant="h6" color="textPrimary">
                     &copy; Copyright Jay Vachhani 2020
                 </Typography>
             </Box>

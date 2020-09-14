@@ -7,7 +7,7 @@ import {useTheme} from '@material-ui/core/styles';
 import Experience from '../experience/experience';
 import Home from '../home/home';
 import Contact from '../contact/contact';
-import About from '../about/about';
+import Notes from '../notes/notes';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -50,7 +50,7 @@ export default function Navbar(props){
     const tabNameToIndex = {
         0: "home",
         1: "experience",
-        2: "about",
+        2: "notes",
         3: "contact"
     }
 
@@ -71,7 +71,7 @@ export default function Navbar(props){
                 <Tabs value={selectedTab} onChange={handleChange} variant="fullWidth" aria-label="All Navigation Tabs">
                     <Tab aria-label="Home" label="Home" {...Props(0)} />
                     <Tab aria-label="Experience" label="Experience" {...Props(1)} />
-                    <Tab aria-label="About" label="About" {...Props(2)} />
+                    <Tab aria-label="Notes" label="Notes" {...Props(2)} />
                     <Tab aria-label="Contact" label="Contact" {...Props(3)}/>
                 </Tabs>
             </AppBar>
@@ -83,7 +83,7 @@ export default function Navbar(props){
                 {selectedTab === 1 && <Experience/>}
             </TabPanel>
             <TabPanel value={selectedTab} index={2}>
-                {selectedTab === 2 && <About/>}
+                {selectedTab === 2 && <Notes/>}
             </TabPanel>
             <TabPanel value={selectedTab} index={3}>
                 {selectedTab === 3 && <Contact/>}

@@ -313,7 +313,7 @@ const ExperienceComponent = () => {
                                 />
                                 <CardContent>
                                     <Typography  variant="body1" color="primary" align="justify">
-                                        I worked to build a new Company Website on Wordpress: <Link href="https://jaivel.aero/" target="_blank">Jaivel</Link>
+                                        I worked to build a new Company Website on Wordpress: <Link href="https://jaivel.aero/" target="_blank">Jaivel.com</Link>
                                     </Typography> 
                                 </CardContent>
                                 <Typography  variant="body1" color="secondary" align="center">

@@ -3,17 +3,17 @@ import { createMuiTheme } from "@material-ui/core";
 export default createMuiTheme({
 	palette: {
 		primary: {
-			main: "#59B8C5"
+			main: "#FFCC80"
 		},
 		secondary: { 
-			main:  "#4A71FF"
+			main:  "#59B8C5"
 		},
 		background:{
 			default: "#0F0F1A"
 		},
 		text:{
-			primary: "#4A71FF",
-			secondary: "#59B8C5",
+			primary: "#59B8C5",
+			secondary: "#FFCC80",
 		}
 	},
 	overrides: {
@@ -27,7 +27,7 @@ export default createMuiTheme({
 				color: "#E4E5E6",
 			},
 			subheader: {
-				color: "#4A71FF" ,
+				color: "#59B8C5" ,
 			}
 		},
 		MuiChip: {
@@ -36,7 +36,7 @@ export default createMuiTheme({
 				backgroundColor: "#0F0F1A"
 			},
 			iconColorPrimary: {
-				color: "#13F6EB",
+				color: "#59B8C5",
 			},
 		},
 		MuiTabs: {

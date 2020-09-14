@@ -1,28 +1,29 @@
-.about h6 {
+.notes h6 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.notes h5 {
     font-weight: 300;
     letter-spacing: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.about h5 {
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-.about h3 {
+.notes h3 {
     text-transform: capitalize;
-    font-weight: 300;
-    letter-spacing: 5px;
-    text-align: center;
-}
-.about h4{
-    text-transform: capitalize;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 2px;
     text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.about caption{
-    font-weight: 300;
-    letter-spacing: 2px;
+.notes h4{
+    text-transform: capitalize;
+    font-weight: 301;
+    letter-spacing: px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.about-wrapper {
+.notes-wrapper {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -30,7 +31,7 @@
     padding-bottom: 10vh;
     width: 100%;
 }
-.about-header{
+.notes-header{
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -38,10 +39,10 @@
     text-align: center;
     padding-bottom: 6vh;
 }
-.about-card{
+.notes-card{
     width: 100%;
 }
-.about-body{
+.notes-body{
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -49,13 +50,13 @@
     text-align: center;
     padding-bottom: 1vh;
 }
-.about-body-header{
+.notes-body-header{
     padding-bottom: 2vh;
 }
-.about-body-item{
+.notes-body-item{
     padding-bottom: 1vh;
 }
-.about-images{
+.notes-images{
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -64,7 +65,7 @@
     max-height: 40%;
     text-align: center;
 }
-.about-img{
+.notes-img{
     height: 255;
     display: block;
     max-width: 400;
