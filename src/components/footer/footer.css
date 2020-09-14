@@ -11,3 +11,9 @@
     margin-right: auto;
     text-align: center;
 }
+.footer h6 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1rem;
+}

@@ -7,16 +7,21 @@
 }
 .header h5 {
     font-weight: 300;
-    text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 1.2rem;
 }
-  
 .header h3 {
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: .7rem;
-    font-size: 1.9rem;
+    letter-spacing: 0.4rem;
+    font-size: 1.5rem;
+}
+.header h1 {
+    text-transform: capitalize;
+    font-weight: 600;  
+    letter-spacing: 0.1rem;
+    font-size: 3.5rem;
+    font-style: italic;  
 }
 .header {
     text-align: center;

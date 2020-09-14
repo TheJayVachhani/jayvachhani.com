@@ -9,14 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Some Things
+- Contact Form
 
 ### Removed
 
-- Nothing Yet
+- About Me Page
 
-## [1.0.0] - 2020-09-03
+## [1.0.0] - 2020-09-14
 
 ### Added
 
-- Initial commit
+- Deployed Website with Initial Content, Currently working on redesign of Pages.
+- Contact Form Does not Work
