@@ -32,7 +32,7 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 15vh;
+    padding-top: 10vh;
     padding-bottom: 1vh;
     width: 98%;
     overflow: hidden;
@@ -58,7 +58,7 @@
 .no-top-padding {
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 15px;
+    padding-left: 12px;
     padding-right: 0px;
 }
 .programming h6{

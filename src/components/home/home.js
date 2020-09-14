@@ -18,10 +18,10 @@ const HomeComponent = () => {
                         </Grid>
                         <Grid container justify="center" direction="column" alignItems="center" spacing={1}>
                             <Grid item xs={11} md={4}>
-                                <Typography variant='h5' color="textSecondary" align="justify">Computer Science and Management Student at King's College London. </Typography>
+                                <Typography variant='h5' color="textSecondary" align="left">Computer Science and Management Student at King's College London. </Typography>
                             </Grid>
                             <Grid item xs={11} md={4}>
-                                <Typography variant='h5' color="textSecondary" align="justify">Passionate about building and designing dynamic web applications & experiences. </Typography>
+                                <Typography variant='h5' color="textSecondary" align="left">Passionate about building and designing dynamic web applications & experiences. </Typography>
                             </Grid>
                         </Grid>
                         <Box component="div" className="icon-wrapper">
@@ -61,7 +61,7 @@ const HomeComponent = () => {
                                                     <ul className="no-top-padding">
                                                         <li>
                                                             <Typography component="span" variant="body1" color="secondary">&lt;h2&gt;</Typography>
-                                                            <Typography component="span" variant="body1" color="textSecondary"> I have practiced to be: </Typography>
+                                                            <Typography component="span" variant="body1" color="textSecondary"> I have trained to be: </Typography>
                                                             <Typography component="span" variant="body1" color="secondary">&lt;/h2&gt;</Typography>
                                                         </li>
                                                         <li><Typography variant="h6" color="secondary">&lt;ul&gt;</Typography></li>
@@ -96,7 +96,7 @@ const HomeComponent = () => {
                                                             </li>
                                                             <li>
                                                                 <Typography component="span" variant="body1" color="secondary">&lt;li&gt;</Typography>
-                                                                <Typography component="span" variant="body1" color="textSecondary"> An Avid Reader & Self-Learner </Typography>
+                                                                <Typography component="span" variant="body1" color="textSecondary"> An Avid Reader & Learner </Typography>
                                                                 <Typography component="span" variant="body1" color="secondary">&lt;/li&gt;</Typography>
                                                             </li>
                                                             <li>
@@ -124,12 +124,12 @@ const HomeComponent = () => {
                                                             </li>
                                                             <li>
                                                                 <Typography component="span" variant="body1" color="secondary">&lt;li&gt;</Typography>
-                                                                <Typography component="span" variant="body1" color="textSecondary"> To Cook </Typography>
+                                                                <Typography component="span" variant="body1" color="textSecondary"> To Code, obviously </Typography>
                                                                 <Typography component="span" variant="body1" color="secondary">&lt;/li&gt;</Typography>
                                                             </li>
                                                             <li>
                                                                 <Typography component="span" variant="body1" color="secondary">&lt;li&gt;</Typography>
-                                                                <Typography component="span" variant="body1" color="textSecondary"> To Explore New Places </Typography>
+                                                                <Typography component="span" variant="body1" color="textSecondary"> To Explore New Ideas </Typography>
                                                                 <Typography component="span" variant="body1" color="secondary">&lt;/li&gt;</Typography>
                                                             </li>
                                                         </ul>
