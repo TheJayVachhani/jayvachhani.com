@@ -7,7 +7,7 @@ import {CssBaseline, IconButton, Box} from '@material-ui/core';
 import Navbar from './components/navigation/navbar';
 import Footer from './components/footer/footer';
 import themeBlackGreen from './themes/BlackGreen/themeBlackGreen.js';
-import themePurple from './themes/Blue/themePurple.js';
+import themePurple from './themes/Purple/themePurple.js';
 import themeSea from './themes/Sea/themeSea.js';
 import themePink from './themes/Pink/themePink';
 import themeLightBlue from './themes/LightBlue/themeLightBlue.js';
