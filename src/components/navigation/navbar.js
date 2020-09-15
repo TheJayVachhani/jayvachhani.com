@@ -67,8 +67,8 @@ export default function Navbar(props){
 
     return (
         <div>
-            <AppBar position="sticky" >
-                <Tabs value={selectedTab} onChange={handleChange} variant="fullWidth" aria-label="All Navigation Tabs">
+            <AppBar position="sticky" className="nav-section" >
+                <Tabs value={selectedTab} onChange={handleChange} variant="fullWidth" aria-label="All Navigation Tabs" centered>
                     <Tab aria-label="Home" label="Home" {...Props(0)} />
                     <Tab aria-label="Experience" label="Experience" {...Props(1)} />
                     <Tab aria-label="Notes" label="Notes" {...Props(2)} />

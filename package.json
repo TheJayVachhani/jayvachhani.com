@@ -28,7 +28,9 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-swipeable-views": "^0.13.9",
-    "react-typed": "^1.2.0"
+    "react-three-fiber": "^4.2.21",
+    "react-typed": "^1.2.0",
+    "three": "^0.120.1"
   },
   "scripts": {
     "predeploy": "npm run build",

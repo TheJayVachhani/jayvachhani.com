@@ -46,7 +46,7 @@ const FooterComponent = () => {
                 </Grid>
             </Box>
             <Box component="div" className="footer-copyright">
-                <Typography variant="h6" color="textPrimary">
+                <Typography variant="h6" color="secondary">
                     &copy; Copyright Jay Vachhani 2020
                 </Typography>
             </Box>

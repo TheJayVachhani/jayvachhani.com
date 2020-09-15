@@ -52,9 +52,11 @@ const HomeComponent = () => {
                                         <li>
                                             <ul className="no-top-padding">
                                                 <li>
-                                                    <Typography component="span" variant="body1" color="secondary">&lt;h1&gt;</Typography>
+                                                    <Typography component="span" variant="body1" color="background">&lt;</Typography>
+                                                    <Typography component="span" variant="body1" color="secondary">h1</Typography>
+                                                    <Typography component="span" variant="body1" color="background">&gt;</Typography>
                                                     <Typography component="span" variant="body1" color="textSecondary"> About Me </Typography>
-                                                    <Typography component="span" variant="body1" color="secondary">&lt;/h1&gt;</Typography>
+                                                    <Typography component="span" variant="body1" color="background">&lt;/h1&gt;</Typography>
                                                 </li>
                                                 <li><Typography variant="body1" color="secondary">&lt;body&gt;</Typography></li>
                                                 <li>
