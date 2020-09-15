@@ -6,20 +6,20 @@ export default createMuiTheme({
 			main: "#A6D1C9"
 		},
 		secondary: { 
-			main:  "#00A19A"
+			main:  "#1FB4FF"
 		},
 		background:{
 			default: "#1E1F1E"
 		},
 		text:{
-			primary: "#00A19A",
+			primary: "#1FB4FF",
 			secondary: "#A6D1C9",
 		}
 	},
 	overrides: {
 		MuiCard:{
 			root: {
-				backgroundColor: "#002927",
+				backgroundColor: "#002D3D",
 			}
 		},
 		MuiCardHeader:{
@@ -36,16 +36,16 @@ export default createMuiTheme({
 				backgroundColor: "#1E1F1E"
 			},
 			iconColorPrimary: {
-				color: "#00A19A"
+				color: "#1FB4FF"
 			},
 		},
 		MuiTabs: {
 			root:{
 				backgroundColor: "#313532",
-				color: "#A6D1C9",
-				indicatorColor: "#00A19A",
+				color: "#0096CC",
+				indicatorColor: "#1FB4FF",
 				'&:hover': {
-					color:"#00A19A",
+					color:"#1FB4FF",
 				}
 			},
 		},

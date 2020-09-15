@@ -13,11 +13,10 @@ import themePink from './themes/Pink/themePink';
 import themeLightBlue from './themes/LightBlue/themeLightBlue.js';
 import './App.css';
 
-
-const theme1 = responsiveFontSizes(themeSea);
-const theme2 = responsiveFontSizes(themePink);
+const theme1 = responsiveFontSizes(themeLightBlue);
+const theme2 = responsiveFontSizes(themeSea);
 const theme3 = responsiveFontSizes(themeBlackGreen);
-const theme4 = responsiveFontSizes(themeLightBlue);
+const theme4 = responsiveFontSizes(themePink);
 const theme5 = responsiveFontSizes(themePurple);
 
 let themeDict = { 
