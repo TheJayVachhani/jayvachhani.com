@@ -57,20 +57,20 @@ const HomeComponent = () => {
                                             <ul className="no-top-padding">
                                                 <li>
                                                     <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                    <Typography component="span" variant="body1" color="secondary">h1</Typography>
-                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                    <Typography component="span" variant="h5" style={{fontWeight: 300, fontSize: 21}} color="textSecondary"> About Me </Typography>
-                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                    <Typography component="span" variant="body1" color="secondary">h1</Typography>
-                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                </li>
-                                                <li>
-                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
                                                     <Typography component="span" variant="body1" color="secondary">body</Typography>
                                                     <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
                                                 </li>
                                                 <li>
                                                     <ul className="no-top-padding">
+                                                    <li>
+                                                        <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
+                                                        <Typography component="span" variant="body1" color="secondary">h1</Typography>
+                                                        <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
+                                                        <Typography component="span" variant="h5" style={{fontWeight: 300, fontSize: 21}} color="textSecondary"> About Me </Typography>
+                                                        <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
+                                                        <Typography component="span" variant="body1" color="secondary">h1</Typography>
+                                                        <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
+                                                    </li>
                                                         <li>
                                                             <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
                                                             <Typography component="span" variant="body1" color="secondary">h2</Typography>
