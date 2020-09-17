@@ -105,7 +105,11 @@ const HomeComponent = () => {
                                                                 <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
                                                             </li>
                                                         </ul>
-                                                        <li><Typography variant="body1" color="secondary">&lt;/ul&gt;</Typography></li>
+                                                        <li>
+                                                            <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
+                                                            <Typography component="span" variant="body1" color="secondary">ul</Typography>
+                                                            <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
+                                                        </li>
                                                     </ul>
                                                 </li>
                                                 <li>
