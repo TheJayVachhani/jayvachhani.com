@@ -8,12 +8,18 @@ import BoliviaSalt from './images/Bolivia-Salt-Flats.png';
 import BoliviaRail from './images/Bolivia-Abandoned-Railway.png';
 import BoliviaAmz from './images/Bolivia-Amazon.png';
 import BoliviaMnT from './images/Bolivia-MtTarija.png';
+import BrightonSea from './images/Brighton-Sea-Sunset.png';
+import Rottingdean from './images/Rottingdean-Cliffs.png';
 import GermanySpeyer from './images/Speyer-Quiet-Street.png';
 import SwissGlacier from './images/Zermatt-Glacier.png';
 import SwissLodge from './images/Zermatt-Lodge.png';
 import './notes.css';
 
 const imageCarousel = [
+    {
+        label: 'UK - Brighton',
+        imgPath: BrightonSea ,
+    },
     {
         label: 'Switzerland - Lodge in Zermatt',
         imgPath: SwissLodge ,
@@ -41,6 +47,10 @@ const imageCarousel = [
     {
         label: 'Bolivia - Salar de Uyuni',
         imgPath: BoliviaSalt ,
+    },
+    {
+        label: 'UK - Rottingdean Cliffs',
+        imgPath: Rottingdean ,
     },
 ]
 

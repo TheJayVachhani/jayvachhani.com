@@ -1,50 +1,51 @@
 import { createMuiTheme } from "@material-ui/core";
 
 export default createMuiTheme({
-	palette: {
+  	palette: {
 		primary: {
-			main: "#FFCC80"
+			main: "#E4E5E6"
 		},
 		secondary: { 
-			main:  "#8d80ff"
+			main: "#FFB01F" 
 		},
 		background:{
-			default: "#0F0F1A"
+			default: "#8F0037"
 		},
 		text:{
-			primary: "#8d80ff",
-			secondary: "#FFCC80",
+			primary: "#FFB01F",
+			secondary: "#E4E5E6",
 		}
 	},
 	overrides: {
 		MuiCard:{
 			root: {
-				backgroundColor: "#161627"
+				backgroundColor: "#001829",
 			}
 		},
 		MuiCardHeader:{
 			title:{
-				color: "#E4E5E6",
+				color: "#02040F",
 			},
 			subheader: {
-				color: "#8d80ff" ,
+				color: "#FFB01F" ,
 			}
 		},
 		MuiChip: {
 			colorPrimary: {
-				color: "#e4e5e6",
-				backgroundColor: "#0F0F1A"
+				color: "#E4E5E6",
+				backgroundColor: "#840032"
 			},
 			iconColorPrimary: {
-				color: "#8d80ff",
+				color: "#E59500"
 			},
 		},
 		MuiTabs: {
 			root:{
-				backgroundColor: "#161627",
-				color: "#8d80ff",
+				backgroundColor: "#001829",
+				color: "#E4E5E6",
+				indicatorColor: "#FFB01F",
 				'&:hover': {
-					color:"#4A71FF",
+					color:"#FFB01F",
 				}
 			},
 		},

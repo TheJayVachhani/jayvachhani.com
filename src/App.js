@@ -7,7 +7,7 @@ import {CssBaseline, IconButton, Box} from '@material-ui/core';
 import Navbar from './components/navigation/navbar';
 import Footer from './components/footer/footer';
 import themeBlackGreen from './themes/BlackGreen/themeBlackGreen.js';
-import themePurple from './themes/Purple/themePurple.js';
+import themeBurgundy from './themes/Burgundy/themeBurgundy.js';
 import themeSea from './themes/Sea/themeSea.js';
 import themePink from './themes/Pink/themePink';
 import themeLightBlue from './themes/LightBlue/themeLightBlue.js';
@@ -17,7 +17,7 @@ const theme1 = responsiveFontSizes(themeLightBlue);
 const theme2 = responsiveFontSizes(themeSea);
 const theme3 = responsiveFontSizes(themeBlackGreen);
 const theme4 = responsiveFontSizes(themePink);
-const theme5 = responsiveFontSizes(themePurple);
+const theme5 = responsiveFontSizes(themeBurgundy);
 
 let themeDict = { 
 	0: theme1,
