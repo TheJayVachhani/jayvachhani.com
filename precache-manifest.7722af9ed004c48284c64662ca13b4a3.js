@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b49f557bd6f45249249eda88829abd67",
+    "revision": "2eaef600bad5101bfa6a6e368a36ec79",
     "url": "/index.html"
   },
   {
-    "revision": "0d5add49d2ac235774e9",
+    "revision": "0668200702f0b1641e8c",
     "url": "/static/css/main.c9ced32e.chunk.css"
   },
   {
-    "revision": "bd7f5c78c9a50a6549da",
-    "url": "/static/js/2.82756c5f.chunk.js"
+    "revision": "e826a1e9bd64662db1cf",
+    "url": "/static/js/2.0a27f639.chunk.js"
   },
   {
     "revision": "84f48c9a090ba2f8cc4a11e48dd3dad0",
-    "url": "/static/js/2.82756c5f.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.0a27f639.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0d5add49d2ac235774e9",
-    "url": "/static/js/main.50c1fa01.chunk.js"
+    "revision": "0668200702f0b1641e8c",
+    "url": "/static/js/main.5856a22a.chunk.js"
   },
   {
     "revision": "d931143917d651f575bb",
@@ -38,6 +38,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5839b03047e908ac0ae4ed6be54e3764",
     "url": "/static/media/Bolivia-Salt-Flats.5839b030.png"
+  },
+  {
+    "revision": "848392d8627ba14101f552852c7b9dfa",
+    "url": "/static/media/Brighton-Sea-Sunset.848392d8.png"
+  },
+  {
+    "revision": "eb9f0ea58f13338dc2892e396f473784",
+    "url": "/static/media/Rottingdean-Cliffs.eb9f0ea5.png"
   },
   {
     "revision": "0c4a88d9fa16e1677ded2098e8879953",
