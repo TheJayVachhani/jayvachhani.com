@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.c9ced32e.chunk.css",
-    "main.js": "/static/js/main.62deac53.chunk.js",
-    "main.js.map": "/static/js/main.62deac53.chunk.js.map",
+    "main.js": "/static/js/main.50c1fa01.chunk.js",
+    "main.js.map": "/static/js/main.50c1fa01.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cc115f75.js",
     "runtime-main.js.map": "/static/js/runtime-main.cc115f75.js.map",
-    "static/js/2.774a0afb.chunk.js": "/static/js/2.774a0afb.chunk.js",
-    "static/js/2.774a0afb.chunk.js.map": "/static/js/2.774a0afb.chunk.js.map",
+    "static/js/2.82756c5f.chunk.js": "/static/js/2.82756c5f.chunk.js",
+    "static/js/2.82756c5f.chunk.js.map": "/static/js/2.82756c5f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ac8e99b3e3f84264d1f0c08ee1ba2601.js": "/precache-manifest.ac8e99b3e3f84264d1f0c08ee1ba2601.js",
+    "precache-manifest.a1e469a25796b5467b121f4fe5adb9cc.js": "/precache-manifest.a1e469a25796b5467b121f4fe5adb9cc.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.c9ced32e.chunk.css.map": "/static/css/main.c9ced32e.chunk.css.map",
-    "static/js/2.774a0afb.chunk.js.LICENSE.txt": "/static/js/2.774a0afb.chunk.js.LICENSE.txt",
+    "static/js/2.82756c5f.chunk.js.LICENSE.txt": "/static/js/2.82756c5f.chunk.js.LICENSE.txt",
     "static/media/Bolivia-Abandoned-Railway.png": "/static/media/Bolivia-Abandoned-Railway.d34d901f.png",
     "static/media/Bolivia-Amazon.png": "/static/media/Bolivia-Amazon.ec44c90e.png",
     "static/media/Bolivia-MtTarija.png": "/static/media/Bolivia-MtTarija.44d9ab7b.png",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.cc115f75.js",
-    "static/js/2.774a0afb.chunk.js",
+    "static/js/2.82756c5f.chunk.js",
     "static/css/main.c9ced32e.chunk.css",
-    "static/js/main.62deac53.chunk.js"
+    "static/js/main.50c1fa01.chunk.js"
   ]
 }
