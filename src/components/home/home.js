@@ -32,7 +32,7 @@ const HomeComponent = () => {
                                     </IconButton>
                                 </Grid>
                                 <Grid item xs={4} md={1}>
-                                    <IconButton href="https://www.linkedin.com/in/thejayvachhani/" target="_blank">
+                                    <IconButton href="/Jay-Vachhani-CV.pdf">
                                         <DescriptionRounded color="secondary" style={{ fontSize: 35 }}/>
                                     </IconButton>
                                 </Grid>
