@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {useTheme} from '@material-ui/core/styles';
 import SwipeableViews from 'react-swipeable-views';
-import {Grid, Typography, Button, MobileStepper, Box} from '@material-ui/core';
-import {KeyboardArrowLeftRounded, KeyboardArrowRightRounded} from '@material-ui/icons';
+import {Grid, Typography, Button, MobileStepper, Box, Accordion, AccordionSummary, AccordionDetails} from '@material-ui/core';
+import {KeyboardArrowLeftRounded, KeyboardArrowRightRounded, ExpandMoreRounded, NoteAddRounded} from '@material-ui/icons';
 
 import BoliviaSalt from './images/Bolivia-Salt-Flats.png';
 import BoliviaRail from './images/Bolivia-Abandoned-Railway.png';
@@ -79,15 +79,61 @@ const NotesComponent = () => {
                                 <Typography variant="h3" color="primary">
                                     My Notes.
                                 </Typography>
-                                <Typography variant="h5">
+                                <Typography variant="h5" color="secondary">
                                     I love to write about my learning, thoughts and interests.                               
                                 </Typography>
-                                <Typography variant="h5">
-                                    I am currently working on this page to become my blog.
-                                </Typography>
-                                <Typography variant="h5">
-                                    Currently this has some nice photos for you to look at.
-                                </Typography>
+                            </Grid>
+                            <Grid item xs={12} md={10}>
+                                <Box component="div" className="notes-accordion-container">
+                                    <Accordion>
+                                        <AccordionSummary expandIcon={<ExpandMoreRounded color="primary"/>} aria-controls="JS Overview" id="JS Overview">
+                                            <Typography variant="h5" color="primary" >JS Overview</Typography>
+                                        </AccordionSummary>
+                                        <AccordionDetails>
+                                            <Typography variant="h6" align="left">
+                                                I wrote these notes whilst learning JavaScript from FreeCodeCamp.
+                                                It has all the tools needed to grasp JS if you are already familiar with programming languages like Java/Python. 
+                                                I have been meticulous in covering all basic bases required to start building your JS upward from.
+                                            </Typography>
+                                        </AccordionDetails>
+                                        <AccordionDetails>
+                                            <Button href="/docs/JavaScript.pdf" fullWidth={true} color="primary" endIcon={<NoteAddRounded fontSize="small" color="secondary"/>}>
+                                                Download
+                                            </Button>
+                                        </AccordionDetails>
+                                    </Accordion>
+                                    <Accordion>
+                                        <AccordionSummary expandIcon={<ExpandMoreRounded color="primary"/>} aria-controls="HTML & CSS basics overview" id="HTML & CSS basics overview">
+                                            <Typography variant="h5" color="primary" >HTML & CSS Basics</Typography>
+                                        </AccordionSummary>
+                                        <AccordionDetails>
+                                            <Typography variant="h6" align="left">
+                                                I wrote these notes whilst refreshing my understanding on HTML & CSS. It can be used as an introductory document for new web developers looking to build their first sites.
+                                                I find it essential to understand these fundamentals before jumping into JS Frameworks like Angular, Vue, React for more complex sites.
+                                            </Typography>
+                                        </AccordionDetails>
+                                        <AccordionDetails>
+                                            <Button href="/docs/HTML_CSS.pdf" fullWidth={true} color="primary" endIcon={<NoteAddRounded fontSize="small" color="secondary"/>}>
+                                                Download
+                                            </Button>
+                                        </AccordionDetails>
+                                    </Accordion>
+                                    <Accordion>
+                                        <AccordionSummary expandIcon={<ExpandMoreRounded color="primary"/>} aria-controls="React + Node" id="React + Node">
+                                            <Typography variant="h5" color="primary" >React + Node</Typography>
+                                        </AccordionSummary>
+                                        <AccordionDetails>
+                                            <Typography variant="h6" align="left">
+                                                I wrote these notes as a guide on how to set up the project repository of a large scale Node and React project. 
+                                            </Typography>
+                                        </AccordionDetails>
+                                        <AccordionDetails>
+                                            <Button href="/docs/React_Node.pdf" fullWidth={true} color="primary" endIcon={<NoteAddRounded fontSize="small" color="secondary"/>}>
+                                                Download
+                                            </Button>
+                                        </AccordionDetails>
+                                    </Accordion>
+                                </Box>
                             </Grid>
                         </Grid>
                     </Box>

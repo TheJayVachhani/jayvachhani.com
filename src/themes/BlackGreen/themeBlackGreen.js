@@ -49,5 +49,10 @@ export default createMuiTheme({
 				}
 			},
 		},
+		MuiAccordion: {
+			root: {
+				backgroundColor: "#D5D7D5"
+			},
+		},
 	},
 });

@@ -40,13 +40,18 @@ export default createMuiTheme({
 			},
 		},
 		MuiTabs: {
-			root:{
+			root: {
 				backgroundColor: "#313532",
 				color: "#0096CC",
 				indicatorColor: "#1FB4FF",
 				'&:hover': {
 					color:"#1FB4FF",
 				}
+			},
+		},
+		MuiAccordion: {
+			root: {
+				backgroundColor: "#002D3D"
 			},
 		},
 	},
