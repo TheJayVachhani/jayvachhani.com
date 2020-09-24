@@ -194,7 +194,7 @@ const HomeComponent = () => {
                                                                 <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
                                                                 <Typography component="span" variant="body1" color="secondary">li</Typography>
                                                                 <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                <Typography component="span" variant="body1" color="textSecondary"> To solve code problems </Typography>
+                                                                <Typography component="span" variant="body1" color="textSecondary"> To solve problems </Typography>
                                                                 <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
                                                                 <Typography component="span" variant="body1" color="secondary">li</Typography>
                                                                 <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
@@ -203,7 +203,7 @@ const HomeComponent = () => {
                                                                 <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
                                                                 <Typography component="span" variant="body1" color="secondary">li</Typography>
                                                                 <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                <Typography component="span" variant="body1" color="textSecondary"> To explore new ideas </Typography>
+                                                                <Typography component="span" variant="body1" color="textSecondary"> Learning in a new way </Typography>
                                                                 <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
                                                                 <Typography component="span" variant="body1" color="secondary">li</Typography>
                                                                 <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>

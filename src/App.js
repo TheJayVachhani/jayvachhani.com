@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Route , Redirect, Switch} from 'react-router-dom';
 import {MuiThemeProvider, responsiveFontSizes} from '@material-ui/core/styles';
-import {Brightness4Rounded, Brightness7Rounded} from '@material-ui/icons';
+import {Brightness7Rounded} from '@material-ui/icons';
 import {CssBaseline, IconButton, Box} from '@material-ui/core';
 
 import Navbar from './components/navigation/navbar';
@@ -43,10 +43,6 @@ class App extends Component {
 		}
 		this.setState(({ themeIs: themeDict[value]}));
 	}
-	backToNormal = () => {
-		value=2;
-		this.setState(({ themeIs: themeDict[value]}));
-	}
 
 	render() {
 		var {themeIs} = this.state;
@@ -62,10 +58,7 @@ class App extends Component {
 						</Box>
 						<Box component="div" className="change-buttons" color="background"> 
 							<IconButton onClick={this.onChange} title="Change Theme" aria-label="Change Theme Button" color="secondary">
-								<Brightness4Rounded/>
-							</IconButton>
-							<IconButton onClick={this.backToNormal} title="Starting Theme" aria-label="Starting Theme" color="primary">
-								<Brightness7Rounded/>
+								<Brightness7Rounded style={{ fontSize: 35 }}/>
 							</IconButton>
 						</Box>
 						<div>
@@ -78,3 +71,12 @@ class App extends Component {
 }
 
 export default App;
+/*
+	backToNormal = () => {
+		value=2;
+		this.setState(({ themeIs: themeDict[value]}));
+	}
+							<IconButton onClick={this.backToNormal} title="Starting Theme" aria-label="Starting Theme" color="primary">
+								<Brightness7Rounded/>
+							</IconButton>
+*/
