@@ -76,18 +76,18 @@ export default function Navbar(props){
                 </Tabs>
             </AppBar>
             <SwipeableViews axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'} index={selectedTab} onChangeIndex={handleChangeIndex}>
-            <TabPanel value={selectedTab} index={0}>
-                {selectedTab === 0 && <Home/>}
-            </TabPanel>
-            <TabPanel value={selectedTab} index={1}>
-                {selectedTab === 1 && <Experience/>}
-            </TabPanel>
-            <TabPanel value={selectedTab} index={2}>
-                {selectedTab === 2 && <Notes/>}
-            </TabPanel>
-            <TabPanel value={selectedTab} index={3}>
-                {selectedTab === 3 && <Contact/>}
-            </TabPanel>
+                <TabPanel value={selectedTab} index={0}>
+                    {selectedTab === 0 && <Home/>}
+                </TabPanel>
+                <TabPanel value={selectedTab} index={1}>
+                    {selectedTab === 1 && <Experience/>}
+                </TabPanel>
+                <TabPanel value={selectedTab} index={2}>
+                    {selectedTab === 2 && <Notes/>}
+                </TabPanel>
+                <TabPanel value={selectedTab} index={3}>
+                    {selectedTab === 3 && <Contact/>}
+                </TabPanel>
             </SwipeableViews>
         </div>
     )

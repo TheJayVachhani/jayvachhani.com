@@ -61,9 +61,9 @@ class App extends Component {
 								<Brightness7Rounded style={{ fontSize: 35 }}/>
 							</IconButton>
 						</Box>
-						<div>
+						<Box component="div">
 							<Footer/>
-						</div>
+						</Box>
 					</div>
 			</MuiThemeProvider>
 		);
