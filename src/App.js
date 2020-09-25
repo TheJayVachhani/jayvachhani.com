@@ -71,12 +71,3 @@ class App extends Component {
 }
 
 export default App;
-/*
-	backToNormal = () => {
-		value=2;
-		this.setState(({ themeIs: themeDict[value]}));
-	}
-							<IconButton onClick={this.backToNormal} title="Starting Theme" aria-label="Starting Theme" color="primary">
-								<Brightness7Rounded/>
-							</IconButton>
-*/
