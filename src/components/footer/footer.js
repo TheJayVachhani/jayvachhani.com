@@ -1,13 +1,40 @@
 import React from 'react';
 import {RemoveRounded} from '@material-ui/icons';
 import {Box, Button, Typography, Grid} from '@material-ui/core';
-import './footer.css'
+import {makeStyles} from '@material-ui/core/styles';
 
+const footerCSS = makeStyles((theme) => ({
+    footer:{
+        maxWidth: "345px",
+        margin: "auto",
+        textAlign: "center",
+        padding: "0 0 1vh 0",
+    },
+    copyright:{
+        padding: "0 0 3vh 0",
+        margin: "auto",
+        textAlign: "center",
+    },
+    copyrightH6:{
+        fontWeight: "400",
+        fontSize: "0.9rem",
+        letterSpacing: "0.05rem",
+        fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
+    }
+}));
+
+function currentYear(){
+    var d = new Date();
+    return d.getFullYear();
+}
+
+let thisYear = currentYear();
 
 const FooterComponent = () => {
+    const classes = footerCSS();
     return (
         <div>
-            <Box component="div" className="footer" color="background">
+            <Box component="div" className={classes.footer} color="background">
                 <Grid container justify="center"  direction="row" alignItems="center" spacing={3}>
                     <Grid item xs={12}>
                         <Grid container justify="center"  direction="row" alignItems="center">
@@ -22,7 +49,7 @@ const FooterComponent = () => {
                                 </Grid>
                             </Grid>
                             <Grid item xs={1}>
-                                <Grid container justify="flex-start" spacing={1}  direction="column" alignItems="center">
+                                <Grid container justify="flex-start" spacing={2}  direction="column" alignItems="center">
                                     <Grid item xs={12}>
                                         <RemoveRounded fontSize="small" color="secondary"/>
                                     </Grid>
@@ -45,9 +72,9 @@ const FooterComponent = () => {
                     </Grid>
                 </Grid>
             </Box>
-            <Box component="div" className="footer-copyright">
-                <Typography variant="h6" color="secondary">
-                    &copy; Copyright Jay Vachhani 2020
+            <Box component="div" className={classes.copyright}>
+                <Typography variant="h6" color="secondary" className={classes.copyrightH6}>
+                    &copy; Copyright Jay Vachhani {thisYear}
                 </Typography>
             </Box>
         </div>
