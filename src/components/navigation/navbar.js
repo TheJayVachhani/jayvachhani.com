@@ -7,7 +7,7 @@ const navbarCSS = makeStyles((theme) => ({
     bar:{
         position: "sticky",
         width: "100%",
-        height: "60px",
+        height: "65px",
         margin: "0"
     },
     grid:{
@@ -20,7 +20,7 @@ const navbarCSS = makeStyles((theme) => ({
         margin: "auto",
     },
     buttonText:{
-        fontSize: "1.3rem",
+        fontSize: "1.2rem",
         fontWeight: "400",
         textTransform: "capitalize",
         fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
@@ -28,7 +28,6 @@ const navbarCSS = makeStyles((theme) => ({
         lineHeight: "55px",
         textAlign: "center"
     }
-    
 }));
 
 const mainNavbar = () => {
