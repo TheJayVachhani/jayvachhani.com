@@ -1,15 +1,13 @@
 import React from 'react';
-import {Typography, Box, Grid, IconButton, Card} from '@material-ui/core';
+import {Typography, Box, Grid, IconButton, Card, Tooltip, Fade} from '@material-ui/core';
 import {LinkedIn, DescriptionRounded} from '@material-ui/icons';
 import {makeStyles} from '@material-ui/core/styles';
 import Typed from 'react-typed';
 
 const homeCSS = makeStyles((theme) => ({
     headerContainer:{
-        position: "relative",
-        margin: "auto",
-        padding: "10vh 0 1vh 0",
-        width: "95%"
+        width: "95%",
+        margin: "3% auto 0 auto",
     },
     header:{
         textAlign: "center",
@@ -95,14 +93,18 @@ const HomeComponent = () => {
                         <Box component="div" className={classes.iconContainer}>
                             <Grid container justify="center" direction="row" alignItems="center">
                                 <Grid item xs={4} md={1}>
-                                    <IconButton href="https://www.linkedin.com/in/thejayvachhani/" target="_blank">
-                                        <LinkedIn color="secondary" className={classes.icon}/>
-                                    </IconButton>
+                                    <Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">LinkedIn</Typography>} placement="left">
+                                        <IconButton href="https://www.linkedin.com/in/thejayvachhani/" target="_blank">
+                                            <LinkedIn color="secondary" className={classes.icon}/>
+                                        </IconButton>
+                                    </Tooltip>
                                 </Grid>
                                 <Grid item xs={4} md={1}>
-                                    <IconButton href="/Jay-Vachhani-CV.pdf">
-                                        <DescriptionRounded color="secondary" className={classes.icon}/>
-                                    </IconButton>
+                                    <Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">Resume/CV</Typography>} placement="right">
+                                        <IconButton href="/Jay-Vachhani-CV.pdf">
+                                            <DescriptionRounded color="secondary" className={classes.icon}/>
+                                        </IconButton>
+                                    </Tooltip>
                                 </Grid>
                             </Grid>
                         </Box>

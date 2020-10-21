@@ -110,16 +110,16 @@ const ExperienceComponent = () => {
             <Box component="div" className={classes.header}>
                 <Grid container direction="column" justify="center" alignItems="center">
                     <Grid item xs={12}>
-                        <Typography  variant='h3' color="primary" className={classes.headerH3}>Experience</Typography>
+                        <Typography  variant='h3' color="primary" className={classes.headerH3}>My Experience.</Typography>
                     </Grid>
                     <Grid item xs={12}>
-                        <Button fullWidth={true} onClick={handleBigClick} color="secondary">All</Button>
+                        <Button fullWidth={true} onClick={handleBigClick} color="secondary">Open All</Button>
                     </Grid>
                 </Grid>
             </Box>
             <Box component="div" className={classes.body}>
                 <Grid container direction="row" justify="center" alignItems="flex-start">
-                    <Grid item xs={0} lg={4}>
+                    <Grid item xs={false} lg={4}>
 
                     </Grid>
                     <Grid item xs={12} lg={4}>
@@ -151,15 +151,15 @@ const ExperienceComponent = () => {
                                                 <Grid item xs={4}>
                                                     <List>
                                                         <ListItem>
-                                                            <ListItemText disableTypography primary={<Typography color="primary" >Languages</Typography>}/>
+                                                            <ListItemText disableTypography primary={<Typography color="primary">Languages</Typography>}/>
                                                         </ListItem>
                                                     </List>
                                                 </Grid>
                                                 <Grid item xs={8}>
-                                                    <Chip color="primary" label="JavaScript" icon={<CodeRounded />} className={classes.chip}/>
-                                                    <Chip color="primary" label="Node JS" icon={<CodeRounded />} className={classes.chip}/>
-                                                    <Chip color="primary" label="PostgreSQL" icon={<CodeRounded />} className={classes.chip}/>
-                                                    <Chip color="primary" label="Git" icon={<CodeRounded />} className={classes.chip}/>
+                                                    <Chip color="primary" label="JavaScript" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
+                                                    <Chip color="primary" label="Node JS" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
+                                                    <Chip color="primary" label="PostgreSQL" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
+                                                    <Chip color="primary" label="Git" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
                                                 </Grid>
                                             </Grid>
                                             <Divider variant="middle"/>
@@ -167,7 +167,7 @@ const ExperienceComponent = () => {
                                                 <Grid item xs={4}>
                                                     <List>
                                                         <ListItem>
-                                                            <ListItemText disableTypography primary={<Typography color="primary" >Frameworks</Typography>}/>
+                                                            <ListItemText disableTypography primary={<Typography color="primary">Frameworks</Typography>}/>
                                                         </ListItem>
                                                     </List>
                                                 </Grid>
@@ -183,7 +183,7 @@ const ExperienceComponent = () => {
                                                 <Grid item xs={4}>
                                                     <List>
                                                         <ListItem>
-                                                            <ListItemText disableTypography primary={<Typography color="primary" >Tools</Typography>}/>
+                                                            <ListItemText disableTypography primary={<Typography color="primary">Tools</Typography>}/>
                                                         </ListItem>
                                                     </List>
                                                 </Grid>
@@ -213,7 +213,7 @@ const ExperienceComponent = () => {
                                                 London, UK
                                         </Typography>
                                         <CardActions disableSpacing>
-                                            <Typography  variant="h6" color="secondary" className={classes.details} >Details</Typography>
+                                            <Typography  variant="h6" color="secondary" className={classes.details}>Details</Typography>
                                             <IconButton className={clsx(classes.expand, {[classes.expandOpen]: open.card2,})} onClick={handleExpandClick2} aria-expanded={open.card2} aria-label="details">
                                                 <ExpandMore color="primary"/>
                                             </IconButton>
@@ -235,9 +235,9 @@ const ExperienceComponent = () => {
                                                     </List>
                                                 </Grid>
                                                 <Grid item xs={8}>
-                                                    <Chip color="primary" label="JavaScript" icon={<CodeRounded />} className={classes.chip}/>
-                                                    <Chip color="primary" label="NoSQL" icon={<CodeRounded />} className={classes.chip}/>
-                                                    <Chip color="primary" label="Python" icon={<CodeRounded />} className={classes.chip}/>
+                                                    <Chip color="primary" label="JavaScript" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
+                                                    <Chip color="primary" label="NoSQL" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
+                                                    <Chip color="primary" label="Python" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
                                                 </Grid>
                                             </Grid>
                                             <Divider variant="middle"/>
@@ -245,7 +245,7 @@ const ExperienceComponent = () => {
                                                 <Grid item xs={4}>
                                                     <List>
                                                         <ListItem>
-                                                            <ListItemText disableTypography primary={<Typography color="primary" >Frameworks</Typography>}/>
+                                                            <ListItemText disableTypography primary={<Typography color="primary">Frameworks</Typography>}/>
                                                         </ListItem>
                                                     </List>
                                                 </Grid>
@@ -261,7 +261,7 @@ const ExperienceComponent = () => {
                                                 <Grid item xs={4}>
                                                     <List>
                                                         <ListItem>
-                                                            <ListItemText disableTypography primary={<Typography color="primary" >Tools</Typography>}/>
+                                                            <ListItemText disableTypography primary={<Typography color="primary">Tools</Typography>}/>
                                                         </ListItem>
                                                     </List>
                                                 </Grid>
@@ -314,8 +314,8 @@ const ExperienceComponent = () => {
                                                     </List>
                                                 </Grid>
                                                 <Grid item xs={8}>
-                                                    <Chip color="primary" label="PDDL" icon={<CodeRounded />} className={classes.chip}/>
-                                                    <Chip color="primary" label="Queen's English" icon={<CodeRounded />} className={classes.chip}/>
+                                                    <Chip color="primary" label="PDDL" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
+                                                    <Chip color="primary" label="Queen's English" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
                                                 </Grid>
                                             </Grid>
                                             <Divider variant="middle"/>
@@ -323,7 +323,7 @@ const ExperienceComponent = () => {
                                                 <Grid item xs={4}>
                                                     <List>
                                                         <ListItem>
-                                                            <ListItemText disableTypography primary={<Typography  color="primary" >Skills Applied</Typography>}/>
+                                                            <ListItemText disableTypography primary={<Typography color="primary">Skills Applied</Typography>}/>
                                                         </ListItem>
                                                     </List>
                                                 </Grid>
@@ -340,7 +340,7 @@ const ExperienceComponent = () => {
                                                 <Grid item xs={4}>
                                                     <List>
                                                         <ListItem>
-                                                            <ListItemText disableTypography primary={<Typography  color="primary" >Tools</Typography>}/>
+                                                            <ListItemText disableTypography primary={<Typography color="primary">Tools</Typography>}/>
                                                         </ListItem>
                                                     </List>
                                                 </Grid>
@@ -385,13 +385,13 @@ const ExperienceComponent = () => {
                                                 <Grid item xs={4}>
                                                     <List>
                                                         <ListItem>
-                                                            <ListItemText disableTypography primary={<Typography  color="primary">Languages</Typography>}/>
+                                                            <ListItemText disableTypography primary={<Typography color="primary">Languages</Typography>}/>
                                                         </ListItem>
                                                     </List>
                                                 </Grid>
                                                 <Grid item xs={8}>
-                                                    <Chip color="primary" label="PHP" icon={<CodeRounded />} className={classes.chip}/>
-                                                    <Chip color="primary" label="HTML/CSS" icon={<CodeRounded />} className={classes.chip}/>
+                                                    <Chip color="primary" label="PHP" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
+                                                    <Chip color="primary" label="HTML/CSS" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
                                                 </Grid>
                                             </Grid>
                                             <Divider variant="middle"/>
@@ -399,15 +399,15 @@ const ExperienceComponent = () => {
                                                 <Grid item xs={4}>
                                                     <List>
                                                         <ListItem>
-                                                            <ListItemText disableTypography primary={<Typography  color="primary" >Tools</Typography>}/>
+                                                            <ListItemText disableTypography primary={<Typography color="primary">Tools</Typography>}/>
                                                         </ListItem>
                                                     </List>
                                                 </Grid>
                                                 <Grid item xs={8}>
                                                     <Chip color="primary" label="WordPress" icon={<PanoramaFishEye fontSize="small"/>} className={classes.chip}/>
-                                                    <Chip color="primary" label="Office 365" icon={<PanoramaFishEye  fontSize="small"/>} className={classes.chip}/>
-                                                    <Chip color="primary" label="X-Mind" icon={<PanoramaFishEye  fontSize="small"/>} className={classes.chip}/>
-                                                    <Chip color="primary" label="GIMP" icon={<PanoramaFishEye  fontSize="small"/>} className={classes.chip}/>
+                                                    <Chip color="primary" label="Office 365" icon={<PanoramaFishEye fontSize="small"/>} className={classes.chip}/>
+                                                    <Chip color="primary" label="X-Mind" icon={<PanoramaFishEye fontSize="small"/>} className={classes.chip}/>
+                                                    <Chip color="primary" label="GIMP" icon={<PanoramaFishEye fontSize="small"/>} className={classes.chip}/>
                                                 </Grid>
                                             </Grid>
                                             <Divider variant="middle"/>
@@ -415,7 +415,7 @@ const ExperienceComponent = () => {
                                                 <Grid item xs={4}>
                                                     <List>
                                                         <ListItem>
-                                                            <ListItemText disableTypography primary={<Typography  color="primary" >Tools</Typography>}/>
+                                                            <ListItemText disableTypography primary={<Typography color="primary">Tools</Typography>}/>
                                                         </ListItem>
                                                     </List>
                                                 </Grid>
@@ -464,7 +464,7 @@ const ExperienceComponent = () => {
                                                 <Grid item xs={4}>
                                                     <List>
                                                         <ListItem>
-                                                            <ListItemText disableTypography primary={<Typography color="primary" >Skills</Typography>}/>
+                                                            <ListItemText disableTypography primary={<Typography color="primary">Skills</Typography>}/>
                                                         </ListItem>
                                                     </List>
                                                 </Grid>
@@ -478,15 +478,13 @@ const ExperienceComponent = () => {
                                         </Collapse>
                                     </Card>
                                 </Grid>
-                                <Grid container direction="column" justify="center">
-                                    <Grid item xs={12}>
-                                        <Button fullWidth={true} onClick={handleBigClick} color="secondary" align="center">Open All</Button>
-                                    </Grid>
+                                <Grid item xs={11}>
+                                    <Button fullWidth={true} onClick={handleBigClick} color="secondary" align="center">Open All</Button>
                                 </Grid>
                             </Grid>
                         </Box>
                     </Grid>
-                    <Grid item xs={0} lg={4}>
+                    <Grid item xs={false} lg={4}>
 
                     </Grid>
                 </Grid>

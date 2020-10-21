@@ -6,7 +6,7 @@ export default createMuiTheme({
 			main: "#0A0B0C"
 		},
 		secondary: { 
-			main: "#16C25D" 
+			main: "#12A550" 
 		},
 		background:{
 			default: "#E4E5E6"
@@ -17,6 +17,29 @@ export default createMuiTheme({
 		}
 	},
 	overrides: {
+		MuiButton:{
+			textPrimary:{
+				backgroundColor: "transparent",
+				color: "#E4E5E6",
+				'&:hover':{
+					backgroundColor: "transparent",
+					color: "#12A550"
+				}
+			},
+			textSecondary:{
+				backgroundColor: "transparent",
+				color: "#0A0B0C",
+				'&:hover':{
+					backgroundColor: "#D5D7D5",
+					color: "#12A550"
+				}
+			}
+		},
+		MuiAppBar:{
+			colorPrimary:{
+				backgroundColor: "#313335"
+			}
+		},
 		MuiCard:{
 			root: {
 				backgroundColor: "#D5D7D5",
@@ -27,7 +50,7 @@ export default createMuiTheme({
 				color: "#0A0B0C",
 			},
 			subheader: {
-				color: "#16C25D" ,
+				color: "#12A550" ,
 			}
 		},
 		MuiChip: {
@@ -36,17 +59,7 @@ export default createMuiTheme({
 				backgroundColor: "#313335"
 			},
 			iconColorPrimary: {
-				color: "#16C25D"
-			},
-		},
-		MuiTabs: {
-			root:{
-				backgroundColor: "#313335",
-				color: "#e4e5e6",
-				indicatorColor: "#16C25D",
-				'&:hover': {
-					color:"#78E2A5",
-				}
+				color: "#12A550"
 			},
 		},
 		MuiAccordion: {

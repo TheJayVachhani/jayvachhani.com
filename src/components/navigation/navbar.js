@@ -1,95 +1,68 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import SwipeableViews from 'react-swipeable-views';
-import {AppBar, Tabs, Tab, Typography, Box} from '@material-ui/core';
-import {useTheme} from '@material-ui/core/styles';
+import {AppBar, Button, Toolbar, Typography, Grid, Slide } from '@material-ui/core';
+import {makeStyles} from '@material-ui/core/styles';
+import {Link} from 'react-router-dom';
 
-import Experience from '../experience/experience';
-import Home from '../home/home';
-import Contact from '../contact/contact';
-import Notes from '../notes/notes';
-
-function TabPanel(props) {
-    const { children, value, index, ...other } = props;
-  
-    return (
-        <div
-            role="tabpanel"
-            hidden={value !== index}
-            id={`simple-tabpanel-${index}`}
-            aria-labelledby={`simple-tab-${index}`}
-            {...other}
-        >
-            {value === index && (
-            <Box>
-                <Typography component="span" >{children}</Typography>
-            </Box>
-            )}
-        </div>
-    );
-}
-  
-TabPanel.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.any.isRequired,
-    value: PropTypes.any.isRequired,
-};
-  
-function Props(index) {
-    return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
-    };
-}
-
-export default function Navbar(props){
-    const {history} = props;
-
-    const theme = useTheme();
-    
-    const tabNameToIndex = {
-        0: "home",
-        1: "experience",
-        2: "notes",
-        3: "contact"
+const navbarCSS = makeStyles((theme) => ({
+    bar:{
+        position: "sticky",
+        width: "100%",
+        height: "60px",
+        margin: "0"
+    },
+    grid:{
+        width: "100%",
+        margin: "auto",
+    },
+    button:{
+        width: "100%",
+        height: "55px",
+        margin: "auto",
+    },
+    buttonText:{
+        fontSize: "1.3rem",
+        fontWeight: "400",
+        textTransform: "capitalize",
+        fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+        verticalAlign: "middle",
+        lineHeight: "55px",
+        textAlign: "center"
     }
+    
+}));
 
-    const [selectedTab, setSelectedTab] = React.useState(0);
-  
-    const handleChange = (event, newValue) => {
-        history.push(`/${tabNameToIndex[newValue]}`);
-        setSelectedTab(newValue);
-    };
-
-    const handleChangeIndex = (index) => {
-        setSelectedTab(index);
-    };
-
+const mainNavbar = () => {
+    const classes = navbarCSS();
     return (
-        <div>
-            <AppBar position="sticky" className="nav-section" >
-                <Tabs value={selectedTab} onChange={handleChange} variant="fullWidth" aria-label="All Navigation Tabs" centered>
-                    <Tab aria-label="Home" label="Home" {...Props(0)} />
-                    <Tab aria-label="Experience" label="Experience" {...Props(1)} />
-                    <Tab aria-label="Notes" label="Notes" {...Props(2)} />
-                    <Tab aria-label="Contact" label="Contact" {...Props(3)}/>
-                </Tabs>
+        <Slide in={true} direction="down" timeout={750}>
+            <AppBar className={classes.bar} color="primary">
+                <Toolbar disableGutters={true}>
+                    <Grid container direction="row" justify="center" alignItems="center">
+                        <Grid item xs={3} lg={2}>
+                            <Button component={Link} to="/home" color="primary" variant="text" className={classes.button}>
+                                <Typography variant="h5" className={classes.buttonText}>Home</Typography>
+                            </Button>
+                        </Grid>
+                        <Grid item xs={3} lg={2}>
+                            <Button component={Link} to="/experience" color="primary" variant="text" className={classes.button}>
+                                <Typography variant="h5" className={classes.buttonText}>Experience</Typography>
+                            </Button>
+                        </Grid>
+                        <Grid item xs={3} lg={2}>
+                            <Button component={Link} to="/notes" color="primary" variant="text" className={classes.button}>
+                                <Typography variant="h5" className={classes.buttonText}>Notes</Typography>
+                            </Button>
+                        </Grid>
+                        <Grid item xs={3} lg={2}>
+                            <Button component={Link} to="/contact" color="primary" variant="text" className={classes.button}>
+                                <Typography variant="h5" className={classes.buttonText}>Contact</Typography>
+                            </Button>
+                        </Grid>
+                    </Grid>
+                </Toolbar>
             </AppBar>
-            <SwipeableViews axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'} index={selectedTab} onChangeIndex={handleChangeIndex}>
-                <TabPanel value={selectedTab} index={0}>
-                    {selectedTab === 0 && <Home/>}
-                </TabPanel>
-                <TabPanel value={selectedTab} index={1}>
-                    {selectedTab === 1 && <Experience/>}
-                </TabPanel>
-                <TabPanel value={selectedTab} index={2}>
-                    {selectedTab === 2 && <Notes/>}
-                </TabPanel>
-                <TabPanel value={selectedTab} index={3}>
-                    {selectedTab === 3 && <Contact/>}
-                </TabPanel>
-            </SwipeableViews>
-        </div>
+        </Slide>
     )
 }
 
+export default mainNavbar

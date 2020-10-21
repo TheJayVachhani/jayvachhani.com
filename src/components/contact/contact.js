@@ -26,9 +26,9 @@ const contactCSS = makeStyles((theme) => ({
 const ContactComponent = () => {
 
     const [state, setState] = React.useState({
-        name: '',
-        email: '',
-        message: ''
+        name: "",
+        email: "",
+        message: ""
     })
 
     const handleForm = (e) => {
@@ -47,7 +47,7 @@ const ContactComponent = () => {
         })
 
         e.preventDefault();
-        setState({name: '', email: '', message: ""})
+        setState({name: "", email: "", message: ""})
     }
 
     const handleFields = (e) => {
@@ -60,7 +60,7 @@ const ContactComponent = () => {
             <Box component="div" className="contact">
                 <Grid container justify="center" direction="column">
                     <Grid item xs={12}>
-                        <Typography variant="h3" color="primary" className={classes.contactH3}>Contact Me</Typography>
+                        <Typography variant="h3" color="primary" className={classes.contactH3}>Let's Talk.</Typography>
                     </Grid>
                     <br/>
                     <Grid item xs={12}>
@@ -105,7 +105,7 @@ const ContactComponent = () => {
                                     size="medium"
                                 />
                             </FormControl>
-                            <Button type="submit" fullWidth={true} color="primary" endIcon={<SendRounded fontSize="small" color="secondary"/>}>
+                            <Button type="submit" fullWidth={true} color="secondary" variant="text" endIcon={<SendRounded fontSize="small" color="secondary"/>}>
                                 Send
                             </Button>
                             <Box component="div" className="success-message">

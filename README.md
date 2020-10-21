@@ -1,15 +1,15 @@
 <h1 align="center">
-  jayvachhani.tech v1.0
+  jayvachhani.tech v2.0 in Progress
 </h1>
 <p>
-This site is built with React & Material UI
+This site is built with React & Material UI. The most up to date version, will be in the releases.
 </p>
 
 ## Forking this repo
 
 This is my website that I have built from scratch. I have found inspiration, as one does, from a great many sources. I would welcome people to use this as inspiration as well.
 
-Given that _**plagiarism is a bit sketchy**_, If you want to use this as a template, I would suggest that you star the repo and simply give a cheeky link back to this repo as credit.
+Given that _**plagiarism is a bit sketchy**_, if you want to use this as a template, I would suggest that you star the repo and simply give a cheeky link back to this repo as credit.
 
 ### TL;DR
 
