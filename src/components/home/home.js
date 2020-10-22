@@ -80,7 +80,7 @@ const homeCSS = makeStyles((theme) => ({
     noTopPadding:{
         listStyle: "none",
         margin: "auto",
-        padding: "0 0 0 12px"
+        padding: "0 0 0 20px"
     },
     ul:{
         listStyle: "none",
