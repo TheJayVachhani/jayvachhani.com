@@ -33,7 +33,7 @@ const navbarCSS = makeStyles((theme) => ({
 const mainNavbar = () => {
     const classes = navbarCSS();
     return (
-        <Slide in={true} direction="down" timeout={750}>
+        <Slide in={true} direction="down" timeout={750} style={{transitionDelay: 8250}}>
             <AppBar className={classes.bar} color="primary">
                 <Toolbar disableGutters={true}>
                     <Grid container direction="row" justify="center" alignItems="center">

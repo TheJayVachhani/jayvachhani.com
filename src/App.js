@@ -2,7 +2,7 @@ import React from 'react';
 import {Route , Redirect, Switch} from 'react-router-dom';
 import {MuiThemeProvider, responsiveFontSizes} from '@material-ui/core/styles';
 import {Brightness7Rounded} from '@material-ui/icons';
-import {CssBaseline, IconButton, Box, Tooltip, Fade, Typography} from '@material-ui/core';
+import {CssBaseline, IconButton, Box, Tooltip, Fade, Typography, Slide} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 
 import Navbar from './components/navigation/navbar';
@@ -76,13 +76,15 @@ const App = () => {
 						<Route exact path="/contact" component={Contact}/>
 					</Switch>
 				</Box>
-				<Box component="div" className={classes.changeButtons} color="background"> 
-					<Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">Change Theme</Typography>} placement="top">
-						<IconButton onClick={themeChange} aria-label="Change Theme Button" color="secondary">
-							<Brightness7Rounded className={classes.icon}/>
-						</IconButton>
-					</Tooltip>
-				</Box>
+				<Slide in={true} direction="up" timeout={750} style={{transitionDelay: 8250}}>
+					<Box component="div" className={classes.changeButtons} color="background"> 
+						<Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">Change Theme</Typography>} placement="top">
+							<IconButton onClick={themeChange} aria-label="Change Theme Button" color="secondary">
+								<Brightness7Rounded className={classes.icon}/>
+							</IconButton>
+						</Tooltip>
+					</Box>
+				</Slide>
 				<Box component="div">
 					<Footer/>
 				</Box>

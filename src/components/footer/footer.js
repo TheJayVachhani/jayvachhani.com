@@ -1,6 +1,6 @@
 import React from 'react';
 import {RemoveRounded} from '@material-ui/icons';
-import {Box, Button, Typography, Grid} from '@material-ui/core';
+import {Box, Button, Typography, Grid, Slide} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 
 const footerCSS = makeStyles((theme) => ({
@@ -33,7 +33,7 @@ let thisYear = currentYear();
 const FooterComponent = () => {
     const classes = footerCSS();
     return (
-        <div>
+        <Slide in={true} direction="up" timeout={750} style={{transitionDelay: 9000}}>
             <Box component="div" className={classes.footer} color="background">
                 <Grid container justify="center"  direction="row" alignItems="center" spacing={3}>
                     <Grid item xs={12}>
@@ -71,13 +71,13 @@ const FooterComponent = () => {
                         </Grid>
                     </Grid>
                 </Grid>
+                <Box component="div" className={classes.copyright}>
+                    <Typography variant="h6" color="secondary" className={classes.copyrightH6}>
+                        &copy; Copyright Jay Vachhani {thisYear}
+                    </Typography>
+                </Box>
             </Box>
-            <Box component="div" className={classes.copyright}>
-                <Typography variant="h6" color="secondary" className={classes.copyrightH6}>
-                    &copy; Copyright Jay Vachhani {thisYear}
-                </Typography>
-            </Box>
-        </div>
+        </Slide>
     );
 };
 
