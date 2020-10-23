@@ -101,9 +101,9 @@ const HomeComponent = () => {
     const classes = homeCSS();
     return (
             <Box component="div" className={classes.content}>
-                <Grid container direction="row" justify="center" alignItems="flex-start">
+                <Grid container direction="row" justify="center" alignItems="flex-start" spacing={0}>
                     <Hidden mdDown>
-                        <Grid item lg={7}>
+                        <Grid item lg={6}>
                             <Grid container direction="column" justify="flex-start" alignItems="center" spacing={2}>
                                 <Fade in={true} timeout={1000} style={{transitionDelay: 500}}>
                                     <Grid item xs={12}>
@@ -154,7 +154,7 @@ const HomeComponent = () => {
                             </Grid>
                         </Grid>
                     </Hidden>
-                    <Grid item xs={12} lg={5}>
+                    <Grid item xs={12} md={6}>
                         <Box component="div" className={classes.mobileContent}>
                             <Grid container direction="column" justify="flex-start" alignItems="center" spacing={2}>
                                 <Hidden lgUp>

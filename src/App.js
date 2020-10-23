@@ -13,11 +13,11 @@ import Experience from './components/experience/experience.js';
 import Notes from './components/notes/notes.js';
 import Contact from './components/contact/contact.js';
 
-import themeBlackGreen from './themes/BlackGreen/themeBlackGreen.js';
-import themeBurgundy from './themes/Burgundy/themeBurgundy.js';
-import themeSea from './themes/Sea/themeSea.js';
-import themePink from './themes/Pink/themePink';
-import themeLightBlue from './themes/LightBlue/themeLightBlue.js';
+import themeBlackGreen from './themes/BlackGreen.js';
+import themeBurgundy from './themes/Burgundy.js';
+import themeSea from './themes/Sea.js';
+import themePink from './themes/Pink.js';
+import themeLightBlue from './themes/LightBlue.js';
 
 const theme1 = responsiveFontSizes(themeLightBlue);
 const theme2 = responsiveFontSizes(themeSea);
