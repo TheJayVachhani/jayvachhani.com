@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route , Redirect, Switch} from 'react-router-dom';
 import {MuiThemeProvider, responsiveFontSizes} from '@material-ui/core/styles';
-import {Brightness7Rounded} from '@material-ui/icons';
+import {ArrowLeftRounded, ArrowRightRounded} from '@material-ui/icons';
 import {CssBaseline, IconButton, Box, Tooltip, Fade, Typography, Slide} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 
@@ -19,20 +19,31 @@ import themeSea from './themes/Sea.js';
 import themePink from './themes/Pink.js';
 import themeLightBlue from './themes/LightBlue.js';
 
-const theme1 = responsiveFontSizes(themeLightBlue);
-const theme2 = responsiveFontSizes(themeSea);
-const theme3 = responsiveFontSizes(themeBlackGreen);
-const theme4 = responsiveFontSizes(themeBurgundy);
-const theme5 = responsiveFontSizes(themePink); 
+const Blue = responsiveFontSizes(themeLightBlue);
+const Sea = responsiveFontSizes(themeSea);
+const Plain = responsiveFontSizes(themeBlackGreen);
+const Burgundy = responsiveFontSizes(themeBurgundy);
+const Pink = responsiveFontSizes(themePink); 
 
 let themeDict = { 
-	0: theme1,
-	1: theme2,
-	2: theme3,
-	3: theme4,
-	4: theme5,
-}
+	0: Blue,
+	1: Sea,
+	2: Plain,
+	3: Burgundy,
+	4: Pink,
+};
+
+let nameDict ={
+	0: "Blue",
+	1: "Sea",
+	2: "Simple",
+	3: "Burgundy",
+	4: "Pink",
+
+};
+
 let value = 0;
+let name = nameDict[value];
 
 const appCSS = makeStyles((theme) => ({
 	changeButtons:{
@@ -41,7 +52,13 @@ const appCSS = makeStyles((theme) => ({
 		textAlign: "center"
 	},
 	icon:{
-		fontSize: "35px"
+		fontSize: "2.0rem"
+	},
+	themeName:{
+		fontWeight: "400",
+        fontSize: "1.0rem",
+        letterSpacing: "0.2rem",
+        fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
 	}
 }));
 
@@ -50,7 +67,7 @@ const App = () => {
 		themeIs: value
 	});
 
-	const themeChange = () => {
+	const forwardChange = () => {
 		switch(value){
 			case 0: value=1; break;
 			case 1: value=2; break;
@@ -59,6 +76,19 @@ const App = () => {
 			case 4: value=0; break;
 			default: value=0;
 		};
+		name = nameDict[value];
+		setState((state) => ({themeIs: value}));
+	};
+	const backwardChange = () => {
+		switch(value){
+			case 0: value=4; break;
+			case 1: value=0; break;
+			case 2: value=1; break;
+			case 3: value=2; break;
+			case 4: value=3; break;
+			default: value=0;
+		};
+		name = nameDict[value];
 		setState((state) => ({themeIs: value}));
 	};
 
@@ -77,12 +107,22 @@ const App = () => {
 					</Switch>
 				</Box>
 				<Slide in={true} direction="up" timeout={750} style={{transitionDelay: 8250}}>
-					<Box component="div" className={classes.changeButtons} color="background"> 
-						<Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">Change Theme</Typography>} placement="top">
-							<IconButton onClick={themeChange} aria-label="Change Theme Button" color="secondary">
-								<Brightness7Rounded className={classes.icon}/>
-							</IconButton>
-						</Tooltip>
+					<Box component="div" className={classes.changeButtons} color="background">
+						<Box component="span">
+							<Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">Previous Theme</Typography>} placement="top">
+								<IconButton onClick={backwardChange} aria-label="Change Theme Button" color="secondary">
+									<ArrowLeftRounded className={classes.icon}/>
+								</IconButton>
+							</Tooltip>
+						</Box>
+						<Typography component="span" variant="h1" color="textSecondary" className={classes.themeName}>{name}</Typography>
+						<Box component="span">
+							<Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">Next Theme</Typography>} placement="top">
+								<IconButton onClick={forwardChange} aria-label="Change Theme Button" color="secondary">
+									<ArrowRightRounded className={classes.icon}/>
+								</IconButton>
+							</Tooltip>
+						</Box>
 					</Box>
 				</Slide>
 				<Box component="div">
