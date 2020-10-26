@@ -13,33 +13,37 @@ import Experience from './components/experience/experience.js';
 import Notes from './components/notes/notes.js';
 import Contact from './components/contact/contact.js';
 
-import themeBlackGreen from './themes/BlackGreen.js';
-import themeBurgundy from './themes/Burgundy.js';
-import themeSea from './themes/Sea.js';
-import themePink from './themes/Pink.js';
-import themeLightBlue from './themes/LightBlue.js';
+import TAlpine from './themes/Alpine.js';
+import TBMWSport from './themes/BMWSport.js';
+import TMcLaren from './themes/McLaren.js';
+import TMazda787B from './themes/Mazda787B.js';
+import TMercedes from './themes/Mercedes.js';
+import TSea from './themes/Sea.js';
 
-const Blue = responsiveFontSizes(themeLightBlue);
-const Sea = responsiveFontSizes(themeSea);
-const Plain = responsiveFontSizes(themeBlackGreen);
-const Burgundy = responsiveFontSizes(themeBurgundy);
-const Pink = responsiveFontSizes(themePink); 
 
-let themeDict = { 
-	0: Blue,
-	1: Sea,
-	2: Plain,
-	3: Burgundy,
-	4: Pink,
+const Alpine = responsiveFontSizes(TAlpine);
+const BMWSport = responsiveFontSizes(TBMWSport);
+const McLaren = responsiveFontSizes(TMcLaren);
+const Mazda787B = responsiveFontSizes(TMazda787B);
+const Mercedes = responsiveFontSizes(TMercedes);
+const Sea = responsiveFontSizes(TSea);
+
+let themeDict = {
+	0: Alpine,
+	1: BMWSport,
+	2: McLaren,
+	3: Mazda787B,
+	4: Mercedes,
+	5: Sea,
 };
 
 let nameDict ={
-	0: "Blue",
-	1: "Sea",
-	2: "Simple",
-	3: "Burgundy",
-	4: "Pink",
-
+	0: "Alpine",
+	1: "BMW M Sport",
+	2: "McLaren",
+	3: "Mazda 787B",
+	4: "Mercedes",
+	5: "Sea",
 };
 
 let value = 0;
@@ -73,7 +77,8 @@ const App = () => {
 			case 1: value=2; break;
 			case 2: value=3; break;
 			case 3: value=4; break;
-			case 4: value=0; break;
+			case 4: value=5; break;
+			case 5: value=0; break;
 			default: value=0;
 		};
 		name = nameDict[value];
@@ -81,11 +86,12 @@ const App = () => {
 	};
 	const backwardChange = () => {
 		switch(value){
-			case 0: value=4; break;
+			case 0: value=5; break;
 			case 1: value=0; break;
 			case 2: value=1; break;
 			case 3: value=2; break;
 			case 4: value=3; break;
+			case 5: value=4; break;
 			default: value=0;
 		};
 		name = nameDict[value];

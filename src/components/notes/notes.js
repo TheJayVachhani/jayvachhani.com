@@ -141,7 +141,7 @@ const NotesComponent = () => {
                                         </AccordionDetails>
                                         <AccordionDetails>
                                             <Button href="/docs/JavaScript.pdf" fullWidth={true} color="primary" endIcon={<NoteAddRounded fontSize="small" color="secondary"/>}>
-                                                Download
+                                                <Typography variant="h6" className={classes.notesH6} color="primary">Download</Typography>
                                             </Button>
                                         </AccordionDetails>
                                     </Accordion>
@@ -157,7 +157,7 @@ const NotesComponent = () => {
                                         </AccordionDetails>
                                         <AccordionDetails>
                                             <Button href="/docs/HTML_CSS.pdf" fullWidth={true} color="primary" endIcon={<NoteAddRounded fontSize="small" color="secondary"/>}>
-                                                Download
+                                                <Typography variant="h6" className={classes.notesH6} color="primary">Download</Typography>
                                             </Button>
                                         </AccordionDetails>
                                     </Accordion>
@@ -172,7 +172,7 @@ const NotesComponent = () => {
                                         </AccordionDetails>
                                         <AccordionDetails>
                                             <Button href="/docs/React_Node.pdf" fullWidth={true} color="primary" endIcon={<NoteAddRounded fontSize="small" color="secondary"/>}>
-                                                Download
+                                                <Typography variant="h6" className={classes.notesH6} color="primary">Download</Typography>
                                             </Button>
                                         </AccordionDetails>
                                     </Accordion>

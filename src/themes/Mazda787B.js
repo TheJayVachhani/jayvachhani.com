@@ -2,69 +2,69 @@ import { createMuiTheme } from "@material-ui/core";
 
 export default createMuiTheme({
   	palette: {
-		primary: {
-			main: "#E8D9E0"
+		primary:{
+			main: "#F5F4F4"
 		},
-		secondary: { 
-			main: "#FFB833" 
+		secondary:{ 
+			main: "#E06100"
 		},
 		background:{
-			default: "#A3003F"
+			default: "#017A4B"
 		},
 		text:{
-			primary: "#FFB833",
-			secondary: "#E8D9E0",
+			primary: "#E06100",
+			secondary: "#F5F4F4",
 		}
 	},
-	overrides: {
+	overrides:{
 		MuiButton:{
 			textPrimary:{
 				backgroundColor: "transparent",
-				color: "#E8D9E0",
+				color: "#F5F4F4",
 				'&:hover':{
-					backgroundColor: "transparent",
-					color: "#FFB833"
+					backgroundColor: "#F5F4F4",
+					color: "#0F539A"
 				}
 			},
 			textSecondary:{
 				backgroundColor: "transparent",
-				color: "#E8D9E0",
+				color: "#F5F4F4",
 				'&:hover':{
-					backgroundColor: "#00243D",
-					color: "#FFB833"
+					backgroundColor: "#F5F4F4",
+					color: "#0F539A"
 				}
 			}
 		},
 		MuiAppBar:{
 			colorPrimary:{
-				backgroundColor: "#001829"
+				backgroundColor: "#E06100"
 			}
 		},
 		MuiCard:{
 			root: {
-				backgroundColor: "#001829",
+				backgroundColor: "#00662C",
 			}
 		},
 		MuiCardHeader:{
 			title:{
-				color: "#02040F",
+				color: "#F5F4F4",
 			},
 			subheader: {
-				color: "#FFB833" ,
+				color: "#E06100" ,
 			}
 		},
 		MuiChip: {
 			colorPrimary: {
-				color: "#E8D9E0",
-				backgroundColor: "#840032"
+				color: "#E06100",
+				backgroundColor: "#0F539A"
 			},
 			iconColorPrimary: {
-				color: "#E59500"
+				color: "#F5F4F4"
 			},
 		},
 		MuiAccordion: {
 			root: {
-				backgroundColor: "#001829"
+				backgroundColor: "#00662C"
 			},
 		},
 	},
