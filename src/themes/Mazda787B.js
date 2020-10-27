@@ -55,11 +55,11 @@ export default createMuiTheme({
 		},
 		MuiChip: {
 			colorPrimary: {
-				color: "#E06100",
-				backgroundColor: "#0F539A"
+				color: "#0F539A",
+				backgroundColor: "#F5F4F4"
 			},
 			iconColorPrimary: {
-				color: "#F5F4F4"
+				color: "#E06100"
 			},
 		},
 		MuiAccordion: {
