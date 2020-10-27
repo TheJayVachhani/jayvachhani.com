@@ -41,10 +41,10 @@ const FooterComponent = () => {
                             <Grid item xs={5}>
                                 <Grid container justify="center"  direction="column" alignItems="flex-end">
                                     <Grid item xs={12}>
-                                        <Button color="secondary" variant="text" target="_blank" href="https://www.linkedin.com/in/thejayvachhani/" aria-label="Linked In Profile Link">LinkedIn</Button>													
+                                        <Button color="secondary" variant="text" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/thejayvachhani/" aria-label="Linked In Profile Link">LinkedIn</Button>													
                                     </Grid>
                                     <Grid item xs={12}>
-                                        <Button color="secondary" variant="text" target="_blank" href="https://www.freecodecamp.org/jayvachhani" aria-label="Free Code Camp Profile Link">FreeCodeCamp</Button>
+                                        <Button color="secondary" variant="text" target="_blank" rel="noreferrer" href="https://www.freecodecamp.org/jayvachhani" aria-label="Free Code Camp Profile Link">FreeCodeCamp</Button>
                                     </Grid>
                                 </Grid>
                             </Grid>
@@ -61,10 +61,10 @@ const FooterComponent = () => {
                             <Grid item xs={5}>
                                 <Grid container justify="center"  direction="column" alignItems="flex-start">
                                     <Grid item xs={12}>
-                                        <Button color="secondary" variant="text" target="_blank" href="https://github.com/TheJayVachhani/" aria-label="Git Hub Profile Link">GitHub</Button>													
+                                        <Button color="secondary" variant="text" target="_blank" rel="noreferrer" href="https://github.com/TheJayVachhani/" aria-label="Git Hub Profile Link">GitHub</Button>													
                                     </Grid>
                                     <Grid item xs={12}>											
-                                        <Button color="secondary" variant="text" target="_blank" href="https://www.hackerrank.com/jay_vachhani" aria-label="Hacker Rank Profile Link">Hackerrank</Button>
+                                        <Button color="secondary" variant="text" target="_blank" rel="noreferrer" href="https://www.hackerrank.com/jay_vachhani" aria-label="Hacker Rank Profile Link">Hackerrank</Button>
                                     </Grid>
                                 </Grid>
                             </Grid>

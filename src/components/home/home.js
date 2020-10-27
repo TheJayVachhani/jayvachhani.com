@@ -138,7 +138,7 @@ const HomeComponent = () => {
                                 <Grid item xs={12}>
                                     <Fade in={true} timeout={500} style={{transitionDelay: 6000}}>
                                         <Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">LinkedIn</Typography>} placement="left">
-                                            <IconButton href="https://www.linkedin.com/in/thejayvachhani/" target="_blank">
+                                            <IconButton href="https://www.linkedin.com/in/thejayvachhani/" target="_blank" rel="noreferrer">
                                                 <LinkedIn color="secondary" className={classes.webIcon}/>
                                             </IconButton>
                                         </Tooltip>

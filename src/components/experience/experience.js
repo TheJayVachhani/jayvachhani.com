@@ -302,7 +302,7 @@ const ExperienceComponent = () => {
                                                 <CardContent>
                                                     <Typography  variant="body1" color="primary"  align="justify">
                                                         We modelled volunteers who can carry resources that they pick up from a depot to various at-risk individuals.
-                                                        Our full report with our code can be found <Link href="https://github.com/JVK1890728/AI-Coursework" target="_blank">here</Link>. We scored 93/100.
+                                                        <Link href="https://github.com/JVK1890728/AI-Coursework" target="_blank" rel="noreferrer">Our full report with our code can be found on Github.</Link> We scored 93/100.
                                                     </Typography> 
                                                 </CardContent>
                                                 </Grid>
@@ -361,7 +361,7 @@ const ExperienceComponent = () => {
                                         />
                                         <CardContent>
                                             <Typography  variant="body1" color="primary" align="justify">
-                                                I worked to build a new Company Website on Wordpress: <Link href="https://jaivel.aero/" target="_blank">Jaivel.com</Link>
+                                                I worked to build a new Company Website on Wordpress: <Link href="https://jaivel.aero/" target="_blank" rel="noreferrer">jaivel.aero</Link>
                                             </Typography> 
                                         </CardContent>
                                         <Typography  variant="body1" color="secondary" align="center">
