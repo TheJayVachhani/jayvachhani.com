@@ -2,7 +2,7 @@
   jayvachhani.tech v2.0 in Progress
 </h1>
 <p>
-This site is built with React & Material UI. The most up to date version, will be in the releases.
+This site is built with React & Material UI. The most up to date working version will be in the releases section.
 </p>
 
 ## Forking this repo
