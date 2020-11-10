@@ -1,28 +1,26 @@
 {
   "files": {
-    "main.js": "/static/js/main.5cd3dabd.chunk.js",
-    "main.js.map": "/static/js/main.5cd3dabd.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.cc115f75.js",
-    "runtime-main.js.map": "/static/js/runtime-main.cc115f75.js.map",
-    "static/js/2.1b1026ec.chunk.js": "/static/js/2.1b1026ec.chunk.js",
-    "static/js/2.1b1026ec.chunk.js.map": "/static/js/2.1b1026ec.chunk.js.map",
+    "main.js": "/static/js/main.3b05d29b.chunk.js",
+    "main.js.map": "/static/js/main.3b05d29b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d8db0c4e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d8db0c4e.js.map",
+    "static/js/2.d0f6f558.chunk.js": "/static/js/2.d0f6f558.chunk.js",
+    "static/js/2.d0f6f558.chunk.js.map": "/static/js/2.d0f6f558.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7c6ba589a58da87f523d13c94324cd81.js": "/precache-manifest.7c6ba589a58da87f523d13c94324cd81.js",
-    "service-worker.js": "/service-worker.js",
-    "static/js/2.1b1026ec.chunk.js.LICENSE.txt": "/static/js/2.1b1026ec.chunk.js.LICENSE.txt",
-    "static/media/Bolivia-Abandoned-Railway.png": "/static/media/Bolivia-Abandoned-Railway.d34d901f.png",
-    "static/media/Bolivia-Amazon.png": "/static/media/Bolivia-Amazon.ec44c90e.png",
-    "static/media/Bolivia-MtTarija.png": "/static/media/Bolivia-MtTarija.44d9ab7b.png",
-    "static/media/Bolivia-Salt-Flats.png": "/static/media/Bolivia-Salt-Flats.5839b030.png",
-    "static/media/Brighton-Sea-Sunset.png": "/static/media/Brighton-Sea-Sunset.848392d8.png",
-    "static/media/Rottingdean-Cliffs.png": "/static/media/Rottingdean-Cliffs.eb9f0ea5.png",
-    "static/media/Speyer-Quiet-Street.png": "/static/media/Speyer-Quiet-Street.0c4a88d9.png",
-    "static/media/Zermatt-Glacier.png": "/static/media/Zermatt-Glacier.aaaca069.png",
-    "static/media/Zermatt-Lodge.png": "/static/media/Zermatt-Lodge.9ecb6ee3.png"
+    "static/js/2.d0f6f558.chunk.js.LICENSE.txt": "/static/js/2.d0f6f558.chunk.js.LICENSE.txt",
+    "static/media/Bolivia-Abandoned-Railway.cc56ab8f.png": "/static/media/Bolivia-Abandoned-Railway.cc56ab8f.png",
+    "static/media/Bolivia-Amazon.50cc4a35.png": "/static/media/Bolivia-Amazon.50cc4a35.png",
+    "static/media/Bolivia-MtTarija.2c992787.png": "/static/media/Bolivia-MtTarija.2c992787.png",
+    "static/media/Bolivia-Salt-Flats.d825d074.png": "/static/media/Bolivia-Salt-Flats.d825d074.png",
+    "static/media/Brighton-Sea-Sunset.d7d8e5a2.png": "/static/media/Brighton-Sea-Sunset.d7d8e5a2.png",
+    "static/media/Rottingdean-Cliffs.4fd071da.png": "/static/media/Rottingdean-Cliffs.4fd071da.png",
+    "static/media/Speyer-Quiet-Street.826ded09.png": "/static/media/Speyer-Quiet-Street.826ded09.png",
+    "static/media/Zermatt-Glacier.4d01ace2.png": "/static/media/Zermatt-Glacier.4d01ace2.png",
+    "static/media/Zermatt-Lodge.952bae1d.png": "/static/media/Zermatt-Lodge.952bae1d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.cc115f75.js",
-    "static/js/2.1b1026ec.chunk.js",
-    "static/js/main.5cd3dabd.chunk.js"
+    "static/js/runtime-main.d8db0c4e.js",
+    "static/js/2.d0f6f558.chunk.js",
+    "static/js/main.3b05d29b.chunk.js"
   ]
 }
