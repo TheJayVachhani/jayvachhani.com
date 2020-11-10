@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Grid, Typography, Hidden} from '@material-ui/core';
+import {Box, Grid, Typography, Hidden, Fade} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 
 import Y3IPPCard from './cards/Y3IPP.js';
@@ -39,9 +39,11 @@ const JourneyComponent = () => {
         <Box component="div" className={classes.experienceContainer}>
             <Box component="div" className={classes.header}>
                 <Grid container direction="column" justify="center" alignItems="center">
-                    <Grid item xs={12}>
-                        <Typography variant='h3' color="primary" className={classes.headerH3}>My Journey</Typography>
-                    </Grid>
+                    <Fade in={true} timeout={500} style={{transitionDelay: 500}}>
+                        <Grid item xs={12}>
+                            <Typography variant='h3' color="primary" className={classes.headerH3}>My Journey</Typography>
+                        </Grid>
+                    </Fade>
                 </Grid>
             </Box>
             <Box component="div" className={classes.body}>
@@ -55,21 +57,31 @@ const JourneyComponent = () => {
                         <Grid item xs={12} lg={4}>
                             <Box component="div" className={classes.expCardContainer}>
                                 <Grid container direction="column" justify="center" alignItems="center" spacing={1}>
-                                    <Grid item xs={11}>
-                                        <Y3IPPCard/>
-                                    </Grid>
-                                    <Grid item xs={11}>
-                                        <Y2SDPCard/>
-                                    </Grid>
-                                    <Grid item xs={11}>
-                                        <Y2AIPPCard/>                                    
-                                    </Grid>
-                                    <Grid item xs={11}>
-                                        <WorkExpJACard/>
-                                    </Grid>
-                                    <Grid item xs={11}>
-                                        <WorkExpMcLarenCard/>
-                                    </Grid>
+                                    <Fade in={true} timeout={500} style={{transitionDelay: 1000}}>
+                                        <Grid item xs={11}>
+                                            <Y3IPPCard/>
+                                        </Grid>
+                                    </Fade>
+                                    <Fade in={true} timeout={500} style={{transitionDelay: 1250}}>
+                                        <Grid item xs={11}>
+                                            <Y2SDPCard/>
+                                        </Grid>
+                                    </Fade>
+                                    <Fade in={true} timeout={500} style={{transitionDelay: 1500}}>
+                                        <Grid item xs={11}>
+                                            <Y2AIPPCard/>                                    
+                                        </Grid>
+                                    </Fade>
+                                    <Fade in={true} timeout={500} style={{transitionDelay: 1750}}>
+                                        <Grid item xs={11}>
+                                            <WorkExpJACard/>
+                                        </Grid>
+                                    </Fade>
+                                    <Fade in={true} timeout={500} style={{transitionDelay: 2000}}> 
+                                        <Grid item xs={11}>
+                                            <WorkExpMcLarenCard/>
+                                        </Grid>
+                                    </Fade>
                                 </Grid>
                             </Box>
                         </Grid>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Grid, Card, CardHeader, CardContent, Chip, CardActions, Collapse, IconButton, Typography, List, ListItem, ListItemText, Divider} from '@material-ui/core';
+import {Box, Grid, Card, CardHeader, CardContent, Chip, CardActions, Collapse, IconButton, Typography, List, ListItem, ListItemText, Divider, Slide} from '@material-ui/core';
 import {ExpandMore, CodeRounded, DeveloperModeRounded, DataUsageOutlined} from '@material-ui/icons';
 import {makeStyles} from '@material-ui/core/styles';
 import clsx from 'clsx';
@@ -67,87 +67,89 @@ const Y3IPPCard = () => {
 
     return (
         <Box component="div" className={classes.body}>
-            <Card>
-                <CardHeader
-                    title={<Typography variant="h5" className={classes.bodyH5} color="primary">Trainee Software Developer</Typography>} align="center"
-                    subheader={<Typography variant="h6" className={classes.bodyH6} color="secondary">Jaivel Aerospace Ltd, Jun 2020 - Jun 2021</Typography>}
-                />
-                <CardContent>
-                    <Typography variant="body1" color="primary" align="justify">
-                        1 Year Industrial Placement, 
-                        Building a bespoke software solution combining HR, Performance Management and Recruitment.
-                    </Typography> 
-                </CardContent>
-                <Typography  variant="body1" color="secondary" align="center">
-                        Nottingham, UK and Ahmedabad, India
-                </Typography>
-                <CardActions disableSpacing>
-                    <Typography variant="h6" color="secondary" className={classes.details}>Details</Typography>
-                    <IconButton className={clsx(classes.expand, {[classes.expandOpen]: open1.card1})} onClick={handleExpandClick1} aria-expanded={open1.card1} aria-label="details">
-                        <ExpandMore color="primary"/>
-                    </IconButton>
-                </CardActions>
-                <Collapse className={classes.content} in={open1.card1} timeout="auto" unmountOnExit>
-                    <Grid container direction="row" justify="center" alignItems="center">
-                        <Grid item xs={12}>
-                            <CardContent>
-                                <Typography variant="body1" color="primary" align="justify">
-                                    I have spent the first 6 months in the UK designing and building a self-hosted development environment and a modern careers portal for the firm.
-                                    Having conducted extensive research into modern practices of recruitment, I devised a strategy which we will employ from Dec 2020 onwards.
-                                </Typography> 
-                            </CardContent>
-                            <Divider variant="middle"/>
+            <Slide in={true} timeout={750} direction="left" style={{transitionDelay: 1450}}>
+                <Card>
+                    <CardHeader
+                        title={<Typography variant="h5" className={classes.bodyH5} color="primary">Trainee Software Developer</Typography>} align="center"
+                        subheader={<Typography variant="h6" className={classes.bodyH6} color="secondary">Jaivel Aerospace Ltd, Jun 2020 - Jun 2021</Typography>}
+                    />
+                    <CardContent>
+                        <Typography variant="body1" color="primary" align="justify">
+                            1 Year Industrial Placement, 
+                            Building a bespoke software solution combining HR, Performance Management and Recruitment.
+                        </Typography> 
+                    </CardContent>
+                    <Typography  variant="body1" color="secondary" align="center">
+                            Nottingham, UK and Ahmedabad, India
+                    </Typography>
+                    <CardActions disableSpacing>
+                        <Typography variant="h6" color="secondary" className={classes.details}>Details</Typography>
+                        <IconButton className={clsx(classes.expand, {[classes.expandOpen]: open1.card1})} onClick={handleExpandClick1} aria-expanded={open1.card1} aria-label="details">
+                            <ExpandMore color="primary"/>
+                        </IconButton>
+                    </CardActions>
+                    <Collapse className={classes.content} in={open1.card1} timeout="auto" unmountOnExit>
+                        <Grid container direction="row" justify="center" alignItems="center">
+                            <Grid item xs={12}>
+                                <CardContent>
+                                    <Typography variant="body1" color="primary" align="justify">
+                                        I have spent the first 6 months in the UK designing and building a self-hosted development environment and a modern careers portal for the firm.
+                                        Having conducted extensive research into modern practices of recruitment, I devised a strategy which we will employ from Dec 2020 onwards.
+                                    </Typography> 
+                                </CardContent>
+                                <Divider variant="middle"/>
+                            </Grid>
+                            <Grid item xs={4}>
+                                <List>
+                                    <ListItem>
+                                        <ListItemText disableTypography primary={<Typography color="primary">Languages</Typography>}/>
+                                    </ListItem>
+                                </List>
+                            </Grid>
+                            <Grid item xs={8}>
+                                <Chip color="primary" label="JavaScript" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
+                                <Chip color="primary" label="Node JS" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
+                                <Chip color="primary" label="PostgreSQL" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
+                                <Chip color="primary" label="Git" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
+                            </Grid>
                         </Grid>
-                        <Grid item xs={4}>
-                            <List>
-                                <ListItem>
-                                    <ListItemText disableTypography primary={<Typography color="primary">Languages</Typography>}/>
-                                </ListItem>
-                            </List>
+                        <Divider variant="middle"/>
+                        <Grid container direction="row" justify="center" alignItems="center">
+                            <Grid item xs={4}>
+                                <List>
+                                    <ListItem>
+                                        <ListItemText disableTypography primary={<Typography color="primary">Frameworks</Typography>}/>
+                                    </ListItem>
+                                </List>
+                            </Grid>
+                            <Grid item xs={8}>
+                                <Chip color="primary" label="REACT JS" icon={<DeveloperModeRounded fontSize="small"/>} className={classes.chip}/>
+                                <Chip color="primary" label="Material-UI" icon={<DeveloperModeRounded fontSize="small"/>} className={classes.chip}/>
+                                <Chip color="primary" label="PERN" icon={<DeveloperModeRounded fontSize="small"/>} className={classes.chip}/>
+                                <Chip color="primary" label="Atomic Design" icon={<DeveloperModeRounded fontSize="small"/>} className={classes.chip}/>
+                            </Grid>
                         </Grid>
-                        <Grid item xs={8}>
-                            <Chip color="primary" label="JavaScript" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
-                            <Chip color="primary" label="Node JS" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
-                            <Chip color="primary" label="PostgreSQL" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
-                            <Chip color="primary" label="Git" icon={<CodeRounded fontSize="small"/>} className={classes.chip}/>
+                        <Divider variant="middle"/>
+                        <Grid container direction="row" justify="center" alignItems="center">
+                            <Grid item xs={4}>
+                                <List>
+                                    <ListItem>
+                                        <ListItemText disableTypography primary={<Typography color="primary">Tools</Typography>}/>
+                                    </ListItem>
+                                </List>
+                            </Grid>
+                            <Grid item xs={8}>
+                                <Chip color="primary" label="Jira" icon={<DataUsageOutlined fontSize="small"/>} className={classes.chip}/>
+                                <Chip color="primary" label="VS Code" icon={<DataUsageOutlined fontSize="small"/>} className={classes.chip}/>
+                                <Chip color="primary" label="Figma" icon={<DataUsageOutlined fontSize="small"/>} className={classes.chip}/>
+                                <Chip color="primary" label="Bitbucket" icon={<DataUsageOutlined fontSize="small"/>} className={classes.chip}/>
+                                <Chip color="primary" label="Office 365" icon={<DataUsageOutlined fontSize="small"/>} className={classes.chip}/>
+                            </Grid>
                         </Grid>
-                    </Grid>
-                    <Divider variant="middle"/>
-                    <Grid container direction="row" justify="center" alignItems="center">
-                        <Grid item xs={4}>
-                            <List>
-                                <ListItem>
-                                    <ListItemText disableTypography primary={<Typography color="primary">Frameworks</Typography>}/>
-                                </ListItem>
-                            </List>
-                        </Grid>
-                        <Grid item xs={8}>
-                            <Chip color="primary" label="REACT JS" icon={<DeveloperModeRounded fontSize="small"/>} className={classes.chip}/>
-                            <Chip color="primary" label="Material-UI" icon={<DeveloperModeRounded fontSize="small"/>} className={classes.chip}/>
-                            <Chip color="primary" label="PERN" icon={<DeveloperModeRounded fontSize="small"/>} className={classes.chip}/>
-                            <Chip color="primary" label="Atomic Design" icon={<DeveloperModeRounded fontSize="small"/>} className={classes.chip}/>
-                        </Grid>
-                    </Grid>
-                    <Divider variant="middle"/>
-                    <Grid container direction="row" justify="center" alignItems="center">
-                        <Grid item xs={4}>
-                            <List>
-                                <ListItem>
-                                    <ListItemText disableTypography primary={<Typography color="primary">Tools</Typography>}/>
-                                </ListItem>
-                            </List>
-                        </Grid>
-                        <Grid item xs={8}>
-                            <Chip color="primary" label="Jira" icon={<DataUsageOutlined fontSize="small"/>} className={classes.chip}/>
-                            <Chip color="primary" label="VS Code" icon={<DataUsageOutlined fontSize="small"/>} className={classes.chip}/>
-                            <Chip color="primary" label="Figma" icon={<DataUsageOutlined fontSize="small"/>} className={classes.chip}/>
-                            <Chip color="primary" label="Bitbucket" icon={<DataUsageOutlined fontSize="small"/>} className={classes.chip}/>
-                            <Chip color="primary" label="Office 365" icon={<DataUsageOutlined fontSize="small"/>} className={classes.chip}/>
-                        </Grid>
-                    </Grid>
-                    <Divider variant="middle"/>
-                </Collapse>
-            </Card>
+                        <Divider variant="middle"/>
+                    </Collapse>
+                </Card>
+            </Slide>
         </Box>
     );
 };

@@ -179,13 +179,13 @@ const HomeComponent = () => {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Fade in={true} timeout={750} style={{transitionDelay: 4000}}>
-                                            <Typography variant='h2' component="span" color="textSecondary" className={classes.mobileH2}>Curious</Typography>
+                                            <Typography variant='h2' component="span" color="textSecondary" className={classes.mobileH2}>Curious </Typography>
                                         </Fade>
                                         <Fade in={true} timeout={750} style={{transitionDelay: 4500}}>
                                             <Typography variant='h2' component="span" color="textSecondary" className={classes.mobileH2}> Articulate </Typography>
                                         </Fade>
                                         <Fade in={true} timeout={750} style={{transitionDelay: 5000}}>
-                                            <Typography variant='h2' component="span" color="textSecondary" className={classes.mobileH2}>Versatile</Typography>
+                                            <Typography variant='h2' component="span" color="textSecondary" className={classes.mobileH2}> Versatile</Typography>
                                         </Fade> 
                                     </Grid>
                                     <Box component="div" className={classes.mobileIconContainer}>
