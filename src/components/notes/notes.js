@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useTheme} from '@material-ui/core/styles';
 import SwipeableViews from 'react-swipeable-views';
-import {Grid, Typography, Button, MobileStepper, Box, Accordion, AccordionSummary, AccordionDetails} from '@material-ui/core';
+import {Grid, Typography, Button, MobileStepper, Box, Accordion, AccordionSummary, AccordionDetails, Fade} from '@material-ui/core';
 import {KeyboardArrowLeftRounded, KeyboardArrowRightRounded, ExpandMoreRounded, NoteAddRounded} from '@material-ui/icons';
 import {makeStyles} from '@material-ui/core/styles';
 
@@ -34,10 +34,13 @@ const notesCSS = makeStyles((theme) => ({
         overflow: "hidden"
     },
     header:{
-        margin: "auto",
-        width: "100%",
-        textAlign: "center",
-        padding: "0 0 6vh 0",
+        padding: "0 0 15px 0"
+    },
+    headerH3:{
+        textTransform: "capitalize",
+        fontWeight: "400",
+        letterSpacing: "2px",
+        fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
     },
     notesH3:{
         textTransform: "capitalize",
@@ -115,17 +118,25 @@ const NotesComponent = () => {
 
     return (
             <Box component="div" className={classes.notesContainer}>
-                <Box component="div">
-                    <Box component="div" className={classes.header}>
-                        <Grid container justify="center" spacing={1} direction="column" alignItems="center">
-                            <Grid item xs={12} md={10}>
-                                <Typography variant="h3" className={classes.notesH3} color="primary">
-                                    My Notes.
-                                </Typography>
+                <Box component="div" className={classes.header}>
+                    <Grid container direction="column" justify="center" alignItems="center" spacing={2}>
+                        <Fade in={true} timeout={500} style={{transitionDelay: 500}}>
+                            <Grid item xs={12}>
+                                <Typography variant='h3' color="primary" className={classes.headerH3}>My Blog</Typography>
+                            </Grid>
+                        </Fade>
+                        <Fade in={true} timeout={500} style={{transitionDelay: 750}}>
+                            <Grid item xs={12}>
                                 <Typography variant="h5" className={classes.notesH5} color="secondary">
                                     I love to write about my learning, thoughts and interests.                               
                                 </Typography>
                             </Grid>
+                        </Fade>
+                    </Grid>
+                </Box>
+                <Box component="div">
+                    <Box component="div" className={classes.header}>
+                        <Grid container justify="center" spacing={1} direction="column" alignItems="center">
                             <Grid item xs={12} md={10}>
                                 <Box component="div" className={classes.accordionContainer}>
                                     <Accordion>
