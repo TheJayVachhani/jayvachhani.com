@@ -9,14 +9,13 @@ import Navbar from './components/navigation/navbar';
 import Footer from './components/footer/footer';
 
 import Home from './components/home/home.js';
-import Experience from './components/experience/experience.js';
+import Journey from './components/experience/journey.js';
 import Notes from './components/notes/notes.js';
 import Contact from './components/contact/contact.js';
 
 import TAlpine from './themes/Alpine.js';
 import TBMWSport from './themes/BMWSport.js';
 import TMcLaren from './themes/McLaren.js';
-import TMazda787B from './themes/Mazda787B.js';
 import TMercedes from './themes/Mercedes.js';
 import TSea from './themes/Sea.js';
 
@@ -24,7 +23,6 @@ import TSea from './themes/Sea.js';
 const Alpine = responsiveFontSizes(TAlpine);
 const BMWSport = responsiveFontSizes(TBMWSport);
 const McLaren = responsiveFontSizes(TMcLaren);
-const Mazda787B = responsiveFontSizes(TMazda787B);
 const Mercedes = responsiveFontSizes(TMercedes);
 const Sea = responsiveFontSizes(TSea);
 
@@ -32,18 +30,16 @@ let themeDict = {
 	0: Alpine,
 	1: BMWSport,
 	2: McLaren,
-	3: Mazda787B,
-	4: Mercedes,
-	5: Sea,
+	3: Mercedes,
+	4: Sea,
 };
 
 let nameDict ={
 	0: "Alpine",
 	1: "BMW M Sport",
 	2: "McLaren",
-	3: "Mazda 787B",
-	4: "Mercedes",
-	5: "Sea",
+	3: "Mercedes",
+	4: "Sea",
 };
 
 let value = 0;
@@ -77,8 +73,7 @@ const App = () => {
 			case 1: value=2; break;
 			case 2: value=3; break;
 			case 3: value=4; break;
-			case 4: value=5; break;
-			case 5: value=0; break;
+			case 4: value=0; break;
 			default: value=0;
 		};
 		name = nameDict[value];
@@ -86,12 +81,11 @@ const App = () => {
 	};
 	const backwardChange = () => {
 		switch(value){
-			case 0: value=5; break;
+			case 0: value=4; break;
 			case 1: value=0; break;
 			case 2: value=1; break;
 			case 3: value=2; break;
 			case 4: value=3; break;
-			case 5: value=4; break;
 			default: value=0;
 		};
 		name = nameDict[value];
@@ -106,8 +100,9 @@ const App = () => {
 				<Box component="div">
 					<Switch>
 						<Redirect exact from="/" to="/home"/>
+						<Redirect exact from="/experience" to="/home"/>
 						<Route exact path="/home" component={Home}/>
-						<Route exact path="/experience" component={Experience}/>
+						<Route exact path="/journey" component={Journey}/>
 						<Route exact path="/notes" component={Notes}/>
 						<Route exact path="/contact" component={Contact}/>
 					</Switch>

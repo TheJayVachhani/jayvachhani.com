@@ -43,13 +43,13 @@ const mainNavbar = () => {
                             </Button>
                         </Grid>
                         <Grid item xs={3} lg={2}>
-                            <Button component={Link} to="/experience" color="primary" variant="text" className={classes.button}>
-                                <Typography variant="h5" className={classes.buttonText}>Experience</Typography>
+                            <Button component={Link} to="/journey" color="primary" variant="text" className={classes.button}>
+                                <Typography variant="h5" className={classes.buttonText}>Journey</Typography>
                             </Button>
                         </Grid>
                         <Grid item xs={3} lg={2}>
                             <Button component={Link} to="/notes" color="primary" variant="text" className={classes.button}>
-                                <Typography variant="h5" className={classes.buttonText}>Notes</Typography>
+                                <Typography variant="h5" className={classes.buttonText}>Blog</Typography>
                             </Button>
                         </Grid>
                         <Grid item xs={3} lg={2}>
