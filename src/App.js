@@ -9,7 +9,7 @@ import Navbar from './components/navigation/navbar';
 import Footer from './components/footer/footer';
 
 import Home from './components/home/home.js';
-import Journey from './components/experience/journey.js';
+import Journey from './components/journey/journey.js';
 import Notes from './components/notes/notes.js';
 import Contact from './components/contact/contact.js';
 
