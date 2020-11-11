@@ -1,8 +1,8 @@
 <h1 align="center">
-  jayvachhani.tech v2.0 in Progress
+  jayvachhani.tech v2.0 In Progress
 </h1>
 <p>
-This site is built with React & Material UI. The most up to date working version will be in the releases section.
+This site is built with React & Material UI. The most recent version in the releases will be fully functional. This is site is fully responsive with great performance on most devices.
 </p>
 
 ## Forking this repo
@@ -17,7 +17,7 @@ Yes, you can fork this repo. Please add a cheeky credit by linking back to [jayv
 
 ## Installation & Set Up
 
-1. Install the relevant dependencies after forking the repo
+1. Install the relevant dependencies after forking/cloning the repo
 
    ```sh
    npm install
@@ -37,10 +37,10 @@ Yes, you can fork this repo. Please add a cheeky credit by linking back to [jayv
    npm run build
    ```
 
-1. Preview the site as it will appear once deployed
+2. Run full deployment process with creation of a new production build
 
    ```sh
-   npm run serve
+   npm run deploy
    ```
 
 ## Colors
