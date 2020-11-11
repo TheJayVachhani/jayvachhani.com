@@ -87,7 +87,6 @@ const ContactComponent = () => {
                                     labelWidth={115}
                                     placeholder="whatsUp@Doc?.com"
                                     size="medium"
-                                    
                                 />
                             </FormControl>
                             <FormControl required fullWidth variant="outlined" className={classes.textField}>
