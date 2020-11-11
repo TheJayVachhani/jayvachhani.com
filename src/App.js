@@ -10,7 +10,7 @@ import Footer from './components/footer/footer';
 
 import Home from './components/home/home.js';
 import Journey from './components/journey/journey.js';
-import Notes from './components/notes/notes.js';
+import Blog from './components/blog/blog.js';
 import Contact from './components/contact/contact.js';
 
 import TAlpine from './themes/Alpine.js';
@@ -103,7 +103,7 @@ const App = () => {
 						<Redirect exact from="/experience" to="/home"/>
 						<Route exact path="/home" component={Home}/>
 						<Route exact path="/journey" component={Journey}/>
-						<Route exact path="/notes" component={Notes}/>
+						<Route exact path="/blog" component={Blog}/>
 						<Route exact path="/contact" component={Contact}/>
 					</Switch>
 				</Box>
