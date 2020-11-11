@@ -67,7 +67,7 @@ const Y3IPPCard = () => {
 
     return (
         <Box component="div" className={classes.body}>
-            <Slide in={true} timeout={750} direction="left" style={{transitionDelay: 1450}}>
+            <Slide in={true} timeout={750} direction="left" style={{transitionDelay: 3250}}>
                 <Card>
                     <CardHeader
                         title={<Typography variant="h5" className={classes.bodyH5} color="primary">Trainee Software Developer</Typography>} align="center"
@@ -75,8 +75,9 @@ const Y3IPPCard = () => {
                     />
                     <CardContent>
                         <Typography variant="body1" color="primary" align="justify">
-                            1 Year Industrial Placement, 
-                            Building a bespoke software solution combining HR, Performance Management and Recruitment.
+                            1 Year Industrial Placement. I have 2 major tasks, first of which is to build a bespoke careers portal to implement a new recruitment strategy.
+                            The careers portal will encompass all interaction of prospective candidates until they reach an interview stage, pre-screening and assessments will be completed on the portal.
+                            My secondary major task is to build a software engineering team to tackle a larger scale project of a bespoke performance management system.
                         </Typography> 
                     </CardContent>
                     <Typography  variant="body1" color="secondary" align="center">
@@ -94,7 +95,8 @@ const Y3IPPCard = () => {
                                 <CardContent>
                                     <Typography variant="body1" color="primary" align="justify">
                                         I have spent the first 6 months in the UK designing and building a self-hosted development environment and a modern careers portal for the firm.
-                                        Having conducted extensive research into modern practices of recruitment, I devised a strategy which we will employ from Dec 2020 onwards.
+                                        Over the months of Dec 2020 to April 2020 I will be in Ahmedabad, India to implement and test the careers portal whilst beginning my secondary major task. 
+                                        I also assisted in many activities alongside my major tasks which include: business administration, fulfillment and customer interaction.
                                     </Typography> 
                                 </CardContent>
                                 <Divider variant="middle"/>

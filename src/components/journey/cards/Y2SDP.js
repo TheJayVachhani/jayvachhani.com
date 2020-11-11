@@ -67,7 +67,7 @@ const Y2SDPCard = () => {
 
     return (
         <Box component="div" className={classes.body}>
-            <Slide in={true} timeout={750} direction='left' style={{transitionDelay: 1750}}>
+            <Slide in={true} timeout={750} direction='left' style={{transitionDelay: 2750}}>
                 <Card>
                     <CardHeader
                         title={<Typography variant="h5" className={classes.bodyH5} color="primary">University Software Development Project</Typography>} align="center"

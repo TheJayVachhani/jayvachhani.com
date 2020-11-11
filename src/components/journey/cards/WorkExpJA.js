@@ -67,7 +67,7 @@ const WorkExpJACard = () => {
 
     return (
         <Box component="div" className={classes.body}>
-            <Slide in={true} timeout={750} direction='left' style={{transitionDelay: 2750}}>
+            <Slide in={true} timeout={750} direction='left' style={{transitionDelay: 1750}}>
                 <Card>
                     <CardHeader
                         title={<Typography variant="h5" className={classes.bodyH5} color="primary">Learner Work Experience</Typography>} align="center"
@@ -75,8 +75,12 @@ const WorkExpJACard = () => {
                     />
                     <CardContent>
                         <Typography  variant="body1" color="primary" align="justify">
-                            I worked to build a new company website on Wordpress: <Link href="https://jaivel.aero/" target="_blank" rel="noreferrer">jaivel.aero</Link>
-                        </Typography> 
+                            As my first proper summer internship, I worked to build a new company website on Wordpress: <Link href="https://jaivel.aero/" target="_blank" rel="noreferrer">jaivel.aero</Link>.  
+                        </Typography>
+                        <Typography  variant="body1" color="primary" align="justify">
+                            As my support task, I assisted in the business administration department with multiple subsidy applications to the industries commission of the Gujarat state government.
+                            As of March 2020 they have all been approved and received.
+                        </Typography>  
                     </CardContent>
                     <Typography  variant="body1" color="secondary" align="center">
                         Ahmedabad, India
@@ -92,7 +96,7 @@ const WorkExpJACard = () => {
                             <Grid item xs={12}>
                             <CardContent>
                                 <Typography  variant="body1" color="primary" align="justify">
-                                    My First proper web development project. I assisted in the realization of a new website design and content creation.
+                                    I assisted in the realization of a new website design and content creation whilst working alongside senior leadership.
                                 </Typography> 
                             </CardContent>
                             <Divider variant="middle"/>

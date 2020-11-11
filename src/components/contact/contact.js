@@ -60,7 +60,7 @@ const ContactComponent = () => {
             <Box component="div" className="contact">
                 <Grid container justify="center" direction="column">
                     <Grid item xs={12}>
-                        <Typography variant="h3" color="primary" className={classes.contactH3}>Let's Talk.</Typography>
+                        <Typography variant="h3" color="primary" className={classes.contactH3}>Let's Talk</Typography>
                     </Grid>
                     <br/>
                     <Grid item xs={12}>

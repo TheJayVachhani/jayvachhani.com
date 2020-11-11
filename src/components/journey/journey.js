@@ -59,12 +59,12 @@ const JourneyComponent = () => {
                                 <Grid container direction="column" justify="center" alignItems="center" spacing={1}>
                                     <Fade in={true} timeout={500} style={{transitionDelay: 1000}}>
                                         <Grid item xs={11}>
-                                            <Y3IPPCard/>
+                                            <WorkExpMcLarenCard/>
                                         </Grid>
                                     </Fade>
                                     <Fade in={true} timeout={500} style={{transitionDelay: 1250}}>
                                         <Grid item xs={11}>
-                                            <Y2SDPCard/>
+                                            <WorkExpJACard/>
                                         </Grid>
                                     </Fade>
                                     <Fade in={true} timeout={500} style={{transitionDelay: 1500}}>
@@ -74,12 +74,12 @@ const JourneyComponent = () => {
                                     </Fade>
                                     <Fade in={true} timeout={500} style={{transitionDelay: 1750}}>
                                         <Grid item xs={11}>
-                                            <WorkExpJACard/>
+                                            <Y2SDPCard/>
                                         </Grid>
                                     </Fade>
                                     <Fade in={true} timeout={500} style={{transitionDelay: 2000}}> 
                                         <Grid item xs={11}>
-                                            <WorkExpMcLarenCard/>
+                                            <Y3IPPCard/>
                                         </Grid>
                                     </Fade>
                                 </Grid>

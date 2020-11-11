@@ -85,7 +85,7 @@ const TimelineComponent = () => {
                             </Slide>
                         </Box>
                         <Box component="div" className={classes.cardContainer}>
-                            <Y3IPPCard/>
+                            <WorkExpMcLarenCard/>
                         </Box>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
@@ -130,7 +130,7 @@ const TimelineComponent = () => {
                 <TimelineItem>
                     <TimelineOppositeContent>
                         <Box component="div" className={classes.cardContainer}>
-                            <Y2SDPCard/>
+                            <WorkExpJACard/>
                         </Box>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
@@ -216,7 +216,7 @@ const TimelineComponent = () => {
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineOppositeContent>
-                        <WorkExpJACard/>
+                        <Y2SDPCard/>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <Fade in={true} timeout={500} style={{transitionDelay: 2500}}>
@@ -232,12 +232,12 @@ const TimelineComponent = () => {
                         <Box component="div" className={classes.journeyContainer}>
                             <Slide in={true} timeout={500} direction='right' style={{transitionDelay: 2750}}>
                                 <Typography variant='h5' color="primary" className={classes.journeyContent}>
-                                    Leading my software development project showed that: 
+                                    Whilst leading my software development project, after each client meeting we would organise the key points on a whiteboard to visualise the road ahead, this showed us that:
                                 </Typography>
                             </Slide>
                             <Slide in={true} timeout={500} direction='right' style={{transitionDelay: 2875}}>
                                 <Typography variant='h5' color="primary" className={classes.journeyBullet}>
-                                    Handling client demands and team expectations requires concentrated planning with finesse in order to achieve great team morale, whilst ensuring the desired goal for the client is met.
+                                    Handling client demands requires concentrated planning with finesse in order to organise effectively and achieve great team morale, an essential step towards meeting expectations.
                                 </Typography>
                             </Slide>                            
                             <Box component="div" className={classes.iconContainer}>
@@ -250,7 +250,7 @@ const TimelineComponent = () => {
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineOppositeContent>
-                        <WorkExpMcLarenCard/>
+                        <Y3IPPCard/>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <Fade in={true} timeout={500} style={{transitionDelay: 3000}}>

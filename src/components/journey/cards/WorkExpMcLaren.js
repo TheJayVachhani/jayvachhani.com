@@ -67,7 +67,7 @@ const WorkExpMcLarenCard = () => {
 
     return (
         <Box component="div" className={classes.body}>
-            <Slide in={true} timeout={750} direction='left' style={{transitionDelay: 3250}}>
+            <Slide in={true} timeout={750} direction='left' style={{transitionDelay: 1450}}>
                 <Card>
                     <CardHeader
                         title={<Typography variant="h5" className={classes.bodyH5} color="primary">Student Work Experience</Typography>} align="center"

@@ -76,7 +76,7 @@ const Y2AIPPCard = () => {
                     <CardContent>
                         <Typography  variant="body1" color="primary"  align="justify">
                             My First ever AI project in a team of 3. Our task was to model and test a domain for an AI Planner to solve.
-                            We chose to model the delivery of necessities to at-risk individuals during COVID-19.
+                            We chose to model the delivery of necessities and medical supplies to at-risk individuals during COVID-19. I explain the model in more detail below.
                         </Typography> 
                     </CardContent>
                     <Typography  variant="body1" color="secondary"  align="center">
@@ -93,7 +93,7 @@ const Y2AIPPCard = () => {
                             <Grid item xs={12}>
                             <CardContent>
                                 <Typography  variant="body1" color="primary" align="justify">
-                                    We modelled volunteers who can carry resources that they pick up from a depot to various at-risk individuals. <Link href="https://github.com/JVK1890728/AI-Coursework" target="_blank" rel="noreferrer">Our full report with our code can be found on Github.</Link>, we scored 93/100.
+                                    We modelled volunteers who can carry resources that they pick up from a depot and deliver them to various at-risk individuals. <Link href="https://github.com/JVK1890728/AI-Coursework" target="_blank" rel="noreferrer">Our full report with our code can be found on Github</Link>, we scored 93/100.
                                 </Typography> 
                             </CardContent>
                             <Divider variant="middle"/>
