@@ -67,5 +67,15 @@ export default createMuiTheme({
 				backgroundColor: "#013365"
 			},
 		},
+		MuiOutlinedInput:{
+			root: {
+				'& fieldset':{
+					borderColor: "#FF8700"
+				},
+				'&:hover fieldset':{
+					borderColor: "#F5F4F4"
+				}
+			}
+		},
 	},
 });
