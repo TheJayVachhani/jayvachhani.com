@@ -42,7 +42,7 @@ const BlogComponent = () => {
                     </Fade>
                     <Fade in={true} timeout={500} style={{transitionDelay: 750}}>
                         <Grid item xs={12}>
-                            <Typography variant="h5" className={classes.subheading} color="secondary">
+                            <Typography variant="h5" className={classes.subheading} color="secondary" align="center">
                                 I love to write about my learning, reflect on my reading and analyse interesting events.                               
                             </Typography>
                         </Grid>
