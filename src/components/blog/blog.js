@@ -13,57 +13,19 @@ const blogCSS = makeStyles((theme) => ({
         margin: "3% auto 2% auto",
         overflow: "hidden"
     },
-    headerH3:{
+    title:{
         textTransform: "capitalize",
         fontWeight: "400",
         letterSpacing: "2px",
         fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
     },
-    notesH3:{
-        textTransform: "capitalize",
-        fontWeight: "400",
-        letterSpacing: "2px",
-        textAlign: "center",
-        fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
-    },
-    notesH4:{
-        textTransform: "capitalize",
-        fontWeight: "400",
-        textAlign: "center",
-        padding:"0 0 15px 0",
-        fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
-    },
-    notesH5:{
+    subheading:{
         fontWeight: "400",
         letterSpacing: "1px",
-        fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
-    },
-    notesH6:{  
-        fontWeight: "400",
-        letterSpacing: "1px",
-        fontSize: "1rem",
         fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
     },
     section:{
         padding: "0 0 15px 0"
-    },
-    bodyContainer:{
-        margin: "auto",
-        width: "100%",
-        textAlign: "center",
-        paddingBottom: "1vh",
-    },
-    bodyHeader:{
-        paddingBottom: "2vh"
-    },
-    bodyItem:{
-        paddingBottom: "1vh"
-    },
-    accordionContainer:{
-        width: "100%",
-        margin: "auto",
-        textAlign: "center",
-        padding: "1vh 0 2vh 0",
     },
 }))
 
@@ -75,12 +37,12 @@ const BlogComponent = () => {
                 <Grid container direction="column" justify="center" alignItems="center" spacing={2}>
                     <Fade in={true} timeout={500} style={{transitionDelay: 500}}>
                         <Grid item xs={12}>
-                            <Typography variant='h3' color="primary" className={classes.headerH3}>My Blog</Typography>
+                            <Typography variant='h3' color="primary" className={classes.title}>My Blog</Typography>
                         </Grid>
                     </Fade>
                     <Fade in={true} timeout={500} style={{transitionDelay: 750}}>
                         <Grid item xs={12}>
-                            <Typography variant="h5" className={classes.notesH5} color="secondary">
+                            <Typography variant="h5" className={classes.subheading} color="secondary">
                                 I love to write about my learning, reflect on my reading and analyse interesting events.                               
                             </Typography>
                         </Grid>

@@ -1,23 +1,15 @@
 import React from 'react';
 import {Box, Typography, Slide, Fade} from '@material-ui/core';
-import {Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineOppositeContent, TimelineDot} from '@material-ui/lab';
-import {ArrowBackRounded, ArrowDownwardRounded, FiberManualRecordRounded, FilterHdrRounded} from '@material-ui/icons';
+import {Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot} from '@material-ui/lab';
+import {ArrowDownwardRounded, FiberManualRecordRounded, FilterHdrRounded} from '@material-ui/icons';
 import {makeStyles} from '@material-ui/core/styles';
 
-import Y3IPPCard from './cards/Y3IPP.js';
-import Y2SDPCard from './cards/Y2SDP.js';
-import Y2AIPPCard from './cards/Y2AIPP.js';
-import WorkExpJACard from './cards/WorkExpJA.js';
-import WorkExpMcLarenCard from './cards/WorkExpMcLaren.js';
-
-const timelineCSS = makeStyles((theme) => ({
-    header:{
-        padding: "0 0 15px 0"
-    },
+const mobileTimelineCSS = makeStyles((theme) => ({
     timelineH4:{
         textTransform: "capitalize",
         fontWeight: "400",
         letterSpacing: "1px",
+        fontSize: "1.5rem",
         fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
     },
     subHContainer:{
@@ -34,14 +26,14 @@ const timelineCSS = makeStyles((theme) => ({
         textAlign: "left",
         fontWeight: "300",
         fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-        fontSize: "1.5rem",
+        fontSize: "1.0rem",
     },
     journeyBullet:{
         padding: "0 0 10px 25px",
         textAlign: "left",
         fontWeight: "300",
         fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-        fontSize: "1.5rem",
+        fontSize: "1.0rem",
     },
     cardContainer:{
         margin: "10px 0 10px 0"
@@ -55,37 +47,30 @@ const timelineCSS = makeStyles((theme) => ({
         fontSize: "35px"
     },
     timelineIcon:{
-        fontSize: "15px",
+        fontSize: "10px",
     },
+    contentAlign:{
+        flex: "100%"
+    }
 }));
 
-const TimelineComponent = () => {
-    const classes = timelineCSS();
+const MobileTimelineComponent = () => {
+    const classes = mobileTimelineCSS();
     return(
         <Box component="div">
             <Timeline align="right">
                 <TimelineItem>
-                    <TimelineOppositeContent>
-                        <Box component="div" className={classes.subHContainer}>
-                            <Slide in={true} timeout={500} direction="left" style={{transitionDelay: 1250}}>
-                                <Typography variant='h4' color="primary" className={classes.timelineH4}>Experience</Typography>
-                            </Slide>
-                        </Box>
-                        <Box component="div" className={classes.cardContainer}>
-                            <WorkExpMcLarenCard/>
-                        </Box>
-                    </TimelineOppositeContent>
                     <TimelineSeparator>
                         <Fade in={true} timeout={500} style={{transitionDelay: 1000}}>
                             <TimelineDot variant="outlined" color="secondary">
-                                <ArrowBackRounded/>
+                                <FiberManualRecordRounded className={classes.timelineIcon}/>
                             </TimelineDot>
                         </Fade>
                         <Fade in={true} timeout={500} style={{transitionDelay: 1250}}>
                             <TimelineConnector/>
                         </Fade>
                     </TimelineSeparator>
-                    <TimelineContent>
+                    <TimelineContent className={classes.contentAlign}>
                         <Box component="div" className={classes.subHContainer}>
                             <Slide in={true} timeout={500} direction='right' style={{transitionDelay: 1250}}>
                                 <Typography variant='h4' color="primary" className={classes.timelineH4}>The First Step</Typography>
@@ -115,11 +100,6 @@ const TimelineComponent = () => {
                     </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
-                    <TimelineOppositeContent>
-                        <Box component="div" className={classes.cardContainer}>
-                            <WorkExpJACard/>
-                        </Box>
-                    </TimelineOppositeContent>
                     <TimelineSeparator>
                         <Fade in={true} timeout={500} style={{transitionDelay: 1500}}>
                             <TimelineDot variant="outlined" color="secondary">
@@ -130,7 +110,7 @@ const TimelineComponent = () => {
                             <TimelineConnector/>
                         </Fade>
                     </TimelineSeparator>
-                    <TimelineContent>
+                    <TimelineContent className={classes.contentAlign}>
                         <Box component="div" className={classes.subHContainer}>
                             <Slide in={true} timeout={500} direction='right' style={{transitionDelay: 1750}}>
                                 <Typography variant='h4' color="primary" className={classes.timelineH4}>A Pivotal Moment</Typography>
@@ -161,11 +141,6 @@ const TimelineComponent = () => {
                     </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
-                    <TimelineOppositeContent>
-                        <Box component="div" className={classes.cardContainer}>
-                            <Y2AIPPCard/>
-                        </Box>
-                    </TimelineOppositeContent>
                     <TimelineSeparator>
                         <Fade in={true} timeout={500} style={{transitionDelay: 2000}}>
                             <TimelineDot variant="outlined" color="secondary">
@@ -176,7 +151,7 @@ const TimelineComponent = () => {
                             <TimelineConnector/>
                         </Fade>
                     </TimelineSeparator>
-                    <TimelineContent>
+                    <TimelineContent className={classes.contentAlign}>
                         <Box component="div" className={classes.subHContainer}>
                             <Slide in={true} timeout={500} direction='right' style={{transitionDelay: 2250}}>
                                 <Typography variant='h4' color="primary" className={classes.timelineH4}>Insights Acquired</Typography>
@@ -202,9 +177,6 @@ const TimelineComponent = () => {
                     </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
-                    <TimelineOppositeContent>
-                        <Y2SDPCard/>
-                    </TimelineOppositeContent>
                     <TimelineSeparator>
                         <Fade in={true} timeout={500} style={{transitionDelay: 2500}}>
                             <TimelineDot variant="outlined" color="secondary">
@@ -215,7 +187,7 @@ const TimelineComponent = () => {
                             <TimelineConnector/>
                         </Fade>
                     </TimelineSeparator>
-                    <TimelineContent>
+                    <TimelineContent className={classes.contentAlign}>
                         <Box component="div" className={classes.journeyContainer}>
                             <Slide in={true} timeout={500} direction='right' style={{transitionDelay: 2750}}>
                                 <Typography variant='h5' color="primary" className={classes.journeyContent}>
@@ -236,9 +208,6 @@ const TimelineComponent = () => {
                     </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
-                    <TimelineOppositeContent>
-                        <Y3IPPCard/>
-                    </TimelineOppositeContent>
                     <TimelineSeparator>
                         <Fade in={true} timeout={500} style={{transitionDelay: 3000}}>
                             <TimelineDot variant="outlined" color="secondary">
@@ -254,7 +223,7 @@ const TimelineComponent = () => {
                             </TimelineDot>
                         </Fade>
                     </TimelineSeparator>
-                    <TimelineContent>
+                    <TimelineContent className={classes.contentAlign}>
                         <Box component="div" className={classes.subHContainer}>
                             <Slide in={true} timeout={500} direction='right' style={{transitionDelay: 3250}}>
                                 <Typography variant='h4' color="primary" className={classes.timelineH4}>The Next Step</Typography>
@@ -285,4 +254,4 @@ const TimelineComponent = () => {
     );
 };
 
-export default TimelineComponent;
+export default MobileTimelineComponent;

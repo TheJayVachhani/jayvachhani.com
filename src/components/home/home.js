@@ -1,8 +1,9 @@
 import React from 'react';
-import {Typography, Box, Grid, IconButton, Card, Tooltip, Fade, Hidden, Slide} from '@material-ui/core';
+import {Typography, Box, Grid, IconButton, Tooltip, Fade, Hidden} from '@material-ui/core';
 import {LinkedIn, DescriptionRounded} from '@material-ui/icons';
 import {makeStyles} from '@material-ui/core/styles';
-import Typed from 'react-typed';
+
+import FauxCode from './fauxCode.js';
 
 const homeCSS = makeStyles((theme) => ({
     content:{
@@ -67,34 +68,6 @@ const homeCSS = makeStyles((theme) => ({
     icon:{
         fontSize: "35px",
     },
-    description:{
-        padding: "10px 0 10px 0"
-    },
-    programmingContainer:{
-        position: "relative",
-        maxWidth: "450px",
-        height: "520px",
-        margin: "auto",
-        padding: "0 5px 0 5px",
-    },
-    noTopPadding:{
-        listStyle: "none",
-        margin: "auto",
-        padding: "0 0 0 20px"
-    },
-    ul:{
-        listStyle: "none",
-        padding: "0 20px 0 20px",
-    },
-    listHeader:{
-        fontWeight: 300, 
-        fontSize: 21
-    },
-    listSubheader:{
-        fontWeight: 300, 
-        fontSize: 18
-    },
-
 }));
 
 const HomeComponent = () => {
@@ -213,180 +186,7 @@ const HomeComponent = () => {
                                 </Hidden>
                             </Grid>
                         </Box>
-                        <Slide in={true} timeout={1250} direction="left" style={{transitionDelay: 7000}}>
-                            <Box component="div" className={classes.programmingContainer}>
-                                <Grid container justify="center" direction="column" alignItems="stretch" spacing={1}>
-                                    <Grid item xs={12}>
-                                        <Card>
-                                            <ul className={classes.ul}>
-                                                <li>
-                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                    <Typography component="span" variant="body1" color="secondary">html</Typography>
-                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                </li>
-                                                <li>
-                                                    <ul className={classes.noTopPadding}>
-                                                        <li>
-                                                            <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                            <Typography component="span" variant="body1" color="secondary">body</Typography>
-                                                            <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                        </li>
-                                                        <li>
-                                                            <ul className={classes.noTopPadding}>
-                                                            <li>
-                                                                <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                                <Typography component="span" variant="body1" color="secondary">h1</Typography>
-                                                                <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                <Typography component="span" variant="h5" className={classes.listHeader} color="textSecondary"> About Me </Typography>
-                                                                <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                                <Typography component="span" variant="body1" color="secondary">h1</Typography>
-                                                                <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                            </li>
-                                                                <li>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                                    <Typography component="span" variant="body1" color="secondary">h2</Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                    <Typography component="span" variant="h6" className={classes.listSubheader} color="textSecondary"> I practice to be </Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                                    <Typography component="span" variant="body1" color="secondary">h2</Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                </li>
-                                                                <li>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                                    <Typography component="span" variant="body1" color="secondary">ul</Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                </li>
-                                                                <ul className={classes.noTopPadding}>
-                                                                    <li>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                                        <Typography component="span" variant="body1" color="secondary">li</Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                        <Typography component="span" variant="body1" color="textSecondary"> skilled in <Typed strings={["JS", "HTML", "CSS", "REACT", "Java", "PDDL"]} typeSpeed={105} backSpeed={80} loop/> </Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                                        <Typography component="span" variant="body1" color="secondary">li</Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                                        <Typography component="span" variant="body1" color="secondary">li</Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                        <Typography component="span" variant="body1" color="textSecondary"> familiar with <Typed strings={["Python", "C++", "SQL", "Scala", "LaTeX",]} typeSpeed={105} backSpeed={80} loop/> </Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                                        <Typography component="span" variant="body1" color="secondary">li</Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                    </li>
-                                                                </ul>
-                                                                <li>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                                    <Typography component="span" variant="body1" color="secondary">ul</Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <ul className={classes.noTopPadding}>
-                                                                <li>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                                    <Typography component="span" variant="body1" color="secondary">h2</Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                    <Typography component="span" variant="h6" className={classes.listSubheader} color="textSecondary"> I am </Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                                    <Typography component="span" variant="body1" color="secondary">h2</Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                </li>
-                                                                <li>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                                    <Typography component="span" variant="body1" color="secondary">ul</Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                </li>
-                                                                <ul className={classes.noTopPadding}>
-                                                                    <li>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                                        <Typography component="span" variant="body1" color="secondary">li</Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                        <Typography component="span" variant="body1" color="textSecondary"> An Avid Reader & Listener </Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                                        <Typography component="span" variant="body1" color="secondary">li</Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                                        <Typography component="span" variant="body1" color="secondary">li</Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                        <Typography component="span" variant="body1" color="textSecondary"> Proactive & Flexible </Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                                        <Typography component="span" variant="body1" color="secondary">li</Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                    </li>
-                                                                </ul>
-                                                                <li>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                                    <Typography component="span" variant="body1" color="secondary">ul</Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <ul className={classes.noTopPadding}>
-                                                                <li>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                                    <Typography component="span" variant="body1" color="secondary">h2</Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                    <Typography component="span" variant="h6" className={classes.listSubheader} color="textSecondary"> I like </Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                                    <Typography component="span" variant="body1" color="secondary">h2</Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                </li>
-                                                                <li>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                                    <Typography component="span" variant="body1" color="secondary">ul</Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                </li>
-                                                                <ul className={classes.noTopPadding}>
-                                                                    <li>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                                        <Typography component="span" variant="body1" color="secondary">li</Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                        <Typography component="span" variant="body1" color="textSecondary">Economics, Technology & Psychology</Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                                        <Typography component="span" variant="body1" color="secondary">li</Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
-                                                                        <Typography component="span" variant="body1" color="secondary">li</Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                        <Typography component="span" variant="body1" color="textSecondary"> Motorsport, Rowing, Music and more </Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                                        <Typography component="span" variant="body1" color="secondary">li</Typography>
-                                                                        <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                    </li>
-                                                                </ul>
-                                                                <li>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                                    <Typography component="span" variant="body1" color="secondary">ul</Typography>
-                                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                            <Typography component="span" variant="body1" color="secondary">body</Typography>
-                                                            <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
-                                                    <Typography component="span" variant="body1" color="secondary">html</Typography>
-                                                    <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>                                        
-                                                </li>
-                                            </ul>
-                                        </Card>
-                                    </Grid>
-                                </Grid>
-                            </Box>
-                        </Slide>
+                        <FauxCode/>
                     </Grid>
                 </Grid>
             </Box>

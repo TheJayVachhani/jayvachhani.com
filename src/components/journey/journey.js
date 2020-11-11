@@ -8,6 +8,7 @@ import Y2AIPPCard from './cards/Y2AIPP.js';
 import WorkExpJACard from './cards/WorkExpJA.js';
 import WorkExpMcLarenCard from './cards/WorkExpMcLaren.js';
 import TimelineComponent from './timeline.js';
+import MobileTimelineComponent from './mobileTimeline.js';
 
 const journeyCSS = makeStyles((theme) => ({
     experienceContainer:{
@@ -57,6 +58,11 @@ const JourneyComponent = () => {
                         <Grid item xs={12} lg={4}>
                             <Box component="div" className={classes.expCardContainer}>
                                 <Grid container direction="column" justify="center" alignItems="center" spacing={1}>
+                                    <Fade in={true} timeout={500} style={{transitionDelay: 1000}}>
+                                        <Grid item xs={11}>
+                                            <MobileTimelineComponent/>
+                                        </Grid>
+                                    </Fade>
                                     <Fade in={true} timeout={500} style={{transitionDelay: 1000}}>
                                         <Grid item xs={11}>
                                             <WorkExpMcLarenCard/>

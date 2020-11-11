@@ -75,8 +75,7 @@ const Y3IPPCard = () => {
                     />
                     <CardContent>
                         <Typography variant="body1" color="primary" align="justify">
-                            1 Year Industrial Placement. I have 2 major tasks, first of which is to build a bespoke careers portal to implement a new recruitment strategy.
-                            The careers portal will encompass all interaction of prospective candidates until they reach an interview stage, pre-screening and assessments will be completed on the portal.
+                            1 Year Industrial Placement. I have 2 major tasks, first of which is to build a bespoke careers portal which would see to the implementation a new recruitment strategy.
                             My secondary major task is to build a software engineering team to tackle a larger scale project of a bespoke performance management system.
                         </Typography> 
                     </CardContent>
