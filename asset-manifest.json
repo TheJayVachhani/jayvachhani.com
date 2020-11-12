@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.js": "/static/js/main.db6870f5.chunk.js",
-    "main.js.map": "/static/js/main.db6870f5.chunk.js.map",
+    "main.js": "/static/js/main.83d71b99.chunk.js",
+    "main.js.map": "/static/js/main.83d71b99.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d8db0c4e.js",
     "runtime-main.js.map": "/static/js/runtime-main.d8db0c4e.js.map",
     "static/js/2.805f9830.chunk.js": "/static/js/2.805f9830.chunk.js",
     "static/js/2.805f9830.chunk.js.map": "/static/js/2.805f9830.chunk.js.map",
     "index.html": "/index.html",
     "static/js/2.805f9830.chunk.js.LICENSE.txt": "/static/js/2.805f9830.chunk.js.LICENSE.txt",
-    "static/media/Bolivia-Abandoned-Railway.cc56ab8f.png": "/static/media/Bolivia-Abandoned-Railway.cc56ab8f.png",
-    "static/media/Bolivia-Amazon.50cc4a35.png": "/static/media/Bolivia-Amazon.50cc4a35.png",
-    "static/media/Bolivia-MtTarija.2c992787.png": "/static/media/Bolivia-MtTarija.2c992787.png",
-    "static/media/Bolivia-Salt-Flats.d825d074.png": "/static/media/Bolivia-Salt-Flats.d825d074.png",
-    "static/media/Brighton-Sea-Sunset.d7d8e5a2.png": "/static/media/Brighton-Sea-Sunset.d7d8e5a2.png",
-    "static/media/Rottingdean-Cliffs.4fd071da.png": "/static/media/Rottingdean-Cliffs.4fd071da.png",
-    "static/media/Speyer-Quiet-Street.826ded09.png": "/static/media/Speyer-Quiet-Street.826ded09.png",
-    "static/media/Zermatt-Glacier.4d01ace2.png": "/static/media/Zermatt-Glacier.4d01ace2.png",
-    "static/media/Zermatt-Lodge.952bae1d.png": "/static/media/Zermatt-Lodge.952bae1d.png"
+    "static/media/Bolivia-Abandoned-Railway.6b040845.png": "/static/media/Bolivia-Abandoned-Railway.6b040845.png",
+    "static/media/Bolivia-Amazon.34f94c8b.png": "/static/media/Bolivia-Amazon.34f94c8b.png",
+    "static/media/Bolivia-MtTarija.aa8a37d3.png": "/static/media/Bolivia-MtTarija.aa8a37d3.png",
+    "static/media/Bolivia-Salt-Flats.269ac659.png": "/static/media/Bolivia-Salt-Flats.269ac659.png",
+    "static/media/Brighton-Sea-Sunset.c430a6e5.png": "/static/media/Brighton-Sea-Sunset.c430a6e5.png",
+    "static/media/Rottingdean-Cliffs.5030a0c5.png": "/static/media/Rottingdean-Cliffs.5030a0c5.png",
+    "static/media/Speyer-Quiet-Street.c1bd56f9.png": "/static/media/Speyer-Quiet-Street.c1bd56f9.png",
+    "static/media/Zermatt-Glacier.38d7a358.png": "/static/media/Zermatt-Glacier.38d7a358.png",
+    "static/media/Zermatt-Lodge.c2f24f2f.png": "/static/media/Zermatt-Lodge.c2f24f2f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d8db0c4e.js",
     "static/js/2.805f9830.chunk.js",
-    "static/js/main.db6870f5.chunk.js"
+    "static/js/main.83d71b99.chunk.js"
   ]
 }
