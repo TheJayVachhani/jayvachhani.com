@@ -7,10 +7,8 @@ import {makeStyles} from '@material-ui/core/styles';
 
 import BoliviaSalt from './images/Bolivia-Salt-Flats.png';
 import BoliviaRail from './images/Bolivia-Abandoned-Railway.png';
-import BoliviaAmz from './images/Bolivia-Amazon.png';
 import BoliviaMnT from './images/Bolivia-MtTarija.png';
 import BrightonSea from './images/Brighton-Sea-Sunset.png';
-import Rottingdean from './images/Rottingdean-Cliffs.png';
 import GermanySpeyer from './images/Speyer-Quiet-Street.png';
 import SwissGlacier from './images/Zermatt-Glacier.png';
 import SwissLodge from './images/Zermatt-Lodge.png';
@@ -21,10 +19,8 @@ const imageCarousel = [
     {label: 'Switzerland - Zermatt Glacier', imgPath: SwissGlacier},
     {label: 'Germany - Speyer', imgPath: GermanySpeyer},
     {label: 'Bolivia - Salar de Uyuni', imgPath: BoliviaSalt},
-    {label: 'Bolivia - Rurrenabaque', imgPath: BoliviaAmz},
     {label: 'Bolivia - Uyuni Railway', imgPath: BoliviaRail},
     {label: 'UK - Brighton', imgPath: BrightonSea},
-    {label: 'UK - Rottingdean Cliffs', imgPath: Rottingdean},
 ];
 
 const imgCSS = makeStyles((theme) => ({
