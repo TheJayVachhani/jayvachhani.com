@@ -59,11 +59,11 @@ const WorkExpMcLarenCard = () => {
     
     const [open5, setOpen5] = React.useState({
         card5: false
-    })
+    });
 
     const handleExpandClick = () => {
         setOpen5((open5) =>({card5: !open5.card5}));
-    }
+    };
 
     return (
         <Box component="div" className={classes.body}>

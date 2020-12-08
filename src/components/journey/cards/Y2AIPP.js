@@ -59,11 +59,11 @@ const Y2AIPPCard = () => {
     
     const [open3, setOpen3] = React.useState({
         card3: false
-    })
+    });
 
     const handleExpandClick = () => {
         setOpen3((open3) =>({card3: !open3.card3}));
-    }
+    };
 
     return (
         <Box component="div" className={classes.body}>

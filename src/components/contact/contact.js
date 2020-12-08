@@ -12,10 +12,11 @@ const contactCSS = makeStyles((theme) => ({
         width: "350px",
         textAlign: "center"
     },
-    contactH3:{
+    title:{
         textTransform: "capitalize",
         fontWeight: "400",
         letterSpacing: "2px",
+        fontSize: "3rem",
         fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
     },
     textField:{
@@ -60,7 +61,7 @@ const ContactComponent = () => {
             <Box component="div" className="contact">
                 <Grid container justify="center" direction="column">
                     <Grid item xs={12}>
-                        <Typography variant="h3" color="primary" className={classes.contactH3}>Let's Talk</Typography>
+                        <Typography variant="h1" color="primary" className={classes.title}>Let's Talk</Typography>
                     </Grid>
                     <br/>
                     <Grid item xs={12}>

@@ -59,11 +59,11 @@ const Y2SDPCard = () => {
     
     const [open2, setOpen2] = React.useState({
         card2: false
-    })
+    });
 
     const handleExpandClick = () => {
         setOpen2((open2) =>({card2: !open2.card2}));
-    }
+    };
 
     return (
         <Box component="div" className={classes.body}>

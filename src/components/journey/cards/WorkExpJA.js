@@ -59,11 +59,11 @@ const WorkExpJACard = () => {
     
     const [open4, setOpen4] = React.useState({
         card4: false
-    })
+    });
 
     const handleExpandClick = () => {
         setOpen4((open4) =>({card4: !open4.card4}));
-    }
+    };
 
     return (
         <Box component="div" className={classes.body}>

@@ -47,7 +47,7 @@ const experienceCSS = makeStyles((theme) => ({
       marginLeft: 'auto',
       transition: theme.transitions.create('transform', {
         duration: theme.transitions.duration.shortest,
-      }),
+        }),
     },
     expandOpen:{
       transform: 'rotate(180deg)',
@@ -59,11 +59,11 @@ const Y3IPPCard = () => {
     
     const [open1, setOpen1] = React.useState({
         card1: false
-    })
+    });
 
     const handleExpandClick1 = () => {
         setOpen1((open1) =>({card1: !open1.card1}));
-    }
+    };
 
     return (
         <Box component="div" className={classes.body}>

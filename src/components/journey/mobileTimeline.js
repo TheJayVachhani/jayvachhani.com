@@ -237,7 +237,7 @@ const MobileTimelineComponent = () => {
                             </Slide>
                             <Slide in={true} timeout={500} direction='right' style={{transitionDelay: 3350}}>
                                 <Typography variant='h5' color="primary" className={classes.journeyContent}>
-                                    I have outlined all my work experience right of this passage, theres always more than meets the eye so I am happy to chat, feel free to get in touch. I will be adding to this as the journey progresses towards the summit.
+                                    I have outlined all my work experience below this passage, theres always more than meets the eye so I am happy to chat, feel free to get in touch. I will be adding to this as the journey progresses towards the summit.
                                 </Typography>
                             </Slide>
                             <Box component="div" className={classes.iconContainer}>

@@ -73,123 +73,123 @@ const homeCSS = makeStyles((theme) => ({
 const HomeComponent = () => {
     const classes = homeCSS();
     return (
-            <Box component="div" className={classes.content}>
-                <Grid container direction="row" justify="center" alignItems="flex-start" spacing={0}>
-                    <Hidden mdDown>
-                        <Grid item lg={6}>
-                            <Grid container direction="column" justify="flex-start" alignItems="center" spacing={2}>
+        <Box component="div" className={classes.content}>
+            <Grid container direction="row" justify="center" alignItems="flex-start" spacing={0}>
+                <Hidden mdDown>
+                    <Grid item lg={6}>
+                        <Grid container direction="column" justify="flex-start" alignItems="center" spacing={2}>
+                            <Fade in={true} timeout={1000} style={{transitionDelay: 500}}>
+                                <Grid item xs={12}>
+                                    <Typography variant='h1' color="textSecondary" className={classes.webH1}>Hi, I'm Jay</Typography>
+                                </Grid>
+                            </Fade>
+                            <Grid item xs={12}>                                    
+                                <Grid container direction="column" justify="center" alignItems="center" spacing={1}>
+                                    <Fade in={true} timeout={1000} style={{transitionDelay: 1500}}>
+                                        <Grid item xs={9}>
+                                            <Typography variant='h3' color="textSecondary" align="left" className={classes.webH3}>I'm a Computer Science and Management Student at King's College London.</Typography>
+                                        </Grid>
+                                    </Fade>
+                                    <Fade in={true} timeout={1000} style={{transitionDelay: 2500}}>
+                                        <Grid item xs={9}>
+                                            <Typography variant='h3' color="textSecondary" align="left" className={classes.webH3}>I love working on new ideas, currently I'm designing and building dynamic web applications.</Typography>
+                                        </Grid>
+                                    </Fade>
+                                </Grid>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Fade in={true} timeout={750} style={{transitionDelay: 4000}}>
+                                    <Typography variant='h2' component="span" color="textSecondary" className={classes.webH2}>Curious</Typography>
+                                </Fade>
+                                <Fade in={true} timeout={750} style={{transitionDelay: 4500}}>
+                                    <Typography variant='h2' component="span" color="textSecondary" className={classes.webH2}> Articulate </Typography>
+                                </Fade>
+                                <Fade in={true} timeout={750} style={{transitionDelay: 5000}}>
+                                    <Typography variant='h2' component="span" color="textSecondary" className={classes.webH2}>Versatile</Typography>
+                                </Fade>                                    
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Fade in={true} timeout={500} style={{transitionDelay: 6000}}>
+                                    <Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">LinkedIn</Typography>} placement="left">
+                                        <IconButton href="https://www.linkedin.com/in/thejayvachhani/" target="_blank" rel="noreferrer">
+                                            <LinkedIn color="secondary" className={classes.webIcon}/>
+                                        </IconButton>
+                                    </Tooltip>
+                                </Fade>
+                                <Fade in={true} timeout={500} style={{transitionDelay: 6500}}>
+                                    <Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">Resume/CV</Typography>} placement="right">
+                                        <IconButton href="/Jay-Vachhani-CV.pdf">
+                                            <DescriptionRounded color="secondary" className={classes.webIcon}/>
+                                        </IconButton>
+                                    </Tooltip>
+                                </Fade>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Hidden>
+                <Grid item xs={12} md={6}>
+                    <Box component="div" className={classes.mobileContent}>
+                        <Grid container direction="column" justify="flex-start" alignItems="center" spacing={2}>
+                            <Hidden lgUp>
                                 <Fade in={true} timeout={1000} style={{transitionDelay: 500}}>
                                     <Grid item xs={12}>
-                                        <Typography variant='h1' color="textSecondary" className={classes.webH1}>Hi, I'm Jay</Typography>
+                                        <Typography variant='h1' color="textSecondary" align="center" className={classes.mobileH1}>Hi, I'm Jay</Typography>
                                     </Grid>
                                 </Fade>
-                                <Grid item xs={12}>                                    
-                                    <Grid container direction="column" justify="center" alignItems="center" spacing={1}>
+                                <Grid item xs={12}>
+                                    <Grid container justify="center" direction="column" alignItems="center" spacing={1}>
                                         <Fade in={true} timeout={1000} style={{transitionDelay: 1500}}>
-                                            <Grid item xs={9}>
-                                                <Typography variant='h3' color="textSecondary" align="left" className={classes.webH3}>I'm a Computer Science and Management Student at King's College London.</Typography>
+                                            <Grid item xs={11}>
+                                                <Typography variant='h3' color="textSecondary" align="left" className={classes.mobileH3}>I'm a Computer Science and Management Student at King's College London.</Typography>
                                             </Grid>
                                         </Fade>
                                         <Fade in={true} timeout={1000} style={{transitionDelay: 2500}}>
-                                            <Grid item xs={9}>
-                                                <Typography variant='h3' color="textSecondary" align="left" className={classes.webH3}>I love working on new ideas, currently I'm designing and building dynamic web applications.</Typography>
+                                            <Grid item xs={11}>
+                                                <Typography variant='h3' color="textSecondary" align="left" className={classes.mobileH3}>I love working on new ideas, currently I'm designing and building dynamic web applications.</Typography>
                                             </Grid>
                                         </Fade>
                                     </Grid>
                                 </Grid>
                                 <Grid item xs={12}>
                                     <Fade in={true} timeout={750} style={{transitionDelay: 4000}}>
-                                        <Typography variant='h2' component="span" color="textSecondary" className={classes.webH2}>Curious</Typography>
+                                        <Typography variant='h2' component="span" color="textSecondary" className={classes.mobileH2}>Curious </Typography>
                                     </Fade>
                                     <Fade in={true} timeout={750} style={{transitionDelay: 4500}}>
-                                        <Typography variant='h2' component="span" color="textSecondary" className={classes.webH2}> Articulate </Typography>
+                                        <Typography variant='h2' component="span" color="textSecondary" className={classes.mobileH2}> Articulate </Typography>
                                     </Fade>
                                     <Fade in={true} timeout={750} style={{transitionDelay: 5000}}>
-                                        <Typography variant='h2' component="span" color="textSecondary" className={classes.webH2}>Versatile</Typography>
-                                    </Fade>                                    
+                                        <Typography variant='h2' component="span" color="textSecondary" className={classes.mobileH2}> Versatile</Typography>
+                                    </Fade> 
                                 </Grid>
-                                <Grid item xs={12}>
-                                    <Fade in={true} timeout={500} style={{transitionDelay: 6000}}>
-                                        <Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">LinkedIn</Typography>} placement="left">
-                                            <IconButton href="https://www.linkedin.com/in/thejayvachhani/" target="_blank" rel="noreferrer">
-                                                <LinkedIn color="secondary" className={classes.webIcon}/>
-                                            </IconButton>
-                                        </Tooltip>
-                                    </Fade>
-                                    <Fade in={true} timeout={500} style={{transitionDelay: 6500}}>
-                                        <Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">Resume/CV</Typography>} placement="right">
-                                            <IconButton href="/Jay-Vachhani-CV.pdf">
-                                                <DescriptionRounded color="secondary" className={classes.webIcon}/>
-                                            </IconButton>
-                                        </Tooltip>
-                                    </Fade>
-                                </Grid>
-                            </Grid>
+                                <Box component="div" className={classes.mobileIconContainer}>
+                                    <Grid container justify="center" direction="row" alignItems="center">
+                                        <Fade in={true} timeout={500} style={{transitionDelay: 6000}}>
+                                            <Grid item xs={4} md={1}>
+                                                <Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">LinkedIn</Typography>} placement="left">
+                                                    <IconButton href="https://www.linkedin.com/in/thejayvachhani/" target="_blank" rel="noreferrer">
+                                                        <LinkedIn color="secondary" className={classes.icon}/>
+                                                    </IconButton>
+                                                </Tooltip>
+                                            </Grid>
+                                        </Fade>
+                                        <Fade in={true} timeout={500} style={{transitionDelay: 6500}}>
+                                            <Grid item xs={4} md={1}>
+                                                <Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">Resume/CV</Typography>} placement="right">
+                                                    <IconButton href="/Jay-Vachhani-CV.pdf"target="_blank" rel="noreferrer">
+                                                        <DescriptionRounded color="secondary" className={classes.icon}/>
+                                                    </IconButton>
+                                                </Tooltip>
+                                            </Grid>
+                                        </Fade>
+                                    </Grid>
+                                </Box>
+                            </Hidden>
                         </Grid>
-                    </Hidden>
-                    <Grid item xs={12} md={6}>
-                        <Box component="div" className={classes.mobileContent}>
-                            <Grid container direction="column" justify="flex-start" alignItems="center" spacing={2}>
-                                <Hidden lgUp>
-                                    <Fade in={true} timeout={1000} style={{transitionDelay: 500}}>
-                                        <Grid item xs={12}>
-                                            <Typography variant='h1' color="textSecondary" align="center" className={classes.mobileH1}>Hi, I'm Jay</Typography>
-                                        </Grid>
-                                    </Fade>
-                                    <Grid item xs={12}>
-                                        <Grid container justify="center" direction="column" alignItems="center" spacing={1}>
-                                            <Fade in={true} timeout={1000} style={{transitionDelay: 1500}}>
-                                                <Grid item xs={11}>
-                                                    <Typography variant='h3' color="textSecondary" align="left" className={classes.mobileH3}>I'm a Computer Science and Management Student at King's College London.</Typography>
-                                                </Grid>
-                                            </Fade>
-                                            <Fade in={true} timeout={1000} style={{transitionDelay: 2500}}>
-                                                <Grid item xs={11}>
-                                                    <Typography variant='h3' color="textSecondary" align="left" className={classes.mobileH3}>I love working on new ideas, currently I'm designing and building dynamic web applications.</Typography>
-                                                </Grid>
-                                            </Fade>
-                                        </Grid>
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <Fade in={true} timeout={750} style={{transitionDelay: 4000}}>
-                                            <Typography variant='h2' component="span" color="textSecondary" className={classes.mobileH2}>Curious </Typography>
-                                        </Fade>
-                                        <Fade in={true} timeout={750} style={{transitionDelay: 4500}}>
-                                            <Typography variant='h2' component="span" color="textSecondary" className={classes.mobileH2}> Articulate </Typography>
-                                        </Fade>
-                                        <Fade in={true} timeout={750} style={{transitionDelay: 5000}}>
-                                            <Typography variant='h2' component="span" color="textSecondary" className={classes.mobileH2}> Versatile</Typography>
-                                        </Fade> 
-                                    </Grid>
-                                    <Box component="div" className={classes.mobileIconContainer}>
-                                        <Grid container justify="center" direction="row" alignItems="center">
-                                            <Fade in={true} timeout={500} style={{transitionDelay: 6000}}>
-                                                <Grid item xs={4} md={1}>
-                                                    <Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">LinkedIn</Typography>} placement="left">
-                                                        <IconButton href="https://www.linkedin.com/in/thejayvachhani/" target="_blank">
-                                                            <LinkedIn color="secondary" className={classes.icon}/>
-                                                        </IconButton>
-                                                    </Tooltip>
-                                                </Grid>
-                                            </Fade>
-                                            <Fade in={true} timeout={500} style={{transitionDelay: 6500}}>
-                                                <Grid item xs={4} md={1}>
-                                                    <Tooltip TransitionComponent={Fade} TransitionProps={{timeout: 400}} title={<Typography variant="body2">Resume/CV</Typography>} placement="right">
-                                                        <IconButton href="/Jay-Vachhani-CV.pdf">
-                                                            <DescriptionRounded color="secondary" className={classes.icon}/>
-                                                        </IconButton>
-                                                    </Tooltip>
-                                                </Grid>
-                                            </Fade>
-                                        </Grid>
-                                    </Box>
-                                </Hidden>
-                            </Grid>
-                        </Box>
-                        <FauxCode/>
-                    </Grid>
+                    </Box>
+                    <FauxCode/>
                 </Grid>
-            </Box>
+            </Grid>
+        </Box>
     );
 }
 

@@ -18,10 +18,11 @@ const journeyCSS = makeStyles((theme) => ({
     header:{
         padding: "0 0 15px 0"
     },
-    headerH3:{
+    title:{
         textTransform: "capitalize",
         fontWeight: "400",
         letterSpacing: "2px",
+        fontSize: "3rem",
         fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
     },
     expCardContainer:{
@@ -42,7 +43,7 @@ const JourneyComponent = () => {
                 <Grid container direction="column" justify="center" alignItems="center">
                     <Fade in={true} timeout={500} style={{transitionDelay: 500}}>
                         <Grid item xs={12}>
-                            <Typography variant='h3' color="primary" className={classes.headerH3}>My Journey</Typography>
+                            <Typography variant='h1' color="primary" className={classes.title}>My Journey</Typography>
                         </Grid>
                     </Fade>
                 </Grid>
