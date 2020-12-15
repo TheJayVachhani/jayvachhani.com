@@ -127,15 +127,18 @@ const BlogComponent = () => {
                                         </Grid>
                                         <Grid item xs={4} md={2}>
                                             <Typography variant="h2" color="secondary" className={classes.postDate}>
-                                                Nov 2020
+                                                Dec 2020
                                             </Typography>
                                         </Grid>
                                         <Grid item xs={8} md={10}>
-                                            <Link href="https://www.notion.so/Internship-Application-Tips-d20983ac1fd34e4196ecef413fb4b62c" target="_blank" rel="noreferrer">
+                                            <Link href="https://www.notion.so/Internship-Assessment-Tips-08bb1774a1a6401994792e032f34a61a" target="_blank" rel="noreferrer">
                                                 <Typography variant="h2" color="primary" className={classes.postTitle}>
-                                                    Application Tips
+                                                    Assessment Tips
                                                 </Typography>
                                             </Link>
+                                        </Grid>
+                                        <Grid item md={2}>
+
                                         </Grid>
                                         <Grid item xs={12} md={10}>
                                             <Card className={classes.postDescriptionCard}>
@@ -150,7 +153,45 @@ const BlogComponent = () => {
                                                         <Grid item xs={12}>
                                                             <CardContent>
                                                                 <Typography variant="h6" color="textPrimary" className={classes.postDescription}>
-                                                                    Since September I have made 36 different internship applications to firms for their 2021 summer programmes.
+                                                                    I share in this document strategies tha build an ability to show off your desirable attributes to recruiters throughout the assessment process.
+                                                                    I mention the strategies I think will put you in the best position to perform in your interviews and tests.                                                                    
+                                                                </Typography>
+                                                            </CardContent>
+                                                        </Grid>
+                                                    </Grid>
+                                                    <Divider variant="middle"/>
+                                                </Collapse>
+                                            </Card>
+                                        </Grid>
+                                        <Grid item xs={4} md={2}>
+                                            <Typography variant="h2" color="secondary" className={classes.postDate}>
+                                                Nov 2020
+                                            </Typography>
+                                        </Grid>
+                                        <Grid item xs={8} md={10}>
+                                            <Link href="https://www.notion.so/Internship-Application-Tips-d20983ac1fd34e4196ecef413fb4b62c" target="_blank" rel="noreferrer">
+                                                <Typography variant="h2" color="primary" className={classes.postTitle}>
+                                                    Application Tips
+                                                </Typography>
+                                            </Link>
+                                        </Grid>
+                                        <Grid item md={2}>
+
+                                        </Grid>
+                                        <Grid item xs={12} md={10}>
+                                            <Card className={classes.postDescriptionCard}>
+                                                <CardActions disableSpacing>
+                                                    <Typography variant="h6" color="primary" className={classes.details}>Description</Typography>
+                                                    <IconButton className={clsx(classes.expand, {[classes.expandOpen]: open.card3})} onClick={handleExpandClick3} aria-expanded={open.card3} aria-label="description">
+                                                        <ExpandMoreRounded color="primary" className={classes.icon}/>
+                                                    </IconButton>
+                                                </CardActions>
+                                                <Collapse className={classes.content} in={open.card3} timeout="auto" unmountOnExit>
+                                                    <Grid container direction="row" justify="center" alignItems="center">
+                                                        <Grid item xs={12}>
+                                                            <CardContent>
+                                                                <Typography variant="h6" color="textPrimary" className={classes.postDescription}>
+                                                                    Since September I have made 33 different internship applications to firms for their 2021 summer programmes.
                                                                     I am glad to say that I received an offer from my first choice firm, I am now an Incoming Intern at UBS in their Investment Bank Chief Operating Office for 2021 Summer.
                                                                     I share in this document some ideas and strategies that I applied to stand out from the crowd.
                                                                 </Typography>
