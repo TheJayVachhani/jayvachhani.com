@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.23f195fa.chunk.js",
-    "main.js.map": "/static/js/main.23f195fa.chunk.js.map",
+    "main.js": "/static/js/main.3841da26.chunk.js",
+    "main.js.map": "/static/js/main.3841da26.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d8db0c4e.js",
     "runtime-main.js.map": "/static/js/runtime-main.d8db0c4e.js.map",
-    "static/js/2.9eed015e.chunk.js": "/static/js/2.9eed015e.chunk.js",
-    "static/js/2.9eed015e.chunk.js.map": "/static/js/2.9eed015e.chunk.js.map",
+    "static/js/2.bd0ef98d.chunk.js": "/static/js/2.bd0ef98d.chunk.js",
+    "static/js/2.bd0ef98d.chunk.js.map": "/static/js/2.bd0ef98d.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.9eed015e.chunk.js.LICENSE.txt": "/static/js/2.9eed015e.chunk.js.LICENSE.txt",
+    "static/js/2.bd0ef98d.chunk.js.LICENSE.txt": "/static/js/2.bd0ef98d.chunk.js.LICENSE.txt",
     "static/media/Bolivia-Abandoned-Railway.6b040845.png": "/static/media/Bolivia-Abandoned-Railway.6b040845.png",
     "static/media/Bolivia-MtTarija.aa8a37d3.png": "/static/media/Bolivia-MtTarija.aa8a37d3.png",
     "static/media/Bolivia-Salt-Flats.269ac659.png": "/static/media/Bolivia-Salt-Flats.269ac659.png",
@@ -18,7 +18,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d8db0c4e.js",
-    "static/js/2.9eed015e.chunk.js",
-    "static/js/main.23f195fa.chunk.js"
+    "static/js/2.bd0ef98d.chunk.js",
+    "static/js/main.3841da26.chunk.js"
   ]
 }
