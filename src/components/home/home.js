@@ -92,7 +92,7 @@ const HomeComponent = () => {
                                     </Fade>
                                     <Fade in={true} timeout={1000} style={{transitionDelay: 2500}}>
                                         <Grid item xs={9}>
-                                            <Typography variant='h3' color="textSecondary" align="left" className={classes.webH3}>I love working on new ideas, currently I'm designing and building dynamic web applications.</Typography>
+                                            <Typography variant='h3' color="textSecondary" align="left" className={classes.webH3}>I love working on new ideas, currently I'm building my skills in market concepts and economics.</Typography>
                                         </Grid>
                                     </Fade>
                                 </Grid>

@@ -172,7 +172,7 @@ const FauxCode = () => {
                                                             <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
                                                             <Typography component="span" variant="body1" color="secondary">li</Typography>
                                                             <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                            <Typography component="span" variant="body1" color="textSecondary"> Economics & Technology</Typography>
+                                                            <Typography component="span" variant="body1" color="textSecondary"> Economics & Technology </Typography>
                                                             <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
                                                             <Typography component="span" variant="body1" color="secondary">li</Typography>
                                                             <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
@@ -181,7 +181,7 @@ const FauxCode = () => {
                                                             <Typography component="span" variant="body1" color="textPrimary">&lt;</Typography>
                                                             <Typography component="span" variant="body1" color="secondary">li</Typography>
                                                             <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>
-                                                            <Typography component="span" variant="body1" color="textSecondary"> Motorsport, Rowing, Music </Typography>
+                                                            <Typography component="span" variant="body1" color="textSecondary"> Big Data & AI Machine Learning </Typography>
                                                             <Typography component="span" variant="body1" color="textPrimary">&lt;/</Typography>
                                                             <Typography component="span" variant="body1" color="secondary">li</Typography>
                                                             <Typography component="span" variant="body1" color="textPrimary">&gt;</Typography>

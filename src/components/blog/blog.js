@@ -83,6 +83,7 @@ const BlogComponent = () => {
         card1: false,
         card2: false,
         card3: false,
+        card4: false,
     });
 
     const handleExpandClick1 = () => {
@@ -93,6 +94,9 @@ const BlogComponent = () => {
     };
     const handleExpandClick3 = () => {
         setOpen((open) =>({card3: !open.card3}));
+    };
+    const handleExpandClick4 = () => {
+        setOpen((open) =>({card4: !open.card4}));
     };
 
     return (
@@ -144,11 +148,11 @@ const BlogComponent = () => {
                                             <Card className={classes.postDescriptionCard}>
                                                 <CardActions disableSpacing>
                                                     <Typography variant="h6" color="primary" className={classes.details}>Description</Typography>
-                                                    <IconButton className={clsx(classes.expand, {[classes.expandOpen]: open.card3})} onClick={handleExpandClick3} aria-expanded={open.card3} aria-label="description">
+                                                    <IconButton className={clsx(classes.expand, {[classes.expandOpen]: open.card4})} onClick={handleExpandClick4} aria-expanded={open.card4} aria-label="description">
                                                         <ExpandMoreRounded color="primary" className={classes.icon}/>
                                                     </IconButton>
                                                 </CardActions>
-                                                <Collapse className={classes.content} in={open.card3} timeout="auto" unmountOnExit>
+                                                <Collapse className={classes.content} in={open.card4} timeout="auto" unmountOnExit>
                                                     <Grid container direction="row" justify="center" alignItems="center">
                                                         <Grid item xs={12}>
                                                             <CardContent>
@@ -269,7 +273,7 @@ const BlogComponent = () => {
                                         </Grid>
                                         <Grid item xs={4} md={2}>
                                             <Typography variant="h5" color="secondary" className={classes.postDate}>
-                                                Jan 2021
+                                                Mar 2021
                                             </Typography>
                                         </Grid>
                                         <Grid item xs={8} md={10}>
