@@ -87,12 +87,12 @@ const HomeComponent = () => {
                                 <Grid container direction="column" justify="center" alignItems="center" spacing={1}>
                                     <Fade in={true} timeout={1000} style={{transitionDelay: 1500}}>
                                         <Grid item xs={9}>
-                                            <Typography variant='h3' color="textSecondary" align="left" className={classes.webH3}>I'm a Computer Science and Management Student at King's College London.</Typography>
+                                            <Typography variant='h3' color="textSecondary" align="left" className={classes.webH3}>I'm a Final Year Computer Science and Management Student at King's College London.</Typography>
                                         </Grid>
                                     </Fade>
                                     <Fade in={true} timeout={1000} style={{transitionDelay: 2500}}>
                                         <Grid item xs={9}>
-                                            <Typography variant='h3' color="textSecondary" align="left" className={classes.webH3}>I love working on new ideas, currently I'm building my skills in market concepts and economics.</Typography>
+                                            <Typography variant='h3' color="textSecondary" align="left" className={classes.webH3}>I love working on new ideas, currently I'm building my skills in AI and Machine Learning.</Typography>
                                         </Grid>
                                     </Fade>
                                 </Grid>
