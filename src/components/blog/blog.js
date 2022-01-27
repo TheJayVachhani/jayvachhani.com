@@ -273,7 +273,7 @@ const BlogComponent = () => {
                                         </Grid>
                                         <Grid item xs={4} md={2}>
                                             <Typography variant="h5" color="secondary" className={classes.postDate}>
-                                                Mar 2021
+                                                Mar 2022
                                             </Typography>
                                         </Grid>
                                         <Grid item xs={8} md={10}>
