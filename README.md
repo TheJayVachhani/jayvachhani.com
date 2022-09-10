@@ -1,5 +1,5 @@
 <h1 align="center">
-  jayvachhani.com v2.0 Complete
+  jayvachhani.com v1.2 Complete
 </h1>
 <p>
 This site is built with React & Material UI. Version 2.0 brings the website quite literally to life; New transitions and animations & Lots of new content customised both for mobile and desktop, though I would say desktop is the best way to view this site. On top of that a whole 4 new themes which are inspired by my favourite motorsport teams and colours. This site is fully responsive with great performance on most devices.
